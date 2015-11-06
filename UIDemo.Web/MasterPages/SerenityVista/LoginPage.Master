@@ -1,0 +1,69 @@
+<%@ Master Language="C#" AutoEventWireup="false" Codebehind="LoginPage.Master.cs" Inherits="SMWeb05.MasterPages.Apathy.LoginPage" EnableTheming="true" %>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- ... -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+	<title></title>
+	<SMWC:FavIcon ID="FavIcon1" runat="server" />
+</head>
+<body class="Login">
+	<form id="form1" runat="server">
+
+		<script type="text/javascript">
+		if (parent.frames['contentframe']!=null)
+			parent.location.href = location.href;
+		</script>
+
+		<table class="Container">
+			<tr>
+				<td align="center">
+					<table class="ShadowBox">
+						<tr class="ShadowTop">
+							<td class="ShadowTopLeft">
+							</td>
+							<td class="ShadowTopTile">
+							</td>
+							<td class="ShadowTopRight">
+							</td>
+						</tr>
+						<tr class="ShadowMid">
+							<td class="ShadowLeftTile">
+							</td>
+							<td class="ShadowBox">
+								<table class="LogInBox">
+									<tr>
+										<td class="TopPanelLeft">
+											<div class="TopPanelMenuText">
+												<STWC:GlobalizedLabel ResourceIDPage="PleaseLogIn" ID="Glbl6" runat="server" />
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="LogInBox">
+											<asp:ContentPlaceHolder ID="PH" runat="server" />
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="ShadowRightTile">
+							</td>
+						</tr>
+						<tr class="ShadowBottom">
+							<td class="ShadowBottomLeft">
+							</td>
+							<td class="ShadowBottomTile">
+								<div class="Copyright">
+									<asp:Literal runat="server" ID="lblCopyright"></asp:Literal>
+								</div>
+							</td>
+							<td class="ShadowBottomRight">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

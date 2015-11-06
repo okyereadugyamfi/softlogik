@@ -1,0 +1,72 @@
+<%@ Master Language="C#" MasterPageFile="UserPage.Master" AutoEventWireup="false" Codebehind="TabbedUserSettingsPage.master.cs" Inherits="SMWeb05.MasterPages.Apathy.TabbedUserSettingsPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="PH" runat="server">
+
+	<script type="text/javascript">
+function GetScrollableSize(doc)
+{
+	var menu = document.getElementById('Menu');
+	var button = document.getElementById('Button');
+	var tab = document.getElementById('<%= trTabStrip.ClientID %>');
+	var tip = document.getElementById('<%= TipText.ClientID %>');
+	var tab2 = document.getElementById('<%= trTabStripBreak.ClientID %>');
+	var retval = menu.offsetHeight + button.offsetHeight
+	if (tab!=null) retval = retval + tab.offsetHeight;
+	if (tab2!=null) retval = retval + tab2.offsetHeight;
+	if (tip!=null) retval = retval + tip.offsetHeight;
+	return retval;
+}
+	</script>
+
+	<table class="InnerSettings" id="InnerContent">
+		<tr>
+			<td id="Menu" class="TopPanelMenuLeft">
+				<div class="TopPanelMenuText">
+					<STWC:CustomPageTitle runat="server" ID="CustomPageTitle1" />
+				</div>
+			</td>
+			<td class="TopPanelMenuRight">
+				<SMWC:Spacer runat="server" ID="Spacer0" Height="1" Width="68" />
+			</td>
+		</tr>
+		<tr class="ButtonBar">
+			<td id="Button" colspan="2" class="ButtonBar">
+				<table class="TwoCellButtonBar">
+					<tr>
+						<td class="ButtonBarLeft">
+							<asp:ContentPlaceHolder ID="BPH" runat="server" />
+						</td>
+						<td class="ButtonBarRight">
+							<div class="ButtonBarRight">
+								<asp:ContentPlaceHolder ID="BrPH" runat="server" />
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr runat="server" id="trTipText">
+			<td id="TipText" class="Tip" colspan="2" style="padding: 0px">
+				<asp:Literal runat="Server" ID="litTipText"></asp:Literal>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="TabStrip" id="trTabStrip" runat="server">
+				<asp:ContentPlaceHolder ID="TPH" runat="server" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="TabStripBreak" id="trTabStripBreak" runat="server">
+				<SMWC:Spacer runat="server" ID="Spacer1" Height="31" Width="1" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" id="Scrollable" class="InnerPageContent" style="padding-top: 0px;">
+				<div class="ContentDiv">
+					<asp:ContentPlaceHolder ID="MPH" runat="server" />
+				</div>
+			</td>
+		</tr>
+	</table>
+</asp:Content>
+

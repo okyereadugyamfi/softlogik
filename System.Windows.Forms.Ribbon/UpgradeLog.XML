@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="System.Windows.Forms.Ribbon">
+</Property><Property Name="Solution File" Value="D:\home\projects\ms.net\components\Framework\System.Windows.Forms.Ribbon\System.Windows.Forms.Ribbon.sln">
+</Property><Property Name="Date" Value="Thursday, October 16, 2008">
+</Property><Property Name="Time" Value="13:29 PM">
+</Property></Properties><Event ErrorLevel="0" Project="System.Windows.Forms.Ribbon" Source="System.Windows.Forms.Ribbon\System.Windows.Forms.Ribbon.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="System.Windows.Forms.Ribbon" Source="System.Windows.Forms.Ribbon\System.Windows.Forms.Ribbon.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RibbonDemo" Source="RibbonDemo\RibbonDemo.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RibbonDemo" Source="RibbonDemo\RibbonDemo.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="System.Windows.Forms.Ribbon.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="System.Windows.Forms.Ribbon.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="System.Windows.Forms.Ribbon" Source="System.Windows.Forms.Ribbon\System.Windows.Forms.Ribbon.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="RibbonDemo" Source="RibbonDemo\RibbonDemo.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

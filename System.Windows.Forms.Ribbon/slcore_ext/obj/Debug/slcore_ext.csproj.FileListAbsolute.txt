@@ -1,0 +1,5 @@
+D:\home\projects\ms.net\components\SoftLogik\System.Windows.Forms.Ribbon\slcore_ext\obj\Debug\ResolveAssemblyReference.cache
+D:\home\projects\ms.net\components\SoftLogik\System.Windows.Forms.Ribbon\slcore_ext\bin\Debug\slcore_ext.dll
+D:\home\projects\ms.net\components\SoftLogik\System.Windows.Forms.Ribbon\slcore_ext\bin\Debug\slcore_ext.pdb
+D:\home\projects\ms.net\components\SoftLogik\System.Windows.Forms.Ribbon\slcore_ext\obj\Debug\slcore_ext.dll
+D:\home\projects\ms.net\components\SoftLogik\System.Windows.Forms.Ribbon\slcore_ext\obj\Debug\slcore_ext.pdb

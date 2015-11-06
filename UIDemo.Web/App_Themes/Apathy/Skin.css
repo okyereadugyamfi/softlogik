@@ -1,0 +1,313 @@
+/* Wow this actually makes things 100% pretty easily */
+html, body, form
+{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+/* end 100% height stuff */
+
+body
+{
+	background-color: White;
+}
+body.Login
+{
+	background-color: #d7d7d7;
+}
+
+.full
+{
+	width: 100%;
+	height: 100%;
+}
+.fullNoPadding
+{
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+/* Container owns everything on the page */
+table.Container
+{
+	height: 100%;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+td.Container
+{
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+}
+/* menu bar is the bar directly below the top bar */
+td.MenuBar
+{
+	height: 49px;
+	width: 100%;
+	padding: 0px;
+	background-color: #666666;
+}
+table.MenuBar
+{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+td.MenuBarLeft
+{
+	background: url(images/skin/MenuBarTile.png) repeat-x left top;
+	padding: 8px 0px 0px 14px;
+	width: 100%;
+	color: White;
+}
+td.MenuBarMid
+{
+	background: url(images/skin/MenuBarTransition.png) repeat-x left top;
+	width: 83px;
+	padding: 0px;
+}
+td.MenuBarRight
+{
+	vertical-align: top;
+	white-space: nowrap;
+	font: 12pt Tahoma;
+	letter-spacing: 1px;
+	font-weight: lighter;
+	margin-right: 0px;
+	background: url(images/skin/MenuBarTileRight.png) repeat-x left top;
+	padding: 19px 15px 0px 0px;
+	color: White;
+}
+/******************************************/
+/* left bar and right pane are the actual "content" of the page */
+table.LeftBar
+{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+td.LeftBar
+{
+	height: 100%;
+	background-color: White;
+	width: 206px;
+	vertical-align: top;
+	padding: 0px;
+	overflow: hidden;
+}
+td.LeftBarInner
+{
+	height: 100%;
+	background-color: White;
+	width: 206px;
+	vertical-align: top;
+	padding: 0px;
+	overflow: hidden;
+}
+
+td.RightPane
+{
+	vertical-align: top;
+	background-color: White;
+	padding: 0px;
+}
+td.LoggedInAsContainer
+{
+	height: 100px;
+	width: 100%;
+	overflow: hidden;
+	vertical-align: top;
+	padding: 0px;
+}
+div.SideBarPanelText
+{
+	font: 9pt Tahoma, Arial, Verdana;
+	color: White;
+	padding: 7px 0px 0px 25px;
+}
+div.SideBarPanel
+{
+	width: 206px;
+	background: white url('Images/Skin/bluePanelShadow.png') no-repeat;
+	height: 40px;
+	overflow: hidden;
+}
+/********************************************/
+/* the border is the bevel that goes around everything in the page*/
+td.TopLeftBorder
+{
+	width: 5px;
+	height: 5px;
+	padding: 0px;
+	background: url(images/skin/BorderTopLeft.png) no-repeat;
+}
+td.TopRightBorder
+{
+	width: 5px;
+	height: 5px;
+	padding: 0px;
+	background: url(images/skin/BorderTopRight.png) no-repeat;
+}
+td.TopMidBorder
+{
+	width: 100%;
+	height: 5px;
+	padding: 0px;
+	background: url(images/skin/BorderTop.png) repeat-x;
+}
+td.BottomLeftBorder
+{
+	padding: 0px;
+	background: url(images/skin/BorderBottomLeft.png) no-repeat;
+}
+td.BottomRightBorder
+{
+	padding: 0px;
+	background: url(images/skin/BorderBottomRight.png) no-repeat;
+}
+td.BottomMidBorder
+{
+	height: 5px;
+	padding: 0px;
+	background: url(images/skin/BorderBottom.png) repeat-x;
+}
+div.TopMidBorder
+{
+	height: 5px;
+	background: url(images/skin/BorderTop.png) repeat-x;
+}
+td.LeftBorder
+{
+	padding: 0px;
+	background: url(images/skin/BorderLeft.png) repeat-y;
+}
+td.RightBorder
+{
+	padding: 0px;
+	background: url(images/skin/BorderLeft.png) repeat-y;
+}
+td.MidBorder
+{
+	width: 5px;
+	padding: 0px;
+	background: url(images/skin/BorderLeft.png) repeat-y;
+}
+/****************************************/
+/* does a shadow around a box */
+table.ShadowBox
+{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+td.ShadowBox
+{
+	padding: 0px;
+}
+td.ShadowTopLeft
+{
+	padding: 0px;
+	width: 14px;
+	height: 14px;
+	background: url(images/skin/ShadowCorners.gif) no-repeat 0px 0px;
+}
+td.ShadowTopRight
+{
+	padding: 0px;
+	width: 14px;
+	height: 14px;
+	background: url(images/skin/ShadowCorners.gif) no-repeat 0px -20px;
+}
+td.ShadowBottomLeft
+{
+	padding: 0px;
+	width: 14px;
+	height: 14px;
+	background: url(images/skin/ShadowCorners.gif) no-repeat 0px -40px;
+}
+td.ShadowBottomRight
+{
+	padding: 0px;
+	width: 14px;
+	height: 14px;
+	background: url(images/skin/ShadowCorners.gif) no-repeat 0px -60px;
+}
+td.ShadowLeftTile
+{
+	padding: 0px;
+	width: 14px;
+	background: url(images/skin/ShadowLeftTile.gif) repeat-y;
+}
+td.ShadowRightTile
+{
+	padding: 0px;
+	width: 14px;
+	background: url(images/skin/ShadowRightTile.gif) repeat-y;
+}
+td.ShadowTopTile
+{
+	padding: 0px;
+	height: 14px;
+	background: url(images/skin/ShadowCorners.gif) repeat-x 0px -80px;
+}
+td.ShadowBottomTile
+{
+	padding: 0px;
+	height: 14px;
+	background: url(images/skin/ShadowCorners.gif) repeat-x 0px -100px;
+}
+/*************************************************/
+/* links */
+a
+{
+	color: #497699;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #497699;
+	text-decoration: none;
+}
+div.Copyright
+{
+	height: 20px;
+	overflow: hidden;
+}
+.Copyright
+{
+	text-align: right;
+	padding-top: 8px;
+	color: White;
+	font: 8pt Arial, Verdana;
+}
+.Copyright a
+{
+	padding-top: 8px;
+	color: White;
+	text-decoration: none;
+	font: 8pt Arial, Verdana;
+}
+
+img
+{
+	border: solid 0px black;
+}
+
+/*************************/

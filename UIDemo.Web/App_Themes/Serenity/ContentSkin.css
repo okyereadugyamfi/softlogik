@@ -1,0 +1,813 @@
+﻿/* This file defines all skin elements that are in "content pages"
+ * colors used:
+ * #497699 - Blue text;
+ * #949494 - Login page border
+ * #FFFFFF - Text on panels
+ * #555555 - Tab strip text
+ */
+
+.FullWText
+{
+	width: 100%;
+}
+
+textarea
+{
+	font: 10pt 'courier new';
+}
+
+input, select
+{
+	font: 8pt 'Arial Unicode MS' , Arial, Verdana;
+}
+
+/* Log in box styles */
+table.LogInBox
+{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+	margin: 0px;
+	font: 9pt Arial;
+	color: #497699;
+	height: 240px;
+	width: 400px;
+	background-color: White;
+	text-align: left;
+}
+
+td.LogInBox
+{
+	padding: 6px 20px 6px 20px;
+}
+
+.TipTextLoginFailure
+{
+	color: Red;
+}
+/*************************/
+/* Log in box styles */
+table.WelcomeBox
+{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+	margin: 0px;
+	font: 9pt Arial;
+	color: #555555;
+	height: 300px;
+	width: 600px;
+	background-color: White;
+	border: solid 1px #949494;
+	text-align: left;
+	vertical-align: top;
+}
+td.WelcomeContent
+{
+	height: 100%;
+	vertical-align: top;
+}
+td.WelcomeBox
+{
+	padding: 6px 20px 6px 20px;
+}
+/*******************/
+table.GenericBox
+{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+	margin: 0px;
+	font: 9pt Arial;
+	color: #497699;
+	height: 100%;
+	width: 100%;
+	background-color: White;
+	border: solid 1px #949494;
+	text-align: left;
+}
+td.GenericBox
+{
+	height: 100%;
+	padding: 0px;
+	vertical-align: top;
+}
+div.InvitationBox
+{
+	width: 100%;
+}
+
+table.InvitationBox
+{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+	margin: 0px;
+	font: 9pt Arial;
+	color: #497699;
+	width: 450px;
+	background-color: White;
+	text-align: left;
+	border: solid 1px #949494;
+	margin-left: auto;
+	margin-right: auto;
+}
+td.InvitationBox
+{
+	height: 100%;
+	padding: 0px;
+	vertical-align: top;
+}
+
+/* this class is used for any inner page that is a settings page. I.e. blue bar followed by a button bar */
+table.InnerSettings
+{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+table.InnerSettingsSplit
+{
+	table-layout: fixed;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+td.InnerPageContent
+{
+	margin: 0px;
+	padding: 0px;
+	vertical-align: top;
+	height: 100%;
+}
+/*******************************************/
+/* Used for the top blue bar of any "window" without a button bar */
+td.TopPanelLeft
+{
+	background: url(images/skin/PanelTile2.png) repeat-x;
+	padding: 0px;
+	margin: 0px;
+	color: #406287;
+	font: 10pt Arial, Verdana;
+	color: White;
+	vertical-align: top;
+	width: 100%;
+	height: 40px;
+}
+td.TopPanelRight
+{
+	padding: 0px;
+	margin: 0px;
+	width: 31px;
+	background: url(images/skin/PanelTile2.png) repeat-x;
+}
+/*************************************************/
+/* Used for the top blue bar of any "window" that is followed by a button bar */
+table.InnerSettingsMenu
+{
+	padding: 0px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	width: 100%;
+}
+td.TopPanelMenuLeft
+{
+	background: url(images/skin/PanelTile.png) repeat-x;
+	margin: 0px;
+	font: 10pt Arial, Verdana;
+	padding: 0px;
+	vertical-align: top;
+	height: 32px;
+}
+div.TopPanelMenuText
+{
+	overflow: hidden;
+	padding: 8px 0px 0px 15px;
+	color: #406287;
+	font: 10pt Tahoma, Verdana;
+}
+td.TopPanelMenuRight
+{
+	height: 32px;
+	padding: 0px;
+	white-space: nowrap;
+	padding-right: 15px;
+	color: #406287;
+	font: 8pt Arial,Verdana;
+	text-align: right;
+	background: url(images/skin/PanelTile.png) repeat-x;
+}
+/*************************************************/
+div.tiptextsuccess
+{
+	border-top: solid 1px white;
+	color: #497699;
+	font: bold 9pt Arial, Verdana;
+	padding: 2px 20px 3px 18px;
+	background-color: #e2e2e2;
+}
+div.tiptextfailure
+{
+	border-top: solid 1px white;
+	color: #FE4719;
+	font: bold 9pt Arial, Verdana;
+	padding: 2px 20px 3px 18px;
+	background-color: #e2e2e2;
+}
+div.tiptextsuccess img, div.tiptextfailure img
+{
+	display: none;
+}
+
+div.ContentDiv
+{
+	outline: none;
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+}
+
+/* Tab strip stuff */
+table.TabStrip
+{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	width: 100%;
+}
+td.TabStrip
+{
+	padding: 21px;
+	padding-bottom: 0px;
+}
+td.TabStripBreak
+{
+	background: url(images/skin/TabStripBreak.png) repeat-x;
+	width: 100%;
+	height: 31px;
+}
+table.TabStripContent
+{
+	font: 9pt Arial, Verdana;
+	width: 100%;
+}
+table.DataGridContent
+{
+	padding: 0px;
+	margin: 0px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	font: 9pt Arial, Verdana;
+	width: 100%;
+}
+
+table.TabStripContentSmall
+{
+	font: 9pt Arial, Verdana;
+	color: #888888;
+}
+/****************************************************/
+/* settings stuff */
+
+table.LoginContent
+{
+	border-spacing: 3px;
+	border-width: 3px;
+	padding: 3px;
+	margin: 0px;
+	font: 9pt Arial;
+	color: #497699;
+	width: 100%;
+	background-color: White;
+	text-align: left;
+}
+
+table.SettingsContent
+{
+	font: 9pt Arial, Verdana;
+	color: #666666;
+	width: 100%;
+	margin-top: 21px;
+}
+
+td.SettingsBase, td.SettingsLabel, td.SettingsLabelFull, td.SettingsLabelInd, td.SettingsLabelHeader, .SettingsHeader, .SettingsNote, td.SettingsCheckbox, td.SettingsSettingSingle, td.SettingsSettingSingleInd, td.SettingsSetting, td.SettingsSettingSmallPadRight, td.SettingsSettingSmallPad, td.SettingsDecludeBottom, td.SettingsDecludeTop
+{
+	text-align: left;
+	vertical-align: middle;
+	font: bold 9pt Arial, Verdana;
+	padding: 3px;
+	color: #666666;
+}
+td.SettingsBase
+{
+	font-weight: normal;
+	color: #444444;
+}
+
+td.SettingsLabel /* left column of a settings page */
+{
+	width: 175px;
+	padding-left: 25px;
+}
+td.SettingsLabelFull /* left column of a settings page (no width restriction) */
+{
+	padding-left: 25px;
+	padding-right: 15px;
+	font: normal 9pt Arial, Verdana;
+}
+td.SettingsLabelInd /* same, but indented */
+{
+	width: 150px;
+	padding-left: 45px;
+}
+td.SettingsLabelHeader /* same but blue */
+{
+	color: #497699;
+	padding-left: 25px;
+	width: 175px;
+}
+.SettingsHeader /* header for a settings page */
+{
+	color: #497699;
+	padding: 15px 3px 3px 25px;
+	border-bottom: solid 1px #CCCCCC;
+}
+.SettingsNote /* A "important note" */
+{
+	color: #497699;
+	padding: 5px 50px 25px 25px;
+}
+td.SettingsCheckbox /* checkboxes have no label */
+{
+	font-weight: normal;
+	color: #444444;
+	padding: 3px 50px 3px 25px;
+	width: 175px;
+}
+td.SettingsSettingSingle
+{
+	font-weight: normal;
+	color: #444444;
+	padding: 3px 50px 3px 25px;
+}
+td.SettingsSettingSingleInd
+{
+	font-weight: normal;
+	color: #444444;
+	padding: 3px 50px 3px 45px;
+}
+td.SettingsSetting /* right column of settings */
+{
+	font-weight: normal;
+	color: #444444;
+	padding-right: 50px;
+}
+td.SettingsSettingSmallPad /* right column of settings */
+{
+	font-weight: normal;
+	color: #444444;
+	padding-right: 15px;
+}
+td.SettingsSettingSmallPadRight /* right column of settings */
+{
+	font-weight: normal;
+	color: #444444;
+	padding-right: 15px;
+	text-align: right;
+}
+td.SettingsDecludeTop
+{
+	padding: 3px 50px 10px 25px;
+	border-bottom: solid 1px #AAAAAA;
+}
+td.SettingsDecludeBottom
+{
+	padding: 3px 10px 50px 25px;
+	border-top: solid 1px #AAAAAA;
+}
+/*************/
+td.AvailabilityLabel
+{
+	text-align: left;
+	vertical-align: top;
+	font: bold 9pt Arial, Verdana;
+	padding: 3px;
+	color: #888888;
+}
+td.AvailabilitySetting
+{
+	text-align: left;
+	vertical-align: top;
+	font: 9pt Arial, Verdana;
+	padding: 3px;
+	color: #666666;
+}
+/************this is used on frmContactConflict for the dynamic table*/
+td.ConflictQuickView
+{
+	border: solid 1px black;
+	width: 400px;
+	padding: 0px;
+}
+td.ConflictLabel
+{
+	text-align: left;
+	vertical-align: top;
+	font: bold 9pt Arial, Verdana;
+	padding: 3px;
+	color: #888888;
+	padding-left: 25px;
+	width: 90px;
+}
+td.ConflictField
+{
+	text-align: left;
+	vertical-align: top;
+	font: 9pt Arial, Verdana;
+	padding: 3px;
+	color: #666666;
+	padding-right: 25px;
+}
+/*************************************/
+/*************used on compose new email page************/
+table.ComposeContent
+{
+	padding: 0px;
+	margin: 0px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	font: 9pt Arial, Verdana;
+	width: 100%;
+	margin-top: 4px;
+}
+div.ComposeContent
+{
+	padding-top: 4px;
+	padding-left: 15px;
+}
+td.ComposeLabel
+{
+	text-align: left;
+	vertical-align: middle;
+	font: bold 9pt Arial, Verdana;
+	color: #888888;
+	padding: 1px 0px 1px 15px;
+	width: 50px;
+}
+td.ComposeField
+{
+	text-align: left;
+	vertical-align: middle;
+	font: 9pt Arial, Verdana;
+	color: #666666;
+	padding: 1px 0px 1px 0px;
+}
+div.ComposeBox
+{
+	padding-right: 25px;
+}
+td.ComposeBox
+{
+	text-align: left;
+	vertical-align: top;
+	font: 9pt Arial, Verdana;
+	color: #888888;
+	background-color: White;
+	padding: 0px;
+	padding-left: 15px;
+}
+/************************************/
+td.SearchRow
+{
+	padding: 0px;
+}
+div.searchbar
+{
+	font: 9pt/9pt Arial, Verdana;
+	background-color: #E2E2E2;
+	padding: 3px 15px 3px 15px;
+	border-top: solid 1px white;
+	height: 23px;
+	vertical-align: baseline;
+}
+a.searchbar
+{
+	font: 9pt Arial, Verdana;
+	text-decoration: none;
+	color: Black;
+	border: solid 1px #555555;
+	padding: 2px 0px 2px 4px;
+	background-color: Transparent;
+	display: inline-block;
+	margin-bottom: -4px;
+	cursor: pointer;
+}
+a.searchbar:hover
+{
+	font: 9pt Arial, Verdana;
+	text-decoration: none;
+	color: Black;
+	padding: 2px 0px 2px 4px;
+	border: solid 1px #555555;
+	background-color: #CCCCCC;
+	display: inline-block;
+	margin-bottom: -4px;
+	cursor: pointer;
+}
+/*************************************************/
+
+.sharebar
+{
+	height: 16px;
+	padding: 2px;
+	padding-left: 4px;
+	background-color: LightYellow;
+	font-family: Arial;
+	font-size: 11px;
+	border-top: solid 1px #888888;
+	border-bottom: solid 1px #888888;
+}
+/*****************************************************/
+/***************used for task list progress bar ****************/
+table.TaskProgressBar
+{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+	margin: 0px;
+	width: 60px;
+	height: 5px;
+	border: solid 1px #000000;
+}
+img.TaskProgressBar
+{
+	vertical-align: baseline !important;
+	height: 1px;
+	width: 1px;
+}
+td.TaskProgressBar
+{
+	padding: 0px;
+	background-color: #6186B3;
+}
+
+/*********************************/
+.innerpagewarning
+{
+	color: #FE4719;
+	font: bold 9pt Arial, Verdana;
+}
+/************************/
+
+.pathbox
+{
+	margin-top: 3px;
+	color: #000000;
+	font-family: 'Courier New' , Monospace;
+	font-size: 8pt;
+}
+
+/*******************************/
+span.Unread
+{
+	font-weight: bold;
+	color: #497699;
+}
+span.TreeNodeSelect span.Unread
+{
+	font-weight: bold;
+	color: White;
+}
+span.TreeNodeSelect span.UnreadJunk
+{
+	font-weight: bold;
+	color: White;
+}
+span.UnreadJunk
+{
+	font-weight: bold;
+	color: #497699;
+}
+.PopUpBox
+{
+	font: 9pt Arial,Verdana;
+	color: Black;
+	position: absolute;
+	left: -1px;
+	top: -1px;
+	visibility: hidden;
+	border: solid 1px Black;
+	padding: 0px;
+	background: LightYellow;
+	z-index: 500;
+}
+.LoggedInAs
+{
+	width: 198px;
+	overflow: hidden;
+	margin: 4px;
+	margin-top: 0px;
+}
+.SideSearchBar
+{
+	width: 190px;
+	overflow: hidden;
+	margin: 4px;
+	margin-top: 0px;
+}
+.SideSearchBar select
+{
+	margin-left: 4px;
+	float: left;
+}
+.SideSearchBar input
+{
+	margin-bottom: 4px;
+}
+
+.GeneralData
+{
+	width: 190px;
+	overflow: hidden;
+	margin: 5px;
+	margin-top: 0px;
+}
+
+div.Reminders
+{
+	width: 195px;
+	overflow: hidden;
+	padding: 5px;
+	padding-top: 0px;
+}
+
+table.SBSkin
+{
+	width: 100%;
+}
+td.SBSkin
+{
+	font: 9pt Arial, Verdana;
+	text-align: left;
+	color: #497699;
+}
+td.SBSkinUserImage
+{
+	width: 40px;
+}
+td.SBSkinText
+{
+	padding: 0px 4px 0px 9px;
+	white-space: normal;
+}
+td.SBSkinText a
+{
+	padding: 0px;
+	font: 8pt Arial, Verdana;
+	text-align: left;
+	color: #555555;
+}
+td.SBSkinLabel
+{
+	padding: 3px;
+	font: bold 9pt Arial, Verdana;
+	text-align: left;
+	color: #555555;
+}
+td.SBSkinRight a
+{
+	font: 8pt Arial, Verdana;
+	color: Black;
+}
+
+td.SBSkinRight
+{
+	padding: 2px;
+	font: 9pt Arial, Verdana;
+	text-align: right;
+	color: #497699;
+	margin: auto 0px auto auto;
+}
+td.SBSkinCenter
+{
+	padding: 2px;
+	font: 9pt Arial, Verdana;
+	text-align: center;
+	color: #497699;
+}
+td.SBSkinRightBold
+{
+	padding: 3px;
+	font: bold 9pt Arial, Verdana;
+	text-align: right;
+	color: #497699;
+}
+td.SBSkinLogOut
+{
+	padding: 2px;
+	font: 8pt Arial, Verdana;
+	text-align: right;
+	color: #497699;
+}
+span.DriveLetter
+{
+	font-weight: bold;
+	color: #555555;
+}
+.NotificationErrorHeader
+{
+	color: #497699;
+	padding: 15px 3px 3px 25px;
+	border-bottom: solid 1px #CCCCCC;
+	font: 9pt Arial, Verdana;
+}
+.NotificationErrorBody
+{
+	font: 9pt Arial, Verdana;
+	color: #666666;
+	padding-left: 25px;
+}
+.NotificationErrorTag
+{
+	font: 9pt Arial, Verdana;
+	font-weight: bold;
+	color: Red;
+}
+.NotificationWarningHeader
+{
+	color: #497699;
+	padding: 15px 3px 3px 25px;
+	border-bottom: solid 1px #CCCCCC;
+	font: 9pt Arial, Verdana;
+}
+.NotificationWarningBody
+{
+	font: 9pt Arial, Verdana;
+	color: #666666;
+	padding-left: 25px;
+}
+.NotificationWarningTag
+{
+	font: 9pt Arial, Verdana;
+	font-weight: bold;
+	color: Red;
+}
+.NotificationInformationHeader
+{
+	color: #497699;
+	padding: 15px 3px 3px 25px;
+	border-bottom: solid 1px #CCCCCC;
+	font: 9pt Arial, Verdana;
+}
+.NotificationInformationBody
+{
+	font: 9pt Arial, Verdana;
+	color: #666666;
+	padding-left: 25px;
+}
+.NotificationInformationTag
+{
+	font: 9pt Arial, Verdana;
+	font-weight: bold;
+	color: #497699;
+}
+.IndentBothSides
+{
+	padding-left: 45px;
+	padding-right: 45px;
+}
+.ReportContent
+{
+	font: 9pt Arial, Verdana;
+	color: #666666;
+	width: 100%;
+	margin-top: 21px;
+}
+.ReportHeader
+{
+	color: #497699;
+	padding: 15px 3px 3px 25px;
+	border-bottom: solid 1px #CCCCCC;
+}
+.ReportLabel
+{
+	font: 9pt Arial, Verdana;
+	font-weight: normal;
+	color: #444444;
+	padding: 3px 50px 3px 45px;
+}
+.ReportValue
+{
+	font: 9pt Arial, Verdana;
+	font-weight: normal;
+	color: #444444;
+	padding: 3px 50px 3px 25px;
+}
+.ButtonBarText
+{
+	padding: 2px 3px 0px 8px;
+}

@@ -1,0 +1,75 @@
+<%@ Master Language="C#" MasterPageFile="AdminPage.Master" Codebehind="GenericInnerAdminPageButtonBar.Master.cs" AutoEventWireup="false" Inherits="SMWeb05.MasterPages.Apathy.GenericInnerAdminPageButtonBar" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="PH" runat="server">
+
+	<script type="text/javascript">
+function GetScrollableSize(doc)
+{
+	var menu = document.getElementById('Menu');
+	var button = document.getElementById('Button');
+	var pager = document.getElementById('Pager');
+	var tip = document.getElementById('<%= TipText.ClientID %>');
+	var retval = menu.offsetHeight + button.offsetHeight
+	if (pager!=null) retval = retval + pager.offsetHeight;
+	if (tip!=null) retval = retval + tip.offsetHeight;
+	return retval;
+}
+	</script>
+
+	<table class="InnerSettings" id="InnerContent">
+		<tr>
+			<td id="Menu" class="TopPanelMenuLeft">
+				<div class="TopPanelMenuText">
+					<STWC:CustomPageTitle runat="server" ID="CustomPageTitle1" />
+				</div>
+			</td>
+			<td class="TopPanelMenuRight">
+				<SMWC:Spacer runat="server" ID="Spacer0" Height="1" Width="68" />
+			</td>
+		</tr>
+		<tr class="ButtonBar">
+			<td id="Button" colspan="2" class="ButtonBar">
+				<table class="TwoCellButtonBar">
+					<tr>
+						<td class="ButtonBarLeft">
+							<asp:ContentPlaceHolder ID="BPH" runat="server" />
+						</td>
+						<td class="ButtonBarRight">
+							<asp:ContentPlaceHolder ID="BrPH" runat="server" />
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr runat="server" id="trTipText">
+			<td id="TipText" class="Tip" colspan="2" style="padding: 0px">
+				<asp:Literal runat="Server" ID="litTipText"></asp:Literal>
+			</td>
+		</tr>
+		<tr>
+			<td id="Scrollable" colspan="2" class="InnerPageContent">
+				<div style="overflow: auto; height: 100%">
+					<asp:ContentPlaceHolder ID="MPH" runat="server" />
+				</div>
+			</td>
+		</tr>
+		<tr runat="server" id="trFooter" visible="false">
+			<td colspan="2" style="padding: 0px;">
+				<table id="Pager" class="DataGridFooter">
+					<tr>
+						<td class="DataGridFooterNav">
+							<asp:ContentPlaceHolder ID="NavPH" runat="server" />
+						</td>
+						<td class="DataGridFooterSummary">
+							<asp:ContentPlaceHolder ID="CntPH" runat="server" />
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<div id="Div1" runat="server" visible="false">
+		<asp:ContentPlaceHolder ID="M2PH" runat="server" />
+	</div>
+</asp:Content>
+

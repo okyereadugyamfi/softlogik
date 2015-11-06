@@ -1,0 +1,148 @@
+<%@ Master Language="C#" AutoEventWireup="false" Codebehind="AdminPage.master.cs" Inherits="SMWeb05.MasterPages.Apathy.AdminPage" %>
+<%@ Register Assembly="RadMenu.Net2" Namespace="Telerik.WebControls" TagPrefix="radM" %>
+<%@ Register Assembly="RadPanelbar.Net2" Namespace="Telerik.WebControls" TagPrefix="radP" %>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- ... -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<title></title>
+	<SMWC:FavIcon ID="FavIcon1" runat="server" />
+	<SMWC:CommonScripts ID="Scripts1" runat="server" />
+</head>
+<body>
+	<form id="form" runat="server">
+
+		<script type="text/javascript" src="<%= JScript %>"></script>
+
+		<table class="Container">
+			<tr>
+				<td id="MenuBar" class="MenuBar">
+					<table class="MenuBar">
+						<tr>
+							<td class="MenuBarLeft">
+								<radM:RadMenu ID="RM" runat="server" EnableViewState="false" />
+							</td>
+							<td class="MenuBarMid">
+								<SMWC:Spacer ID="Spacer1" runat="server" Width="83" Height="20" /></td>
+							<td class="MenuBarRight">
+								<SMWC:SmarterMailVersion ID="SMV" runat="server" />
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td class="Container">
+					<table class="Container" id="Container">
+						<tr>
+							<td class="TopLeftBorder">
+								<SMWC:Spacer ID="Spacer2" runat="server" Width="5" Height="5" /></td>
+							<td class="TopMidBorder">
+								<SMWC:Spacer ID="Spacer3" runat="server" Width="5" Height="5" /></td>
+							<td class="TopRightBorder">
+								<SMWC:Spacer ID="Spacer6" runat="server" Width="5" Height="5" /></td>
+						</tr>
+						<tr>
+							<td class="LeftBorder">
+								<SMWC:Spacer ID="Spacer7" runat="server" Width="5" Height="5" /></td>
+							<td class="Container">
+								<table class="Container">
+									<tr>
+										<td class="LeftBar">
+											<div style="height: 100%; overflow: hidden;">
+												<table class="LeftBar">
+													<tr>
+														<td id="LoggedInAs" class="LoggedInAsContainer">
+															<div class="SideBarPanel">
+																<div class="SideBarPanelText">
+																	<%=GlobalString("@LoggedInAs") %>
+																</div>
+															</div>
+															<div class="LoggedInAs">
+																<SMWC:LoggedInAs ID="LIA" runat="server"></SMWC:LoggedInAs>
+															</div>
+															<div class="TopMidBorder">
+																<SMWC:Spacer ID="Spacer13" runat="server" Width="5" Height="5" /></div>
+															<asp:HiddenField ID="HiddenValue" EnableViewState="true" runat="server" />
+
+															<script type="text/javascript">
+																function onClientExpand(sender, eventArgs)
+																{
+																	document.forms.aspnetForm.<%=HiddenValue.ClientID%>.value = eventArgs.Item.Value;
+																}
+															</script>
+
+															<asp:Literal ID="litExpand" Visible="false" runat="server" />
+														</td>
+													</tr>
+													<tr>
+														<td class="LeftBarInner" id="LeftBar">
+
+															<script type="text/javascript">
+																var el = document.getElementById("Container");
+																var h2 = (el.clientHeight - 5);
+																if (h2>0) el.style.height = h2 + "px";
+															</script>
+
+															<radP:RadPanelbar OnClientItemExpand="onClientExpand" ID="PB" runat="server" 
+                                                                EnableViewState="False" ExpandMode="FullExpandedItem" Height="100%" 
+                                                                Width="206px" >
+                                                                <Items>
+                                                                    <radP:RadPanelItem runat="server" Text="Root RadPanelItem 1">
+                                                                    </radP:RadPanelItem>
+                                                                    <radP:RadPanelItem runat="server" Text="Root RadPanelItem 2">
+                                                                        <Items>
+                                                                            <radP:RadPanelItem runat="server" Text="Child RadPanelItem 1">
+                                                                            </radP:RadPanelItem>
+                                                                            <radP:RadPanelItem runat="server" Text="Child RadPanelItem 2">
+                                                                            </radP:RadPanelItem>
+                                                                        </Items>
+                                                                    </radP:RadPanelItem>
+                                                                    <radP:RadPanelItem runat="server" Text="Root RadPanelItem 3">
+                                                                        <Items>
+                                                                            <radP:RadPanelItem runat="server" Text="Child RadPanelItem 1">
+                                                                            </radP:RadPanelItem>
+                                                                        </Items>
+                                                                    </radP:RadPanelItem>
+                                                                    <radP:RadPanelItem runat="server" Text="Root RadPanelItem 4">
+                                                                    </radP:RadPanelItem>
+                                                                    <radP:RadPanelItem runat="server" Text="Root RadPanelItem 5">
+                                                                        <Items>
+                                                                            <radP:RadPanelItem runat="server" Text="Child RadPanelItem 1">
+                                                                            </radP:RadPanelItem>
+                                                                        </Items>
+                                                                    </radP:RadPanelItem>
+                                                                </Items>
+                                                            </radP:RadPanelbar>
+														</td>
+													</tr>
+												</table>
+											</div>
+										</td>
+										<td class="MidBorder">
+											<SMWC:Spacer ID="Spacer8" runat="server" Width="5" Height="5" /></td>
+										<td class="RightPane" id="RightPane">
+											<asp:ContentPlaceHolder ID="PH" runat="server" />
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="RightBorder">
+								<SMWC:Spacer ID="Spacer9" runat="server" Width="5" Height="5" /></td>
+						</tr>
+						<tr>
+							<td class="BottomLeftBorder">
+								<SMWC:Spacer ID="Spacer10" runat="server" Width="5" Height="5" /></td>
+							<td class="BottomMidBorder">
+								<SMWC:Spacer ID="Spacer12" runat="server" Width="5" Height="5" /></td>
+							<td class="BottomRightBorder">
+								<SMWC:Spacer ID="Spacer17" runat="server" Width="5" Height="5" /></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

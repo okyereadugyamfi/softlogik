@@ -1,0 +1,745 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F29746E4-80D4-4198-B1EF-982E19FBDDFE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SoftLogik.Win</RootNamespace>
+    <AssemblyName>SoftLogik.Win</AssemblyName>
+    <MyType>Windows</MyType>
+    <OptionStrict>On</OptionStrict>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Spellnet.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Spellnet.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=3.0.8.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e" />
+    <Reference Include="CryptKci, Version=1.0.0.0, Culture=neutral, PublicKeyToken=19e737ad361a24ef, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CryptoAPI.NET\bin\CryptKci.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Microsoft Enterprise Library January 2006\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files\Microsoft Enterprise Library January 2006\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MT.Common.Controls.OutlookStyleNavigateBar, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OutlookStyleNavigateBar\bin\Release\MT.Common.Controls.OutlookStyleNavigateBar.dll</HintPath>
+    </Reference>
+    <Reference Include="PropertyGridEx, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OutlookStyleNavigateBar\bin\Release\PropertyGridEx.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\apps\SLHSuite\Dependencies\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.Win32" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Drawing.Drawing2D" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="WeifenLuo" />
+    <Import Include="WeifenLuo.WinFormsUI" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Datasets\DSFilters.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSFilters.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\DSFilters.vb">
+      <DependentUpon>DSFilters.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\dsUserSecurity.vb">
+      <DependentUpon>dsUserSecurity.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\dsUserSecurity1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsUserSecurity.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Services\SPDataException.vb" />
+    <Compile Include="Data\Services\SPDataProviderFactory.vb" />
+    <Compile Include="Data\Services\SPDataServices.vb" />
+    <Compile Include="Data\Services\SPDataTracer.vb" />
+    <Compile Include="Data\Support\SPPayMode.vb" />
+    <Compile Include="Data\Support\SPCompanyData.vb" />
+    <Compile Include="Security\ChangePasswordForm.Designer.vb">
+      <DependentUpon>ChangePasswordForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ChangePasswordForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\SecurityForm.Designer.vb">
+      <DependentUpon>SecurityForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\SecurityForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\ListForm.Designer.vb">
+      <DependentUpon>ListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\ListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\RecordForm.Designer.vb">
+      <DependentUpon>RecordForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\RecordForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\SetupForm.Designer.vb">
+      <DependentUpon>SetupForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\SetupForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\Support\FormsSupport.vb" />
+    <Compile Include="UI\Form\Support\SPDataFormats.vb" />
+    <Compile Include="Data\Support\SPMaster.vb" />
+    <Compile Include="Data\Support\SPPayModeCategories.vb" />
+    <Compile Include="Data\Support\SPServices.vb" />
+    <Compile Include="UI\Form\TransactionForm.Designer.vb">
+      <DependentUpon>TransactionForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\TransactionForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Support\SPThemedColors.vb" />
+    <Compile Include="UI\Dialog\SPFileDialog.Designer.vb">
+      <DependentUpon>SPFileDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dialog\SPFileDialog.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\ImageBox\SPImageBox.Designer.vb">
+      <DependentUpon>SPImageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ImageBox\SPImageBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\TabControl\SPTabControl.Designer.vb">
+      <DependentUpon>SPTabControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TabControl\SPTabControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\TreeView\SPTreeView.Designer.vb">
+      <DependentUpon>SPTreeView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TreeView\SPTreeView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\RadioButton\SPRadioButtonList.Designer.vb">
+      <DependentUpon>SPRadioButtonList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RadioButton\SPRadioButtonList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Docking\Controls\PopupButton.Designer.vb">
+      <DependentUpon>PopupButton.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\Controls\PopupButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Extender\Extender.vb" />
+    <Compile Include="Docking\Extender\FromBase\AutoHideStripFromBase.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Extender\FromBase\AutoHideTabFromBase.vb" />
+    <Compile Include="Docking\Extender\FromBase\DockPaneCaptionFromBase.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Extender\FromBase\DockPaneStripFromBase.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Extender\FromBase\DockPaneTabFromBase.vb">
+    </Compile>
+    <Compile Include="Docking\Extender\FromBase\Helpers\DockHelper.vb" />
+    <Compile Include="Docking\Extender\FromBase\Helpers\DrawHelper.vb" />
+    <Compile Include="Docking\Extender\FromBase\Helpers\ResourceHelper.vb" />
+    <Compile Include="Docking\Extender\FromBase\Win32\Enums.vb" />
+    <Compile Include="Docking\Extender\FromBase\Win32\Gdi32.vb" />
+    <Compile Include="Docking\Extender\FromBase\Win32\Structs.vb" />
+    <Compile Include="Docking\Extender\FromBase\Win32\User32.vb" />
+    <Compile Include="Docking\Extender\Override\AutoHideStripOverride.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Extender\Override\DockPaneStripOverride.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Form\DockableForm.Designer.vb">
+      <DependentUpon>DockableForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\DockableForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\DocklessForm.Designer.vb">
+      <DependentUpon>DocklessForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\DocklessForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\DockingMDI.designer.vb">
+      <DependentUpon>DockingMDI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\DockingMDI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\NavigatorForm.Designer.vb">
+      <DependentUpon>NavigatorForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\NavigatorForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Support\SPRadioButtonListEditorUI.Designer.vb">
+      <DependentUpon>SPRadioButtonListEditorUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Support\SPRadioButtonListEditorUI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Datasets\SPDataProxy.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SPDataProxy.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data\IDataAccess.vb" />
+    <Compile Include="Data\SQLDataStream.vb" />
+    <Compile Include="UI\Form\Support\Enums.vb" />
+    <Compile Include="UI\Form\LookupForm.Designer.vb">
+      <DependentUpon>LookupForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\LookupForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\PaymodeForm.Designer.vb">
+      <DependentUpon>PaymodeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\PaymodeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\SplashForm.Designer.vb">
+      <DependentUpon>SplashForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\SplashForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\Support\SPSearchHelper.vb" />
+    <Compile Include="UI\Form\MasterForm.Designer.vb">
+      <DependentUpon>MasterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\MasterForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\SPEnumeratorDescription.vb" />
+    <Compile Include="Reporting\SPReportManager.Designer.vb">
+      <DependentUpon>SPReportManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\SPReportManager.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\Support\Enum.vb" />
+    <Compile Include="Reporting\Support\Collections.vb" />
+    <Compile Include="Reporting\Support\Interfaces.vb" />
+    <Compile Include="Reporting\Support\UI\SPReportUIFactory.vb" />
+    <Compile Include="Reporting\Support\UI\SPReportFilterUI.Designer.vb">
+      <DependentUpon>SPReportFilterUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Support\UI\SPReportFilterUI.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reporting\Support\UI\SPReportGroupingUI.Designer.vb">
+      <DependentUpon>SPReportGroupingUI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Support\UI\SPReportGroupingUI.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reporting\Support\SPReportSettings.Designer.vb">
+      <DependentUpon>SPReportSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Support\SPReportSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\Common.vb" />
+    <Compile Include="Modules\CultureSupport.vb" />
+    <Compile Include="Modules\DSNSupport.vb" />
+    <Compile Include="Modules\Encrypt.vb" />
+    <Compile Include="Modules\FileSupport.vb" />
+    <Compile Include="Modules\FormSupport.vb" />
+    <Compile Include="UI\Form\CompanyForm.Designer.vb">
+      <DependentUpon>CompanyForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\CompanyForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Modules\PolicySupport.vb" />
+    <Compile Include="Modules\PopulateSupport.vb" />
+    <Compile Include="Modules\RegSupport.vb" />
+    <Compile Include="UI\ComboBox\SPComboBox.Designer.vb">
+      <DependentUpon>SPComboBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ComboBox\SPComboBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Dialog\SPPreview.Designer.vb">
+      <DependentUpon>SPPreview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dialog\SPPreview.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Dialog\SPPrintSettings.Designer.vb">
+      <DependentUpon>SPPrintSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dialog\SPPrintSettings.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\Support\SPReportViewer.Designer.vb">
+      <DependentUpon>SPReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Support\SPReportViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\TextBox\SPTextBox.Designer.vb">
+      <DependentUpon>SPTextBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\TextBox\SPTextBox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Form\Support\TStripSupport.vb" />
+    <Compile Include="Security\SecurityManager.vb" />
+    <Compile Include="UI\Support\TabOrderManager.vb" />
+    <Compile Include="UI\Support\TabSchemeProvider.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resources\Strings1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Support\AspNetLoginControl.Designer.vb">
+      <DependentUpon>AspNetLoginControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Support\AspNetLoginControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Security\Support\AspnetUserManager.vb" />
+    <Compile Include="Security\Support\CustomPrincipal.vb" />
+    <Compile Include="Security\Support\IUserManager.vb" />
+    <Compile Include="Security\Support\LoginControl.Designer.vb">
+      <DependentUpon>LoginControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Support\LoginControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Security\Support\LoginEventArgs.vb" />
+    <Compile Include="Security\Support\UserManagerProxy.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Security\Support\WSLoginControl.Designer.vb">
+      <DependentUpon>WSLoginControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Support\WSLoginControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Menu\SPMenuStrip.Designer.vb">
+      <DependentUpon>SPMenuStrip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Menu\SPMenuStrip.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Security\ChangePasswordForm.resx">
+      <DependentUpon>ChangePasswordForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\SecurityForm.resx">
+      <DependentUpon>SecurityForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dialog\SPFileDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SPFileDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form\ListForm.resx">
+      <DependentUpon>ListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form\RecordForm.resx">
+      <DependentUpon>RecordForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form\DocklessForm.resx">
+      <DependentUpon>DocklessForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form\SetupForm.resx">
+      <DependentUpon>SetupForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form\TransactionForm.resx">
+      <DependentUpon>TransactionForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\RadioButton\SPRadioButtonList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SPRadioButtonList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Controls\PopupButton.resx">
+      <DependentUpon>PopupButton.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Resources\DockPaneCaption.AutoHideNo.bmp" />
+    <EmbeddedResource Include="Docking\Resources\DockPaneCaption.AutoHideYes.bmp" />
+    <EmbeddedResource Include="Docking\Resources\DockPaneCaption.CloseDisabled.bmp" />
+    <EmbeddedResource Include="Docking\Resources\DockPaneCaption.CloseEnabled.bmp" />
+    <EmbeddedResource Include="Docking\Resources\DockPaneCaption.OptionsDisabled.bmp" />
+    <EmbeddedResource Include="Docking\Resources\DockPaneCaption.OptionsEnabled.bmp" />
+    <EmbeddedResource Include="Docking\Resources\DockPaneStrip.CloseDisabled.bmp" />
+    <EmbeddedResource Include="Docking\Resources\DockPaneStrip.CloseEnabled.bmp" />
+    <EmbeddedResource Include="Docking\Resources\DockPaneStrip.OptionsDisabled.bmp" />
+    <EmbeddedResource Include="Docking\Resources\DockPaneStrip.OptionsEnabled.bmp" />
+    <EmbeddedResource Include="Docking\Resources\DockPaneStrip.OverflowDisabled.bmp" />
+    <EmbeddedResource Include="Docking\Resources\DockPaneStrip.OverflowEnabled.bmp" />
+    <EmbeddedResource Include="UI\Form\DockableForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DockableForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form\DockingMDI.resx">
+      <DependentUpon>DockingMDI.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form\NavigatorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NavigatorForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Support\SPRadioButtonListEditorUI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SPRadioButtonListEditorUI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form\LookupForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LookupForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form\PaymodeForm.resx">
+      <DependentUpon>PaymodeForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form\SplashForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SplashForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form\CompanyForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CompanyForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Support\UI\SPReportFilterUI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SPReportFilterUI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Support\UI\SPReportGroupingUI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SPReportGroupingUI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Support\SPReportSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SPReportSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\LoginForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Form\MasterForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MasterForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dialog\SPPreview.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SPPreview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dialog\SPPrintSettings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SPPrintSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Support\SPReportViewer.resx">
+      <DependentUpon>SPReportViewer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Support\TabSchemeProvider.resx">
+      <DependentUpon>TabSchemeProvider.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Security\Support\LoginControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginControl.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Diagrams\SPCode.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Datasets\SPDataProxy.xsc">
+      <DependentUpon>SPDataProxy.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\SPDataProxy.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SPDataProxy.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\SPDataProxy.xss">
+      <DependentUpon>SPDataProxy.xsd</DependentUpon>
+    </None>
+    <None Include="Diagrams\SetupForm.cd" />
+    <None Include="Resources\SPTaskViewDesigner.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Datasets\DSFilters.xsc">
+      <DependentUpon>DSFilters.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\DSFilters.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSFilters.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Datasets\DSFilters.xss">
+      <DependentUpon>DSFilters.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsUserSecurity.xsc">
+      <DependentUpon>dsUserSecurity.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\dsUserSecurity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUserSecurity1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\dsUserSecurity.xss">
+      <DependentUpon>dsUserSecurity.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\Clock.png" />
+    <None Include="Resources\Locker.png" />
+    <None Include="Resources\Control-Panel.png" />
+    <Content Include="Reporting\Support\FilterConfig.xml" />
+    <None Include="Resources\FermerSZ.png" />
+    <None Include="Resources\admin_24.png" />
+    <None Include="Resources\computer_32.png" />
+    <None Include="Resources\Critical.png" />
+    <None Include="Resources\AlignTableCellMiddleLeftJustHS.png" />
+    <None Include="Resources\ArreterSZ.png" />
+    <None Include="Resources\ArrowDown.PNG" />
+    <None Include="Resources\ArrowLeft.png" />
+    <None Include="Resources\ArrowMenu.png" />
+    <None Include="Resources\ArrowRight.png" />
+    <None Include="Resources\ArrowUp.PNG" />
+    <None Include="Resources\BlueTooth.png" />
+    <None Include="Resources\Book_angleHS.png" />
+    <None Include="Resources\Book_openHS.png" />
+    <None Include="Resources\Calendar241.png" />
+    <None Include="Resources\clock_24.png" />
+    <None Include="Resources\Computer.ico" />
+    <None Include="Resources\config.png" />
+    <None Include="Resources\Contacts24.png" />
+    <None Include="Resources\Diary24.png" />
+    <None Include="Resources\EcranLcd.png" />
+    <None Include="Resources\EcranLcd Off.png" />
+    <None Include="Resources\eventlogSuccessAudit.ico" />
+    <None Include="Resources\eventlogSuccessAudit1.ico" />
+    <None Include="Resources\FermerSZ1.png" />
+    <None Include="Resources\FolderList24.png" />
+    <None Include="Resources\keys.ico" />
+    <None Include="Resources\1downarrow.png" />
+    <None Include="Resources\1downarrow22.png" />
+    <None Include="Resources\1leftarrow.png" />
+    <None Include="Resources\1rightarrow.png" />
+    <None Include="Resources\1uparrow22.png" />
+    <None Include="Resources\2downarrow.png" />
+    <None Include="Resources\2leftarrow.png" />
+    <None Include="Resources\2rightarrow.png" />
+    <None Include="Resources\2uparrow.png" />
+    <None Include="Resources\3uparrow.png" />
+    <None Include="Resources\abacus24.png" />
+    <None Include="Resources\button_cancel.png" />
+    <None Include="Resources\desktop22.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\filesave.png" />
+    <None Include="Resources\editdelete.png" />
+    <None Include="Resources\Generic_Document.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\Edit file_24.png" />
+    <Content Include="Resources\Lockup.bmp" />
+    <None Include="Resources\lock_16.png" />
+    <Content Include="Resources\LoginControl.bmp" />
+    <None Include="Resources\reload.png" />
+    <None Include="Resources\sort_incr.png" />
+    <None Include="Resources\search22.png" />
+    <None Include="Resources\TileWindowsHorizontallyHS.png" />
+    <None Include="Resources\world_24_hot.png" />
+    <None Include="Resources\wi0122-48.gif" />
+    <None Include="Resources\wi0111-48.gif" />
+    <None Include="Resources\wi0054-48.gif" />
+    <None Include="Resources\users.ico" />
+    <None Include="Resources\touch screen kiosk-24.png" />
+    <None Include="Resources\Tasks24.png" />
+    <None Include="Resources\SYS.ico" />
+    <None Include="Resources\Shortcut24.png" />
+    <None Include="Resources\OrganizerHS.png" />
+    <None Include="Resources\Notes24.png" />
+    <None Include="Resources\NoImage.png" />
+    <None Include="Resources\NavigateBar.bmp" />
+    <None Include="Resources\monitor-48.png" />
+    <None Include="Resources\Mail24.png" />
+    <None Include="Resources\user-48.png" />
+    <None Include="Resources\notepad_32.png" />
+    <None Include="Resources\user_group.ico" />
+    <None Include="Resources\Switch User.ico" />
+    <None Include="Resources\umd red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,382 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SoftLogik.Win
+</name>
+</assembly>
+<members>
+<member name="T:SoftLogik.Win.dsUserSecurity.SPApplicationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SoftLogik.Win.dsUserSecurity.SPRoleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SoftLogik.Win.dsUserSecurity.SPUserDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SoftLogik.Win.dsUserSecurity.SPUserRoleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SoftLogik.Win.dsUserSecurity.SPApplicationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SoftLogik.Win.dsUserSecurity.SPRoleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SoftLogik.Win.dsUserSecurity.SPUserRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SoftLogik.Win.dsUserSecurity.SPUserRoleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SoftLogik.Win.dsUserSecurity.SPApplicationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SoftLogik.Win.dsUserSecurity.SPRoleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SoftLogik.Win.dsUserSecurity.SPUserRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SoftLogik.Win.dsUserSecurity.SPUserRoleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SoftLogik.Win.dsUserSecurity">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:SoftLogik.Win.dsUserSecurityTableAdapters.SPApplicationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:SoftLogik.Win.dsUserSecurityTableAdapters.SPRoleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:SoftLogik.Win.dsUserSecurityTableAdapters.SPUserTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:SoftLogik.Win.dsUserSecurityTableAdapters.SPUserRoleTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="F:SoftLogik.Win.UI.TabSchemeProvider.extendees">
+	<summary>
+ Hashtable to store the controls that use our extender property.
+ </summary>
+</member><member name="F:SoftLogik.Win.UI.TabSchemeProvider.topLevelForm">
+	<summary>
+ The form we're hosted on, which will be calculated by watching the extendees entering the control hierarchy.
+ </summary>
+</member><member name="M:SoftLogik.Win.UI.TabSchemeProvider.GetTabScheme(System.Windows.Forms.Control)">
+	<summary>
+ Get whether or not we're managing a given control.
+ </summary>
+	<param name="c"></param>
+	<returns></returns>
+</member><member name="M:SoftLogik.Win.UI.TabSchemeProvider.HookFormLoad">
+	<summary>
+ Hook up to the form load event and indicate that we've done so.
+ </summary>
+</member><member name="M:SoftLogik.Win.UI.TabSchemeProvider.UnhookFormLoad">
+	<summary>
+ Unhook from the form load event and indicate that we need to do so again before applying tab schemes.
+ </summary>
+</member><member name="M:SoftLogik.Win.UI.TabSchemeProvider.HookParentChangedEvents(System.Windows.Forms.Control)">
+	<summary>
+ Hook up to all of the parent changed events for this control and its ancestors so that we are informed
+ if and when they are added to the top-level form (whose load event we need).
+ It's not adequate to look at just the control, because it may have been added to its parent, but the parent
+ may not be descendent of the form -yet-.
+ </summary>
+	<param name="c"></param>
+</member><member name="M:SoftLogik.Win.UI.TabSchemeProvider.SetTabScheme(System.Windows.Forms.Control,SoftLogik.Win.UI.SPTabOrderManager.TabScheme)">
+	<summary>
+ Set the tab scheme to use on a given control
+ </summary>
+	<param name="c"></param>
+</member><member name="M:SoftLogik.Win.UI.TabSchemeProvider.Extendee_ParentChanged(System.Object,System.EventArgs)">
+	<summary>
+ We track when each extendee's parent is changed, and also when their parents are changed, until
+ SOMEBODY finally changes their parent to the form, at which point we can hook the load to apply
+ the tab schemes.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+</member><member name="T:SoftLogik.Win.UI.TabSchemeProvider">
+	<summary>
+ Wrap the TabOrderManager class and supply extendee controls with a custom tab scheme.
+ </summary>
+</member><member name="T:SoftLogik.Win.DSFilters.SPFilterTableDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SoftLogik.Win.DSFilters.SPFilterTableRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SoftLogik.Win.DSFilters.SPFilterTableRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SoftLogik.Win.DSFilters">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:SoftLogik.Win.UI.SPTreeView">
+	<summary>
+ Treeview Control that utilizes a Custom Data Source Manager .
+ </summary>
+</member><member name="T:SoftLogik.Win.FileParseEnum">
+	<summary>
+ Type of File Parsing
+ </summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy.SPMasterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy.SPNotesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy.SPAutoIdDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy.SPCompanyDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy.SPPayModeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy.SPLookupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy.SPMasterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy.SPNotesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy.SPAutoIdRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy.SPCompanyRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy.SPPayModeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy.SPLookupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy.SPMasterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy.SPNotesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy.SPAutoIdRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy.SPCompanyRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy.SPPayModeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy.SPLookupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxy">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxyTableAdapters.taSPMaster">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxyTableAdapters.taSPNotes">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxyTableAdapters.taSPAutoId">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxyTableAdapters.taSPCompany">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxyTableAdapters.taSPPayMode">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:SoftLogik.Win.SPDataProxyTableAdapters.taSPLookup">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="P:SoftLogik.Win.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:SoftLogik.Win.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:SoftLogik.Win.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:SoftLogik.Win.Reporting.SPReportSettings.ViewerForm">
+	<summary>
+ Handle to the Report Viewer Form to enable Settings Form refresh a Loaded Report.
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="T:SoftLogik.Win.UI.SPTabOrderManager.TabSchemeComparer">
+	<summary>
+ Compare two controls in the selected tab scheme.
+ </summary>
+</member><member name="F:SoftLogik.Win.UI.SPTabOrderManager.container">
+	<summary>
+ The container whose tab order we manage.
+ </summary>
+</member><member name="F:SoftLogik.Win.UI.SPTabOrderManager.schemeOverrides">
+	<summary>
+ Hash of controls to schemes so that individual containers can have different ordering
+ strategies than their parents.
+ </summary>
+</member><member name="F:SoftLogik.Win.UI.SPTabOrderManager.curTabIndex">
+	<summary>
+ The tab index we start numbering from when the tab order is applied.
+ </summary>
+</member><member name="T:SoftLogik.Win.UI.SPTabOrderManager.TabScheme">
+	<summary>
+ The general tab-ordering strategy (i.e. whether we tab across rows first, or down columns).
+ </summary>
+</member><member name="M:SoftLogik.Win.UI.SPTabOrderManager.#ctor(System.Windows.Forms.Control)">
+	<summary>
+ Constructor
+ </summary>
+	<param name="container">The container whose tab order we manage.</param>
+</member><member name="M:SoftLogik.Win.UI.SPTabOrderManager.#ctor(System.Windows.Forms.Control,System.Int32,System.Collections.Hashtable)">
+	<summary>
+ Construct a tab order manager that starts numbering at the given tab index.
+ </summary>
+	<param name="container">The container whose tab order we manage.</param>
+	<param name="curTabIndex">Where to start numbering.</param>
+	<param name="schemeOverrides">List of controls with explicitly defined schemes.</param>
+</member><member name="M:SoftLogik.Win.UI.SPTabOrderManager.SetSchemeForControl(System.Windows.Forms.Control,SoftLogik.Win.UI.SPTabOrderManager.TabScheme)">
+	<summary>
+ Explicitly set a tab order scheme for a given (presumably container) control.
+ </summary>
+	<param name="c">The control to set the scheme for.</param>
+	<param name="scheme">The requested scheme.</param>
+</member><member name="M:SoftLogik.Win.UI.SPTabOrderManager.SetTabOrder(SoftLogik.Win.UI.SPTabOrderManager.TabScheme)">
+	<summary>
+ Recursively set the tab order on this container and all of its children.
+ </summary>
+	<param name="scheme">The tab ordering strategy to apply.</param>
+	<returns>The next tab index to be used.</returns>
+</member><member name="T:SoftLogik.Win.UI.SPTabOrderManager">
+	<summary>
+ Dynamically determine and set a tab order for a container and children according to a given strategy.
+ </summary>
+</member><member name="F:SoftLogik.Win.UI.SPImageBox.components">
+	<summary>
+ Required designer variable.
+ </summary>
+</member><member name="M:SoftLogik.Win.UI.SPImageBox.Dispose(System.Boolean)">
+	<summary>
+ Clean up any resources being used.
+ </summary>
+</member><member name="M:SoftLogik.Win.UI.SPImageBox.InitializeComponent">
+	<summary>
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member><member name="T:SoftLogik.Win.UI.SPImageBox">
+	<summary>
+ Summary description for dbImageBox.
+ </summary>
+</member><member name="P:SoftLogik.Win.My.Resources.Strings.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:SoftLogik.Win.My.Resources.Strings.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:SoftLogik.Win.My.Resources.Strings.DockPaneCaption_ToolTipAutoHide">
+	<summary>
+  Looks up a localized string similar to Auto Hide.
+</summary>
+</member><member name="P:SoftLogik.Win.My.Resources.Strings.DockPaneCaption_ToolTipClose">
+	<summary>
+  Looks up a localized string similar to Close.
+</summary>
+</member><member name="P:SoftLogik.Win.My.Resources.Strings.DockPaneCaption_ToolTipOptions">
+	<summary>
+  Looks up a localized string similar to Window Position.
+</summary>
+</member><member name="P:SoftLogik.Win.My.Resources.Strings.DockPaneStrip_ToolTipClose">
+	<summary>
+  Looks up a localized string similar to Close.
+</summary>
+</member><member name="P:SoftLogik.Win.My.Resources.Strings.DockPaneStrip_ToolTipOptions">
+	<summary>
+  Looks up a localized string similar to Active Files.
+</summary>
+</member><member name="T:SoftLogik.Win.My.Resources.Strings">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:SoftLogik.Win.Security.SecurityManager.MdiParent">
+	<summary>
+ MDI Parent, sets or returns the MDI Parent of this Form
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:SoftLogik.Win.Security.SPCompany.MdiParent">
+	<summary>
+ MDI Parent, sets or returns the MDI Parent of this Form
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

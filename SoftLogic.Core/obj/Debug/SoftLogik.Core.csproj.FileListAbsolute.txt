@@ -1,0 +1,12 @@
+D:\home\projects\ms.net\components\SoftLogik\SoftLogic.Core\obj\Debug\ResolveAssemblyReference.cache
+D:\home\projects\ms.net\components\SoftLogik\SoftLogic.Core\obj\Debug\SoftLogik.Win.UI.Controls.Docking.PopupButton.resources
+D:\home\projects\ms.net\components\SoftLogik\SoftLogic.Core\obj\Debug\SoftLogik.Win.Reporting.SPReportSettings.resources
+D:\home\projects\ms.net\components\SoftLogik\SoftLogic.Core\obj\Debug\SoftLogik.Win.Reporting.SPReportViewer.resources
+D:\home\projects\ms.net\components\SoftLogik\SoftLogic.Core\obj\Debug\DomainTextBox.resources
+D:\home\projects\ms.net\components\SoftLogik\SoftLogic.Core\obj\Debug\SoftLogik.Win.UI.Controls.OutlookStyleNavigateBar.NavigateBarOptions.resources
+D:\home\projects\ms.net\components\SoftLogik\SoftLogic.Core\obj\Debug\SoftLogik.Win.UI.Controls.RadioButtonList.resources
+D:\home\projects\ms.net\components\SoftLogik\SoftLogic.Core\obj\Debug\SoftLogik.Win.UI.Controls.RadioButtonListEditorUI.resources
+D:\home\projects\ms.net\components\SoftLogik\SoftLogic.Core\obj\Debug\SoftLogik.Win.UI.Controls.Preview.resources
+D:\home\projects\ms.net\components\SoftLogik\SoftLogic.Core\obj\Debug\SoftLogik.Win.UI.Controls.PrintSettings.resources
+D:\home\projects\ms.net\components\SoftLogik\SoftLogic.Core\obj\Debug\SoftLogik.Win.UI.Controls.FileDialog.resources
+D:\home\projects\ms.net\components\SoftLogik\SoftLogic.Core\obj\Debug\SoftLogik.Core.csproj.GenerateResource.Cache

@@ -1,0 +1,97 @@
+<%@ Master Language="C#" AutoEventWireup="false" Codebehind="AdminPage.master.cs" Inherits="SMWeb05.MasterPages.Apathy.AdminPage" EnableTheming="true" %>
+<%@ Register Assembly="RadMenu.Net2" Namespace="Telerik.WebControls" TagPrefix="radM" %>
+<%@ Register Assembly="RadPanelbar.Net2" Namespace="Telerik.WebControls" TagPrefix="radP" %>
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- ... -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+	<title></title>
+	<SMWC:FavIcon ID="FavIcon1" runat="server" />
+	<SMWC:CommonScripts ID="Scripts1" runat="server" />
+</head>
+<body>
+	<form id="form" runat="server">
+
+		<script type="text/javascript" src="<%= JScript %>"></script>
+
+		<table class="Container" id="Container2">
+			<tr>
+				<td id="MenuBar" class="MenuBar">
+					<table class="MenuBar">
+						<tr>
+							<td class="TopBarLeft">
+								<SMWC:SmarterMailVersion ID="SMV" runat="server" />
+							</td>
+							<td class="TopBarMid">
+								<SMWC:Spacer ID="Spacer1" runat="server" Width="95" Height="1" />
+							</td>
+							<td class="TopBarRight">
+								&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<td class="MenuBarLeft" colspan="3">
+								<radM:RadMenu ID="RM" runat="server" EnableViewState="false" />
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td class="Container">
+					<table class="Container" id="Container">
+						<tr>
+							<td class="LeftBar">
+								<table class="LeftBar">
+									<tr>
+										<td id="LoggedInAs" class="LoggedInAsContainer">
+											<div class="SideBarPanel">
+												<div class="SideBarPanelText">
+													<%=GlobalString("@LoggedInAs") %>
+												</div>
+											</div>
+											<div class="LoggedInAs">
+												<SMWC:LoggedInAs ID="LIA" runat="server"></SMWC:LoggedInAs>
+											</div>
+											<asp:HiddenField ID="HiddenValue" EnableViewState="true" runat="server" />
+
+											<script type="text/javascript">
+												function onClientExpand(sender, eventArgs)
+												{
+													document.forms.aspnetForm.<%=HiddenValue.ClientID%>.value = eventArgs.Item.Value;
+												}
+											</script>
+
+											<asp:Literal ID="litExpand" Visible="false" runat="server" />
+										</td>
+									</tr>
+									<tr>
+										<td class="LeftBarInner" id="LeftBar">
+											<script type="text/javascript">
+											var el = document.getElementById("Container");
+											var h2 = (el.clientHeight - 12);
+											if (h2>0) el.style.height = h2 + "px";
+											</script>		
+											<radP:RadPanelbar OnClientItemExpand="onClientExpand" ID="PB" runat="server" EnableViewState="False" ExpandMode="FullExpandedItem" Height="100%" Width="206px" />
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="MidBorder">
+								<SMWC:Spacer ID="Spacer8" runat="server" Width="1" Height="1" /></td>
+							<td class="RightPane" id="RightPane">
+								<asp:ContentPlaceHolder ID="PH" runat="server" />
+							</td>
+						</tr>
+						<tr>
+							<td class="BottomMidBorder" colspan="3">
+								<SMWC:Spacer ID="Spacer12" runat="server" Width="5" Height="5" /></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

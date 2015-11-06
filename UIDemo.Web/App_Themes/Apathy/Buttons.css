@@ -1,0 +1,84 @@
+﻿.SidebarImageButton
+{
+	border: solid 1px #CCCCCC;
+	display: block;
+	padding: 1px;
+	padding-right: 4px;
+	float: right;
+	color: #555555;
+	font: 10pt Arial;
+	text-decoration: none;
+	vertical-align: middle;
+}
+img.SidebarImageButton 
+{
+	display: none;	
+}
+
+.LoginImageButton
+{
+	color: #888888;
+	font: 10pt Arial;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.ButtonBarImageButton
+{
+	color: #333333;
+	font: 10pt Arial;
+	text-decoration: none;
+	padding-left: 5px;
+	padding-right: 5px;
+	vertical-align: middle;
+}
+img.ButtonBarImageButton
+{
+	padding: 0px;
+	vertical-align: middle;
+}
+
+/* Used for the button bar on a InnerSettingsMenu page */
+tr.ButtonBar
+{
+
+}
+div.ButtonBar
+{
+	height: 40px;
+}
+td.ButtonBar
+{
+	background-color: #E2E2E2;
+	background: url(images/skin/ButtonBarTile.png) repeat-x;
+	padding: 0px;
+	padding-top: 2px;
+	height: 40px;
+}
+td.ButtonBarLeft
+{
+	color: #333333;
+	text-align: left;
+	font: 9pt Arial, Verdana;
+	vertical-align: middle;
+	padding: 0px 0px 0px 6px;
+	white-space: nowrap;
+}
+td.ButtonBarRight
+{
+	text-align: right;
+	font: 9pt Arial, Verdana;
+	vertical-align: middle;
+	padding: 0px 16px 0px 0px;
+	text-align: right;
+	white-space: nowrap;
+}
+table.TwoCellButtonBar
+{
+	margin: 0px;
+	padding: 0px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	width: 100%;
+}
+/*************************************************/

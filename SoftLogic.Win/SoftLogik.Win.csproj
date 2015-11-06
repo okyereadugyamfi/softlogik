@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B401BAF2-40C5-4BD8-93E1-90256FB032E3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SoftLogic.Win</RootNamespace>
+    <AssemblyName>SoftLogic.Win</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=3.0.8.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualC" />
+    <Reference Include="PropertyGridEx, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SoftLogic.Dep\PropertyGridEx.dll</HintPath>
+    </Reference>
+    <Reference Include="SubSonic, Version=2.1.0.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\SubSonic\SubSonic 2.1 Final\SubSonic\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SoftLogic.Dep\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Reporting\SPReportManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reporting\SPReportManager.Designer.cs">
+      <DependentUpon>SPReportManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Support\Collections.cs" />
+    <Compile Include="Reporting\Support\Enum.cs" />
+    <Compile Include="Reporting\Support\Interfaces.cs" />
+    <Compile Include="Reporting\Support\SPReportSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporting\Support\SPReportSettings.Designer.cs">
+      <DependentUpon>SPReportSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Support\SPReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reporting\Support\SPReportViewer.Designer.cs">
+      <DependentUpon>SPReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Support\UI\SPReportFilterUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reporting\Support\UI\SPReportFilterUI.Designer.cs">
+      <DependentUpon>SPReportFilterUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Support\UI\SPReportGroupingUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reporting\Support\UI\SPReportGroupingUI.Designer.cs">
+      <DependentUpon>SPReportGroupingUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\Support\UI\SPReportUIFactory.cs" />
+    <Compile Include="Security\ApplicationUser.cs" />
+    <Compile Include="Security\ApplicationRole.cs" />
+    <Compile Include="Security\Support\Hashcypher.cs" />
+    <Compile Include="UI\Controls\DropDownList\DropDownList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\DropDownList\DropDownList.Designer.cs">
+      <DependentUpon>DropDownList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dialog\FileDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Dialog\FileDialog.Designer.cs">
+      <DependentUpon>FileDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dialog\DocumentPreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Dialog\DocumentPreview.Designer.cs">
+      <DependentUpon>DocumentPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Dialog\DocumentPrintSettings.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Dialog\DocumentPrintSettings.Designer.cs">
+      <DependentUpon>DocumentPrintSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Controller\AllStructs.cs" />
+    <Compile Include="Data\Entities\AutoCode.cs" />
+    <Compile Include="Data\Controller\AutoCodeController.cs" />
+    <Compile Include="Data\Entities\Country.cs" />
+    <Compile Include="Data\Controller\CountryController.cs" />
+    <Compile Include="Data\Entities\Master.cs" />
+    <Compile Include="Data\Controller\MasterController.cs" />
+    <Compile Include="Data\Entities\MasterGroup.cs" />
+    <Compile Include="Data\Controller\MasterGroupController.cs" />
+    <Compile Include="Data\Controller\StoredProcedures.cs" />
+    <Compile Include="Data\Entities\SimpleSearch.cs" />
+    <Compile Include="Docking\Controls\PopupButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Controls\PopupButton.Designer.cs">
+      <DependentUpon>PopupButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Docking\Extender\Extender.cs" />
+    <Compile Include="Docking\Extender\FromBase\AutoHideStripFromBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Extender\FromBase\AutoHideTabFromBase.cs" />
+    <Compile Include="Docking\Extender\FromBase\DockPaneCaptionFromBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Extender\FromBase\DockPaneStripFromBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Extender\FromBase\DockPaneTabFromBase.cs" />
+    <Compile Include="Docking\Extender\FromBase\Helpers\DockHelper.cs" />
+    <Compile Include="Docking\Extender\FromBase\Helpers\DrawHelper.cs" />
+    <Compile Include="Docking\Extender\FromBase\Helpers\ResourceHelper.cs" />
+    <Compile Include="Docking\Extender\FromBase\Win32\Enums.cs" />
+    <Compile Include="Docking\Extender\FromBase\Win32\Gdi32.cs" />
+    <Compile Include="Docking\Extender\FromBase\Win32\Structs.cs" />
+    <Compile Include="Docking\Extender\FromBase\Win32\User32.cs" />
+    <Compile Include="Docking\Extender\Override\AutoHideStripOverride.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Extender\Override\DockPaneStripOverride.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Docking\Support\DockingMDISupport.cs" />
+    <Compile Include="UI\Controls\OutlookStyleNavigateBar\MTSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\OutlookStyleNavigateBar\NavigateBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\OutlookStyleNavigateBar\NavigateBarButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\OutlookStyleNavigateBar\NavigateBarButtonCollection.cs" />
+    <Compile Include="UI\Controls\OutlookStyleNavigateBar\NavigateBarButtonEventArgs.cs" />
+    <Compile Include="UI\Controls\OutlookStyleNavigateBar\NavigateBarCaption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\OutlookStyleNavigateBar\NavigateBarCaptionDescription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\OutlookStyleNavigateBar\NavigateBarCollapsibleScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\OutlookStyleNavigateBar\NavigateBarCollapsibleText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\OutlookStyleNavigateBar\NavigateBarEmptyPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\OutlookStyleNavigateBar\NavigateBarHelper.cs" />
+    <Compile Include="UI\Controls\OutlookStyleNavigateBar\NavigateBarOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\OutlookStyleNavigateBar\NavigateBarOptions.Designer.cs">
+      <DependentUpon>NavigateBarOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\OutlookStyleNavigateBar\NavigateBarOverFlowPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\OutlookStyleNavigateBar\NavigateBarOverFlowPanelButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\OutlookStyleNavigateBar\NavigateBarOverFlowPanelMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\OutlookStyleNavigateBar\NavigateBarSettings.cs" />
+    <Compile Include="UI\Controls\OutlookStyleNavigateBar\NavigateBarTheme.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Controls\RadioButton\RadioButtonList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\RadioButton\RadioButtonList.Designer.cs">
+      <DependentUpon>RadioButtonList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\RadioButton\RadioButtonListEditorUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\RadioButton\RadioButtonListEditorUI.Designer.cs">
+      <DependentUpon>RadioButtonListEditorUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\DomainTextBox\DomainTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\DomainTextBox\DomainTextBox.Designer.cs">
+      <DependentUpon>DomainTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Strings1.Designer.cs" />
+    <Compile Include="Security\ChangePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\ChangePasswordForm.Designer.cs">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\SecurityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Security\SecurityForm.Designer.cs">
+      <DependentUpon>SecurityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\SecurityManager.cs" />
+    <Compile Include="Security\Support\AspNetLoginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Security\Support\AspNetLoginControl.Designer.cs">
+      <DependentUpon>AspNetLoginControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Support\AspnetUserManager.cs" />
+    <Compile Include="Security\Support\CustomPrincipal.cs" />
+    <Compile Include="Security\Support\IUserManager.cs" />
+    <Compile Include="Security\Support\LoginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Security\Support\LoginControl.Designer.cs">
+      <DependentUpon>LoginControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Support\LoginEventArgs.cs" />
+    <Compile Include="Security\Support\UserManagerProxy.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Security\Support\WSLoginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Security\Support\WSLoginControl.Designer.cs">
+      <DependentUpon>WSLoginControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\DockableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\DockableForm.Designer.cs">
+      <DependentUpon>DockableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\DockingMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\DockingMDI.designer.cs">
+      <DependentUpon>DockingMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\DocklessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\DocklessForm.Designer.cs">
+      <DependentUpon>DocklessForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\ListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\ListForm.Designer.cs">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\LookupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\LookupForm.Designer.cs">
+      <DependentUpon>LookupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\MasterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\MasterForm.Designer.cs">
+      <DependentUpon>MasterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\NavigatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\NavigatorForm.Designer.cs">
+      <DependentUpon>NavigatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\PaymodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\PaymodeForm.Designer.cs">
+      <DependentUpon>PaymodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\RecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\RecordForm.Designer.cs">
+      <DependentUpon>RecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\SetupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\SetupForm.Designer.cs">
+      <DependentUpon>SetupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Form\Support\Enums.cs" />
+    <Compile Include="UI\Form\Support\FormsSupport.cs" />
+    <Compile Include="UI\Form\Support\DataFormatting.cs" />
+    <Compile Include="UI\Form\Support\SearchHelper.cs" />
+    <Compile Include="UI\Form\Support\ToolbarSupport.cs" />
+    <Compile Include="UI\Form\TransactionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Form\TransactionForm.Designer.cs">
+      <DependentUpon>TransactionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\ImageBox\ImageBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\ImageBox\ImageBox.Designer.cs">
+      <DependentUpon>ImageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\DataMenuStrip\DataMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\DataMenuStrip\DataMenuStrip.Designer.cs">
+      <DependentUpon>DataMenuStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\VisualTabControl\VisualThemedColors.cs" />
+    <Compile Include="UI\Controls\VisualTabControl\VisualTabOrderManager.cs" />
+    <Compile Include="UI\Controls\VisualTabControl\VisualTabSchemeProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\VisualTabControl\VisualTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\VisualTabControl\VisualTabControl.Designer.cs">
+      <DependentUpon>VisualTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\DataTreeView\DataTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\DataTreeView\DataTreeView.Designer.cs">
+      <DependentUpon>DataTreeView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reporting\Support\SPReportSettings.resx">
+      <DependentUpon>SPReportSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reporting\Support\SPReportViewer.resx">
+      <DependentUpon>SPReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dialog\FileDialog.resx">
+      <DependentUpon>FileDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dialog\DocumentPreview.resx">
+      <DependentUpon>DocumentPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Dialog\DocumentPrintSettings.resx">
+      <DependentUpon>DocumentPrintSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Docking\Controls\PopupButton.resx">
+      <DependentUpon>PopupButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\OutlookStyleNavigateBar\NavigateBarOptions.resx">
+      <DependentUpon>NavigateBarOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\RadioButton\RadioButtonList.resx">
+      <DependentUpon>RadioButtonList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\RadioButton\RadioButtonListEditorUI.resx">
+      <DependentUpon>RadioButtonListEditorUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\DomainTextBox\DomainTextBox.resx">
+      <DependentUpon>DomainTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Docking\Resources\DockPaneCaption.AutoHideNo.bmp" />
+    <Content Include="Docking\Resources\DockPaneCaption.AutoHideYes.bmp" />
+    <Content Include="Docking\Resources\DockPaneCaption.CloseDisabled.bmp" />
+    <Content Include="Docking\Resources\DockPaneCaption.CloseEnabled.bmp" />
+    <Content Include="Docking\Resources\DockPaneCaption.OptionsDisabled.bmp" />
+    <Content Include="Docking\Resources\DockPaneCaption.OptionsEnabled.bmp" />
+    <Content Include="Docking\Resources\DockPaneStrip.CloseDisabled.bmp" />
+    <Content Include="Docking\Resources\DockPaneStrip.CloseEnabled.bmp" />
+    <Content Include="Docking\Resources\DockPaneStrip.OptionsDisabled.bmp" />
+    <Content Include="Docking\Resources\DockPaneStrip.OptionsEnabled.bmp" />
+    <Content Include="Docking\Resources\DockPaneStrip.OverflowDisabled.bmp" />
+    <Content Include="Docking\Resources\DockPaneStrip.OverflowEnabled.bmp" />
+    <Content Include="Reporting\Support\FilterConfig.xml" />
+    <Content Include="Resources\1downarrow.png" />
+    <Content Include="Resources\1downarrow22.png" />
+    <Content Include="Resources\1leftarrow.png" />
+    <Content Include="Resources\1rightarrow.png" />
+    <Content Include="Resources\1uparrow22.png" />
+    <Content Include="Resources\2downarrow.png" />
+    <Content Include="Resources\2leftarrow.png" />
+    <Content Include="Resources\2rightarrow.png" />
+    <Content Include="Resources\2uparrow.png" />
+    <Content Include="Resources\3uparrow.png" />
+    <Content Include="Resources\abacus24.png" />
+    <Content Include="Resources\admin_24.png" />
+    <Content Include="Resources\AlignTableCellMiddleLeftJustHS.png" />
+    <Content Include="Resources\ArreterSZ.png" />
+    <Content Include="Resources\ArrowDown.PNG" />
+    <Content Include="Resources\ArrowLeft.png" />
+    <Content Include="Resources\ArrowLeft1.png" />
+    <Content Include="Resources\ArrowMenu.png" />
+    <Content Include="Resources\ArrowRight.png" />
+    <Content Include="Resources\ArrowUp.PNG" />
+    <Content Include="Resources\BlueTooth.png" />
+    <Content Include="Resources\Book_angleHS.png" />
+    <Content Include="Resources\Book_openHS.png" />
+    <Content Include="Resources\button_cancel.png" />
+    <Content Include="Resources\Calendar241.png" />
+    <Content Include="Resources\Clock.png" />
+    <Content Include="Resources\clock_24.png" />
+    <Content Include="Resources\Computer.ico" />
+    <Content Include="Resources\computer_32.png" />
+    <Content Include="Resources\config.png" />
+    <Content Include="Resources\Contacts24.png" />
+    <Content Include="Resources\Control-Panel.png" />
+    <Content Include="Resources\copy.png" />
+    <Content Include="Resources\Critical.png" />
+    <Content Include="Resources\desktop22.png" />
+    <Content Include="Resources\Diary24.png" />
+    <Content Include="Resources\EcranLcd Off.png" />
+    <Content Include="Resources\EcranLcd.png" />
+    <Content Include="Resources\Edit file_24.png" />
+    <Content Include="Resources\editdelete.png" />
+    <Content Include="Resources\eventlogSuccessAudit.ico" />
+    <Content Include="Resources\eventlogSuccessAudit1.ico" />
+    <Content Include="Resources\exit.png" />
+    <Content Include="Resources\FermerSZ.png" />
+    <Content Include="Resources\FermerSZ1.png" />
+    <Content Include="Resources\filesave.png" />
+    <Content Include="Resources\FolderList24.png" />
+    <Content Include="Resources\Generic_Document.png" />
+    <Content Include="Resources\keys.ico" />
+    <Content Include="Resources\Locker.png" />
+    <Content Include="Resources\Lockup.bmp" />
+    <Content Include="Resources\lock_16.png" />
+    <Content Include="Resources\LoginControl.bmp" />
+    <Content Include="Resources\Mail24.png" />
+    <Content Include="Resources\monitor-48.png" />
+    <Content Include="Resources\NavigateBar.bmp" />
+    <Content Include="Resources\NoImage.png" />
+    <Content Include="Resources\notepad_32.png" />
+    <Content Include="Resources\Notes24.png" />
+    <Content Include="Resources\OrganizerHS.png" />
+    <Content Include="Resources\reload.png" />
+    <Content Include="Resources\search22.png" />
+    <Content Include="Resources\Shortcut24.png" />
+    <Content Include="Resources\sort_incr.png" />
+    <Content Include="Resources\SPTaskViewDesigner.bmp" />
+    <Content Include="Resources\Switch User.ico" />
+    <Content Include="Resources\SYS.ico" />
+    <Content Include="Resources\Tasks24.png" />
+    <Content Include="Resources\TileWindowsHorizontallyHS.png" />
+    <Content Include="Resources\touch screen kiosk-24.png" />
+    <Content Include="Resources\try.gif" />
+    <Content Include="Resources\umd red.png" />
+    <Content Include="Resources\user-48.png" />
+    <Content Include="Resources\users.ico" />
+    <Content Include="Resources\user_group.ico" />
+    <Content Include="Resources\wi0054-48.gif" />
+    <Content Include="Resources\wi0111-48.gif" />
+    <Content Include="Resources\wi0122-48.gif" />
+    <Content Include="Resources\world_24_hot.png" />
+    <None Include="App.config" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\Image1.gif" />
+    <None Include="Resources\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SoftLogic.Core\SoftLogik.Core.csproj">
+      <Project>{2EAE9FAE-75AA-47B5-8189-47374FB34853}</Project>
+      <Name>SoftLogik.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

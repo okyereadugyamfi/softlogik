@@ -1,0 +1,40 @@
+<%@ Master Language="C#" MasterPageFile="AdminPage.Master" Codebehind="GenericInnerAdminPage.master.cs" AutoEventWireup="false" Inherits="SMWeb05.MasterPages.Apathy.GenericInnerAdminPage" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="PH" runat="server">
+
+	<script type="text/javascript">
+	function GetScrollableSize(doc)
+	{
+		var menu = document.getElementById('Menu');
+		var tip = document.getElementById('<%= TipText.ClientID %>');
+		var retval = menu.offsetHeight;
+		if (tip!=null) retval = retval + tip.offsetHeight;
+		return retval;
+	}
+	</script>
+
+	<table class="InnerSettings" id="InnerContent">
+		<tr>
+			<td id="Menu" class="TopPanelLeft">
+				<div class="TopPanelMenuText">
+					<STWC:CustomPageTitle runat="server" ID="CustomPageTitle1" />
+				</div>
+			</td>
+			<td class="TopPanelRight">
+				<SMWC:Spacer runat="server" ID="Spacer0" Height="1" Width="68" />
+			</td>
+		</tr>
+		<tr runat="server" id="trTipText">
+			<td id="TipText" class="Tip" colspan="2" style="padding: 0px">
+				<asp:Literal runat="Server" ID="litTipText"></asp:Literal>
+			</td>
+		</tr>
+		<tr>
+			<td id="Scrollable" colspan="2" class="InnerPageContent">
+				<div class="ContentDiv">
+					<asp:ContentPlaceHolder ID="MPH" runat="server" />
+				</div>
+			</td>
+		</tr>
+	</table>
+</asp:Content>

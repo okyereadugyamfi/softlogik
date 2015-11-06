@@ -1,0 +1,72 @@
+<%@ Master Language="C#" MasterPageFile="UserPage.Master" AutoEventWireup="false" Codebehind="GenericSplitPage.master.cs" Inherits="SMWeb05.MasterPages.Apathy.GenericSplitPage" EnableTheming="true" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="PH" runat="server">
+
+	<script type="text/javascript" src="<%=JScript2 %>"></script>
+
+	<table class="InnerSettingsSplit">
+		<tr>
+			<td id="TopPanel" class="TopPanelMenuLeft">
+				<div id="PageTitle" class="TopPanelMenuText">
+					<STWC:CustomPageTitle runat="server" ID="CustomPageTitle1" />
+				</div>
+			</td>
+			<td class="TopPanelMenuRight">
+				<asp:ContentPlaceHolder ID="CntPH" runat="server" />
+			</td>
+		</tr>
+		<tr id="ButtonBar" class="ButtonBar">
+			<td colspan="2" class="ButtonBar">
+				<table class="TwoCellButtonBar">
+					<tr>
+						<td class="ButtonBarLeft">
+							<asp:ContentPlaceHolder ID="BPH" runat="server" />
+						</td>
+						<td class="ButtonBarRight">
+							<div class="ButtonBarRight">
+								<asp:ContentPlaceHolder ID="BrPH" runat="server" />
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="SearchRow" colspan="2" id="SearchRow">
+				<asp:ContentPlaceHolder ID="SPH" runat="server" />
+			</td>
+		</tr>
+		<tr>
+			<asp:Literal ID="litGridTD" runat="server" Mode="PassThrough"></asp:Literal>
+			<div class="GridArea" id="GridAreaDiv">
+				<SMWC:TipText ID="TipText1" runat="server"></SMWC:TipText>
+				<asp:ContentPlaceHolder ID="MPH" runat="server" />
+			</div>
+			<asp:Literal ID="litGridEndTD" runat="server" Mode="PassThrough" />
+		</tr>
+		<tr>
+			<td colspan="2" id="MessagesPager" class="MessagesPager">
+				<div class="DataGridFooter">
+					<div class="DataGridFooterNav">
+						<asp:ContentPlaceHolder ID="NavPH" runat="server" />
+					</div>
+					<div class="DataGridFooterSummary">
+						
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="TopMidBorder" style="cursor: n-resize;" onmousedown="splitMouseDown(event);">
+				<SMWC:Spacer ID="Spacer4" runat="server" Width="5" Height="3" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" id="MessagesPreview" class="MessagesPreview">
+				<div class="PreviewArea" id="PreviewArea">
+					<asp:ContentPlaceHolder ID="M2PH" runat="server" />
+				</div>
+			</td>
+		</tr>
+	</table>
+</asp:Content>
+

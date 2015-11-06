@@ -1,0 +1,72 @@
+.RadTabStrip_TabStrip
+{
+	font: bold 10pt Arial,Verdana;
+}
+
+
+.RadTabStrip_TabStrip li a
+{
+	padding-left: 10px;
+	background: url('img/images.png') no-repeat 0px 0px;
+	height: 28px;
+	text-decoration:none;
+	margin-right: 2px;
+}
+
+.RadTabStrip_TabStrip li a:hover
+{
+	color: #43458f;
+}
+
+.RadTabStrip_TabStrip li a .wrap
+{
+	color: #777777;
+	padding-right: 10px;
+	height: 28px;
+	background: url('img/images.png') no-repeat right -30px ;
+}
+
+.RadTabStrip_TabStrip li a .innerWrap
+{
+	line-height: 28px;
+	padding: 0px 10px;
+	background: url('img/images.png') repeat-x 0px -60px;
+	text-align: center;
+}
+
+.RadTabStrip_TabStrip li a.selected
+{
+	padding-top: 0px;
+	padding-left: 10px;
+	background: url('img/images.png') no-repeat 0px -90px;
+	line-height: 28px;
+}
+
+.RadTabStrip_TabStrip li a.selected .wrap
+{
+	background: url('img/images.png') no-repeat right -120px;
+	line-height: 28px;
+	padding-right: 10px;
+	color: #565b74;
+}
+
+.RadTabStrip_TabStrip li a.selected .innerWrap
+{
+	background: url('img/images.png') repeat-x 0px -150px;
+	padding-top: 0px;
+}
+
+.RadTabStrip_TabStrip li a.disabled,
+.RadTabStrip_TabStrip li a.disabled .wrap,
+.RadTabStrip_TabStrip li a.disabled .innerWrap
+{
+	cursor: default;
+	color: #cccccc;
+}
+
+.RadTabStrip_TabStrip li a.red,
+.RadTabStrip_TabStrip li a.red .wrap,
+.RadTabStrip_TabStrip li a.red .innerWrap
+{
+	color: #877560;
+}

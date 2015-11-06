@@ -1,0 +1,1676 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ACSGhana.WebFramework
+</name>
+</assembly>
+<members>
+<member name="M:ACSGhana.Web.Framework.SqlConnectionHelper.#ctor">
+	<devdoc>
+	</devdoc>
+</member><member name="M:ACSGhana.Web.Framework.SqlConnectionHelper.GetConnectionString(System.String,System.Boolean,System.Boolean)">
+	<devdoc>
+	</devdoc>
+</member><member name="M:ACSGhana.Web.Framework.Data.PollAnswersController.Insert(System.Guid,System.Guid,System.String,System.Nullable{System.Int32})">
+	<summary>
+ Inserts a record, can be used with the Object Data Source
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Data.PollAnswersController.Update(System.Guid,System.Guid,System.String,System.Nullable{System.Int32})">
+	<summary>
+ Updates a record, can be used with the Object Data Source
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.Data.PollAnswersController">
+	<summary>
+ Controller class for PollAnswers
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovieQuality.High">
+	<summary>
+ [Macromedia Default] Outputs "high" as the value of the quality parameter.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovieQuality.Best">
+	<summary>
+ Outputs "best" as the value of the "quality" parameter.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovieQuality.AutoLow">
+	<summary>
+ Outputs "autolow" as the value of the "quality" parameter.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovieQuality.AutoHigh">
+	<summary>
+ Outputs "autohigh" as the value of the "quality" parameter.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovieQuality.Medium">
+	<summary>
+ Outputs "medium" as the value of the "quality" parameter.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovieQuality.Low">
+	<summary>
+ Outputs "low" as the value of the "quality" parameter.
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.UI.Controls.FlashMovieQuality">
+	<summary>
+ Mimics the Macromedia flash movie "quality" parameter. 
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovieScale.ShowAll">
+	<summary>
+ [Macromedia Default] Does not render the "scale" parameter.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovieScale.NoScale">
+	<summary>
+ Outputs "noscale" as the value of the "scale" parameter.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovieScale.ExactFit">
+	<summary>
+ Outputs "exactfit" as the value of the "scale" parameter.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovieScale.NoBorder">
+	<summary>
+ Outputs "noborder" as the value of the "scale" parameter.
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.UI.Controls.FlashMovieScale">
+	<summary>
+ Mimics the Macromedia flash movie "scale" parameter. 
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovieWindowMode.Window">
+	<summary>
+ [Macromedia Default] Does not render the "wmode" parameter.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovieWindowMode.Opaque">
+	<summary>
+ Outputs "opaque" as the value of the "wmode" parameter.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovieWindowMode.Transparent">
+	<summary>
+ Outputs "transparent" as the value of the "wmode" parameter.
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.UI.Controls.FlashMovieWindowMode">
+	<summary>
+ Mimics the Macromedia flash movie "wmode" parameter.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashOutputType.ClientScriptVersionDection">
+	<summary>
+ Adds version detection script in html output.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashOutputType.SWFVersionDetection">
+	<summary>
+ Outputs special flash object tag for SWF version detection.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashOutputType.FlashOnly">
+	<summary>
+ Ouputs only the html code nessesary to play embed your flash Movie.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashOutputType.FlashOnlyForPocketPC2002">
+	<summary>
+ Not currently supported.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashOutputType.FlashWithAICCTracking">
+	<summary>
+ Not currently supported.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashOutputType.FlashWithSCORMTracking">
+	<summary>
+ Not currently supported.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashOutputType.FlashWithNamedAnchors">
+	<summary>
+ Not currently supported.
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.UI.Controls.FlashOutputType">
+	<summary>
+ Determins how your control will be rendered to the browser
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashHorizontalAlignment.Left">
+	<summary>
+ Outputs "L" as the first character in the "salign" parameter.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashHorizontalAlignment.Center">
+	<summary>
+ [Macromedia Default] Does not render as part of the "salign" parameter value.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashHorizontalAlignment.Right">
+	<summary>
+ Outputs "R" as the first character in the "salign" parameter.
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.UI.Controls.FlashHorizontalAlignment">
+	<summary>
+ Mimics the Macromedia flash movie "salign" parameter. Should be implemented in conjunction with FlashVerticalAlignment since
+  both enumerations make up the full salign parameter for the flash movie.  When used with FlashVerticalAlignment possible values
+  are (RT R RB T B LT L LB).  If both values are set to "Center" the parameter is not rendered to the browser.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashVerticalAlignment.Top">
+	<summary>
+ Outputs "T" as the second character in the "salign" parameter.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashVerticalAlignment.Center">
+	<summary>
+ [Macromedia Default] Does not render as part of the "salign" parameter value.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashVerticalAlignment.Bottom">
+	<summary>
+ Outputs "B" as the second character in the "salign" parameter.
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.UI.Controls.FlashVerticalAlignment">
+	<summary>
+ Mimics the Macromedia flash movie "salign" parameter.  Should be implemented in conjunction with FlashHorizontalAlignment since both
+  enumerations make up the full salign parameter for the flash movie.  When used with FlashHorizontalAlignment possible values
+  are (RT R RB T B LT L LB).  If both values are set to "Center" the parameter is not rendered to the browser.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashHtmlAlignment.None">
+	<summary>
+ [Macromedia Default] Outputs empty quotes as the "Align" attribute value.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashHtmlAlignment.Top">
+	<summary>
+ Outputs "top" as the "Align" attribute value.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashHtmlAlignment.Bottom">
+	<summary>
+ Outputs "bottom" as the "Align" attribute value.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashHtmlAlignment.Left">
+	<summary>
+ Outputs "left" as the "Align" attribute value.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashHtmlAlignment.Right">
+	<summary>
+ Outputs "right" as the "Align" attribute value.
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.UI.Controls.FlashHtmlAlignment">
+	<summary>
+ Mimics the HTML "align" attribute for the Macromedia flash movie.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashScriptAccessControl.SameDomain">
+	<summary>
+ Outputs sameDomain as the "allowScriptAccess" parameter.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashScriptAccessControl.Never">
+	<summary>
+ Outputs never as the "allowScriptAccess" parameter.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashScriptAccessControl.Always">
+	<summary>
+ Outputs always as the "allowScriptAccess" parameter.
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.UI.Controls.FlashScriptAccessControl">
+	<summary>
+ Mimics the allowScriptAccess attributer to the Macromedia flash movie.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovieAlignment.HorizontalAlign">
+	<summary>
+ Gets or Sets the FlashHorizontalAlignment enumeration.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovieAlignment.VerticalAlign">
+	<summary>
+ Gets or Sets the FlashVerticalAlignment enumeration.
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovieAlignment.#ctor">
+	<summary>
+ Initializes both enumerations to a default value of "Center".  
+ This is in correlation to the Macromedia Flash default publishing settings.
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovieAlignment.#ctor(ACSGhana.Web.Framework.UI.Controls.FlashHorizontalAlignment)">
+	<summary>
+ Defaults the FlashVerticalAlignment enumeration to "Center" and allows you to initialize the class with a specific HorizontalAlign value.
+ </summary>
+	<param name="h">The value to initialize the HorizontalAlign property with.</param>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovieAlignment.#ctor(ACSGhana.Web.Framework.UI.Controls.FlashVerticalAlignment)">
+	<summary>
+ Defaults the FlashHorizontalAlignment enumeration to "Center" and allows you to initialize the class with a specific VerticalAlign value.
+ </summary>
+	<param name="v">The value to initialize the VerticalAlign property with.</param>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovieAlignment.#ctor(ACSGhana.Web.Framework.UI.Controls.FlashHorizontalAlignment,ACSGhana.Web.Framework.UI.Controls.FlashVerticalAlignment)">
+	<summary>
+ Allows you to initialize the class with a specific VerticalAlign and HorizontalAlign value.
+ </summary>
+	<param name="h">The value to initialize the HorizontalAlign property with.</param>
+	<param name="v">The value to initialize the VerticalAlign property with.</param>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovieAlignment.Initialize(ACSGhana.Web.Framework.UI.Controls.FlashHorizontalAlignment,ACSGhana.Web.Framework.UI.Controls.FlashVerticalAlignment)">
+	<summary>
+ Sets the private alignment fields during initialization.
+ </summary>
+	<param name="h">The value to initialize the HorizontalAlign property with.</param>
+	<param name="v">The value to initialize the VerticalAlign property with.</param>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovieAlignment.ToString">
+	<summary>
+ Outputs the standard flash alignment format value.
+ </summary>
+	<returns>A two character string used to set the flash salign parameter</returns>
+</member><member name="T:ACSGhana.Web.Framework.UI.Controls.FlashMovieAlignment">
+	<summary>
+ It is suggested to use this class instead of using the FlashHorizontalAlignment and FlashVerticalAlignment Enumerations directly.  
+ This class is simply a wrapper to organize the flash alignment enumerations and to keep them togeather, which is how they should be implemented.
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.Data.PollAnswersCollection">
+	<summary>
+ Strongly-typed collection for the PollAnswers class.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.Data.PollAnswers.PollQuestions">
+	<summary>
+ Returns a PollQuestions ActiveRecord object related to this PollAnswers
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Data.PollAnswers.Insert(System.Guid,System.Guid,System.String,System.Nullable{System.Int32})">
+	<summary>
+ Inserts a record, can be used with the Object Data Source
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Data.PollAnswers.Update(System.Guid,System.Guid,System.String,System.Nullable{System.Int32})">
+	<summary>
+ Updates a record, can be used with the Object Data Source
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.Data.PollAnswers">
+	<summary>
+ This is an ActiveRecord class which wraps the PollAnswers table.
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Data.PollQuestionsController.Insert(System.Guid,System.String,System.DateTime,System.Nullable{System.Guid})">
+	<summary>
+ Inserts a record, can be used with the Object Data Source
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Data.PollQuestionsController.Update(System.Guid,System.String,System.DateTime,System.Nullable{System.Guid})">
+	<summary>
+ Updates a record, can be used with the Object Data Source
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.Data.PollQuestionsController">
+	<summary>
+ Controller class for PollQuestions
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.Data.PollReactionsCollection">
+	<summary>
+ Strongly-typed collection for the PollReactions class.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.Data.PollReactions.PollQuestions">
+	<summary>
+ Returns a PollQuestions ActiveRecord object related to this PollReactions
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Data.PollReactions.Insert(System.Guid,System.Guid,System.DateTime,System.String,System.Guid)">
+	<summary>
+ Inserts a record, can be used with the Object Data Source
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Data.PollReactions.Update(System.Guid,System.Guid,System.DateTime,System.String,System.Guid)">
+	<summary>
+ Updates a record, can be used with the Object Data Source
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.Data.PollReactions">
+	<summary>
+ This is an ActiveRecord class which wraps the PollReactions table.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.DeliveredTo">
+	<summary>
+ To whom the email was delivered to
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.ReturnPath">
+	<summary>
+ To whom the email was
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.DeliveryDate">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.MessageId">
+	<summary>
+ Date when the email was received
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.MimeVersion">
+	<summary>
+ probably '1,0'
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.ContentId">
+	<summary>
+ It may be desirable to allow one body to make reference to another. Accordingly, 
+ bodies may be labelled using the "Content-ID" header field.    
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.ContentDescription">
+	<summary>
+ some descriptive information for body
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.ContentDisposition">
+	<summary>
+ ContentDisposition contains normally redundant information also stored in the 
+ ContentType. Since ContentType is more detailed, it is enough to analyze ContentType
+ 
+ something like:
+ inline
+ inline; filename="image001.gif
+ attachment; filename="image001.jpg"
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.TransferType">
+	<summary>
+ something like "7bit" / "8bit" / "binary" / "quoted-printable" / "base64"
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.ContentTransferEncoding">
+	<summary>
+ similar as TransferType, but .NET supports only "7bit" / "quoted-printable"
+ / "base64" here, "bit8" is marked as "bit7" (i.e. no transfer encoding needed), 
+ "binary" is illegal in SMTP
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.ContentType">
+	<summary>
+ The Content-Type field is used to specify the nature of the data in the body of a
+ MIME entity, by giving media type and subtype identifiers, and by providing 
+ auxiliary information that may be required for certain media types. Examples:
+ text/plain;
+ text/plain; charset=ISO-8859-1
+ text/plain; charset=us-ascii
+ text/plain; charset=utf-8
+ text/html;
+ text/html; charset=ISO-8859-1
+ image/gif; name=image004.gif
+ image/jpeg; name="image005.jpg"
+ message/delivery-status
+ message/rfc822
+ multipart/alternative; boundary="----=_Part_4088_29304219.1115463798628"
+ multipart/related; 	boundary="----=_Part_2067_9241611.1139322711488"
+ multipart/mixed; 	boundary="----=_Part_3431_12384933.1139387792352"
+ multipart/report; report-type=delivery-status; boundary="k04G6HJ9025016.1136391237/carbon.singnet.com.sg"
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.MediaMainType">
+	<summary>
+ .NET framework combines MediaType (text) with subtype (plain) in one property, but
+ often one or the other is needed alone. MediaMainType in this example would be 'text'.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.MediaSubType">
+	<summary>
+ .NET framework combines MediaType (text) with subtype (plain) in one property, but
+ often one or the other is needed alone. MediaSubType in this example would be 'plain'.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.ContentStream">
+	<summary>
+ RxMessage can be used for any MIME entity, as a normal message body, an attachement or an alternative view. ContentStream
+ provides the actual content of that MIME entity. It's mainly used internally and later mapped to the corresponding 
+ .NET types.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.Entities">
+	<summary>
+ A MIME entity can contain several MIME entities. A MIME entity has the same structure
+ like an email. 
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.Parent">
+	<summary>
+ This entity might be part of a parent entity
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.TopParent">
+	<summary>
+ The top most MIME entity this MIME entity belongs to (grand grand grand .... parent)
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.RawContent">
+	<summary>
+ The complete entity in raw content. Since this might take up quiet some space, the raw content gets only stored if the
+ Pop3MimeClient.isGetRawEmail is set.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.UnknowHeaderlines">
+	<summary>
+ Headerlines not interpretable by Pop3ClientEmail
+ <example></example>
+	</summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.#ctor">
+	<summary>
+ default constructor
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.SetContentTypeFields(System.String)">
+	<summary>
+ Set all content type related fields
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.CreateChildEntity">
+	<summary>
+ Creates an empty child MIME entity from the parent MIME entity.
+ 
+ An email can consist of several MIME entities. A entity has the same structure
+ like an email, that is header and body. The child inherits few properties 
+ from the parent as default value.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage.MailStructure">
+	<summary>
+ Convert structure of message into a string
+ </summary>
+	<returns></returns>
+</member><member name="T:ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage">
+	<summary>
+ Stores all MIME decoded information of a received email. One email might consist of
+ several MIME entities, which have a very similar structure to an email. A RxMailMessage
+ can be a top most level email or a MIME entity the emails contains.
+ 
+ According to various RFCs, MIME entities can contain other MIME entities 
+ recursively. However, they usually need to be mapped to alternative views and 
+ attachments, which are non recursive.
+
+ RxMailMessage inherits from System.Net.MailMessage, but provides additional receiving related information 
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ACSGhana.Web.Framework.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ACSGhana.Web.Framework.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.PageNumberer.SelectedPage">
+	<summary>
+ The currently selected page
+ </summary>
+	<value>The page number, with 1 being the first page</value>
+	<remarks></remarks>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.PageNumberer.Count">
+	<summary>
+ The total number of pages
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.PageNumberer.DisplayedPages">
+	<summary>
+ How many pages to show in the display
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="E:ACSGhana.Web.Framework.UI.Controls.PageNumberer.SelectedPageChanged">
+	<summary>
+ Event is fired when user clicks on a different page number.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:ACSGhana.Web.Framework.UI.Controls.PageNumberer">
+	<summary>
+ A simple control that shows page numbers
+ </summary>
+	<remarks>You feed it the number of pages, how many pages to show and it will show links for that many pages along with
+ next and previous buttons as applicable. For example with a high count and current page being 5 and 5 displayed pages, it will show
+  first prev 3, 4, 5, 6, 7 next last  </remarks>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.EmailUid.EmailId">
+	<summary>
+ used in POP3 commands to indicate which message (only valid in the present session)
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.EmailUid.Uid">
+	<summary>
+ Uid is always the same for a message, regardless of session
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.EmailUid.#ctor(System.Int32,System.String)">
+	<summary>
+	</summary>
+	<param name="EmailId"></param>
+	<param name="Uid"></param>
+</member><member name="T:ACSGhana.Web.Framework.Mail.Pop3.EmailUid">
+	<summary>
+ Combines Email ID with Email UID for one email
+ The POP3 server assigns to each message a unique Email UID, which will not change for the life time
+ of the message and no other message should use the same.
+ 
+ Exceptions:
+ Throws Pop3Exception if there is a serious communication problem with the POP3 server, otherwise
+ 
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3Exception.#ctor">
+	<summary>
+	</summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3Exception.#ctor(System.String)">
+	<summary>
+	</summary>
+	<param name="ErrorMessage"></param>
+</member><member name="T:ACSGhana.Web.Framework.Mail.Pop3.Pop3Exception">
+	<summary>
+ If anything goes wrong within Pop3MailClient, a Pop3Exception is raised
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3ConnectionStateEnum.None">
+	<summary>
+ undefined
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3ConnectionStateEnum.Disconnected">
+	<summary>
+ not connected yet to POP3 server
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3ConnectionStateEnum.Authorization">
+	<summary>
+ TCP connection has been opened and the POP3 server has sent the greeting. POP3 server expects user name and password
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3ConnectionStateEnum.Connected">
+	<summary>
+ client has identified itself successfully with the POP3, server has locked all messages 
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3ConnectionStateEnum.Closed">
+	<summary>
+ QUIT command was sent, the server has deleted messages marked for deletion and released the resources
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.Mail.Pop3.Pop3ConnectionStateEnum">
+	<summary>
+ A pop 3 connection goes through the following states:
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.Mail.Pop3.WarningHandler">
+	<summary>
+ If POP3 Server doesn't react as expected or this code has a problem, but
+ can continue with the execution, a Warning is called.
+ </summary>
+	<param name="WarningText"></param>
+	<param name="Response">string received from POP3 server</param>
+</member><member name="T:ACSGhana.Web.Framework.Mail.Pop3.TraceHandler">
+	<summary>
+ Traces all the information exchanged between POP3 client and POP3 server plus some
+ status messages from POP3 client.
+ Helpful to investigate any problem.
+ Console.WriteLine() can be used
+ </summary>
+	<param name="TraceText"></param>
+</member><member name="E:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.Warning">
+	<summary>
+ Called whenever POP3 server doesn't react as expected, but no runtime error is thrown.
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.CallWarning(System.String,System.String,System.String,System.Object[])">
+	<summary>
+ call warning event
+ </summary>
+	<param name="methodName">name of the method where warning is needed</param>
+	<param name="response">answer from POP3 server causing the warning</param>
+	<param name="warningText">explanation what went wrong</param>
+	<param name="warningParameters"></param>
+</member><member name="E:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.Trace">
+	<summary>
+ Shows the communication between PopClient and PopServer, including warnings
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.CallTrace(System.String,System.Object[])">
+	<summary>
+ call Trace event
+ </summary>
+	<param name="text">string to be traced</param>
+	<param name="parameters"></param>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.TraceFrom(System.String,System.Object[])">
+	<summary>
+ Trace information received from POP3 server
+ </summary>
+	<param name="text">string to be traced</param>
+	<param name="parameters"></param>
+</member><member name="P:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.PopServer">
+	<summary>
+ Get POP3 server name
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.m_popServer">
+	<summary>
+ POP3 server name
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.Port">
+	<summary>
+ Get POP3 server port
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.m_port">
+	<summary>
+ POP3 server port
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.UseSSL">
+	<summary>
+ Should SSL be used for connection with POP3 server ?
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.m_useSSL">
+	<summary>
+ Should SSL be used for connection with POP3 server ?
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.IsAutoReconnect">
+	<summary>
+ should Pop3MailClient automatically reconnect if POP3 server has dropped the 
+ connection due to a timeout ?
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.ReadTimeout">
+	<summary>
+ Get / set read timeout (miliseconds)
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.m_readTimeout">
+	<summary>
+ POP3 server read timeout
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.Username">
+	<summary>
+ Get owner name of mailbox on POP3 server
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.m_username">
+	<summary>
+ Owner name of mailbox on POP3 server
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.Password">
+	<summary>
+ Get password for mailbox on POP3 server
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.m_password">
+	<summary>
+ Password for mailbox on POP3 server
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.Pop3ConnectionState">
+	<summary>
+ Get connection status with POP3 server
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.m_pop3ConnectionState">
+	<summary>
+ connection status with POP3 server
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.setPop3ConnectionState(ACSGhana.Web.Framework.Mail.Pop3.Pop3ConnectionStateEnum)">
+	<summary>
+ set POP3 connection state
+ </summary>
+	<param name="State"></param>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.EnsureState(ACSGhana.Web.Framework.Mail.Pop3.Pop3ConnectionStateEnum)">
+	<summary>
+ throw exception if POP3 connection is not in the required state
+ </summary>
+	<param name="requiredState"></param>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.serverTcpConnection">
+	<summary>
+ TCP to POP3 server
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.pop3Stream">
+	<summary>
+ Stream from POP3 server with or without SSL
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.pop3StreamReader">
+	<summary>
+ Reader for POP3 message
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.CRLF">
+	<summary>
+ char 'array' for carriage return / line feed
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.#ctor(System.String,System.Int32,System.Boolean,System.String,System.String)">
+	<summary>
+ Make POP3 client ready to connect to POP3 server
+ </summary>
+	<param name="PopServer"><example>pop.gmail.com</example></param>
+	<param name="Port"><example>995</example></param>
+	<param name="useSSL">True: SSL is used for connection to POP3 server</param>
+	<param name="Username"><example>abc@gmail.com</example></param>
+	<param name="Password">Secret</param>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.Connect">
+	<summary>
+ Connect to POP3 server
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.Disconnect">
+	<summary>
+ Disconnect from POP3 Server
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.DeleteEmail(System.Int32)">
+	<summary>
+ Delete message from server.
+ The POP3 server marks the message as deleted.  Any future
+ reference to the message-number associated with the message
+ in a POP3 command generates an error.  The POP3 server does
+ not actually delete the message until the POP3 session
+ enters the UPDATE state.
+ </summary>
+	<param name="msg_number"></param>
+	<returns></returns>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.GetEmailIdList(System.Collections.Generic.List{System.Int32}@)">
+	<summary>
+ Get a list of all Email IDs available in mailbox
+ </summary>
+	<returns></returns>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.GetEmailSize(System.Int32)">
+	<summary>
+ get size of one particular email
+ </summary>
+	<param name="msg_number"></param>
+	<returns></returns>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.GetUniqueEmailIdList(System.Collections.Generic.List{ACSGhana.Web.Framework.Mail.Pop3.EmailUid}@)">
+	<summary>
+ Get a list with the unique IDs of all Email available in mailbox.
+ 
+ Explanation:
+ EmailIds for the same email can change between sessions, whereas the unique Email id
+ never changes for an email.
+ </summary>
+	<param name="EmailIds"></param>
+	<returns></returns>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.GetUniqueEmailIdList(System.Collections.Generic.SortedList{System.String,System.Int32}@)">
+	<summary>
+ get a list with all currently available messages and the UIDs
+ </summary>
+	<param name="EmailIds">EmailId Uid list</param>
+	<returns>false: server sent negative response (didn't send list)</returns>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.GetUniqueEmailId(ACSGhana.Web.Framework.Mail.Pop3.EmailUid)">
+	<summary>
+ get size of one particular email
+ </summary>
+	<param name="msg_number"></param>
+	<returns></returns>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.NOOP">
+	<summary>
+ Sends an 'empty' command to the POP3 server. Server has to respond with +OK
+ </summary>
+	<returns>true: server responds as expected</returns>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.isTraceRawEmail">
+	<summary>
+ Should the raw content, the US-ASCII code as received, be traced
+ GetRawEmail will switch it on when it starts and off once finished
+ 
+ Inheritors might use it to get the raw email
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.RawEmailSB">
+	<summary>
+ contains one MIME part of the email in US-ASCII, needs to be translated in .NET string (Unicode)
+ contains the complete email in US-ASCII, needs to be translated in .NET string (Unicode)
+ For speed reasons, reuse StringBuilder
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.GetRawEmail(System.Int32,System.String@)">
+	<summary>
+ Reads the complete text of a message
+ </summary>
+	<param name="MessageNo">Email to retrieve</param>
+	<param name="EmailText">ASCII string of complete message</param>
+	<returns></returns>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.UndeleteAllEmails">
+	<summary>
+ Unmark any emails from deletion. The server only deletes email really
+ once the connection is properly closed.
+ </summary>
+	<returns>true: emails are unmarked from deletion</returns>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.GetMailboxStats(System.Int32@,System.Int32@)">
+	<summary>
+ Get mailbox statistics
+ </summary>
+	<param name="NumberOfMails"></param>
+	<param name="MailboxSize"></param>
+	<returns></returns>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.SendRetrCommand(System.Int32)">
+	<summary>
+ Send RETR command to POP 3 server to fetch one particular message
+ </summary>
+	<param name="MessageNo">ID of message required</param>
+	<returns>false: negative server respond, message not delivered</returns>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.executeCommand(System.String,System.String@)">
+	<summary>
+ sends the 4 letter command to POP3 server (adds CRLF) and waits for the
+ response of the server
+ </summary>
+	<param name="commandText">command to be sent to server</param>
+	<param name="response">answer from server</param>
+	<returns>false: server sent negative acknowledge, i.e. server could not execute command</returns>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.executeReconnect(System.IO.IOException,System.String,System.Byte[])">
+	<summary>
+ reconnect, if there is a timeout exception and isAutoReconnect is true
+ 
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.readSingleLine(System.String@)">
+	<summary>
+ read single line response from POP3 server. 
+ <example>Example server response: +OK asdfkjahsf</example>
+	</summary>
+	<param name="response">response from POP3 server</param>
+	<returns>true: positive response</returns>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient.readMultiLine(System.String@)">
+	<summary>
+ read one line in multiline mode from the POP3 server. 
+ </summary>
+	<param name="response">line received</param>
+	<returns>false: end of message</returns>
+</member><member name="T:ACSGhana.Web.Framework.Mail.Pop3.Pop3MailClient">
+	<summary>
+ provides access to emails on a POP3 Server
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.QuotedPrintable.RFC_1521_MAX_CHARS_PER_LINE">
+	<summary>
+ Gets the maximum number of characters per quoted-printable
+ line as defined in the RFC minus 1 to allow for the =
+ character (soft line break).
+ </summary>
+	<remarks>
+ (Soft Line Breaks): The Quoted-Printable encoding REQUIRES 
+ that encoded lines be no more than 76 characters long. If 
+ longer lines are to be encoded with the Quoted-Printable 
+ encoding, 'soft' line breaks must be used. An equal sign 
+ as the last character on a encoded line indicates such a 
+ non-significant ('soft') line break in the encoded text.
+ </remarks>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.QuotedPrintable.DecodeFile(System.String)">
+	<summary>
+ decodes an entire file's contents into plain text that 
+ was encoded with quoted-printable.
+ </summary>
+	<param name="filepath">
+ The path to the quoted-printable encoded file to decode.
+ </param>
+	<returns>The decoded string.</returns>
+	<exception cref="T:System.ObjectDisposedException">
+ A problem occurred while attempting to decode the 
+ encoded string.
+ </exception>
+	<exception cref="T:System.OutOfMemoryException">
+ There is insufficient memory to allocate a buffer for the
+ returned string. 
+ </exception>
+	<exception cref="T:System.ArgumentNullException">
+ A string is passed in as a null reference.
+ </exception>
+	<exception cref="T:System.IO.IOException">
+ An I/O error occurs, such as the stream being closed.
+ </exception>
+	<exception cref="T:System.IO.FileNotFoundException">
+ The file was not found.
+ </exception>
+	<exception cref="T:System.Security.SecurityException">
+ The caller does not have the required permission to open
+ the file specified in filepath.
+ </exception>
+	<exception cref="T:System.UnauthorizedAccessException">
+ filepath is read-only or a directory.
+ </exception>
+	<remarks>
+ Decodes a quoted-printable encoded file into a string
+ of unencoded text of any size.
+ </remarks>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.QuotedPrintable.Decode(System.String)">
+	<summary>
+ Decodes a Quoted-Printable string of any size into 
+ it's original text.
+ </summary>
+	<param name="encoded">
+ The encoded string to decode.
+ </param>
+	<returns>The decoded string.</returns>
+	<exception cref="T:System.ArgumentNullException">
+ A string is passed in as a null reference.
+ </exception>
+	<remarks>
+ Decodes a quoted-printable encoded string into a string
+ of unencoded text of any size.
+ </remarks>
+</member><member name="T:ACSGhana.Web.Framework.Mail.Pop3.QuotedPrintable">
+	<summary>
+		<para>
+ Robust and fast implementation of Quoted Printable
+ Multipart Internet Mail Encoding (MIME) which encodes every 
+ character, not just "special characters" for transmission over SMTP.
+ </para>
+		<para>
+ More information on the quoted-printable encoding can be found
+ here: http://www.freesoft.org/CIE/RFC/1521/6.htm
+ </para>
+	</summary>
+	<remarks>
+		<para>
+ detailed in: RFC 1521
+ </para>
+		<para>
+ more info: http://www.freesoft.org/CIE/RFC/1521/6.htm
+ </para>
+		<para>
+ The QuotedPrintable class encodes and decodes strings and files
+ that either were encoded or need encoded in the Quoted-Printable
+ MIME encoding for Internet mail. The encoding methods of the class
+ use pointers wherever possible to guarantee the fastest possible 
+ encoding times for any size file or string. The decoding methods 
+ use only the .NET framework classes.
+ </para>
+		<para>
+ The Quoted-Printable implementation
+ is robust which means it encodes every character to ensure that the
+ information is decoded properly regardless of machine or underlying
+ operating system or protocol implementation. The decode can recognize
+ robust encodings as well as minimal encodings that only encode special
+ characters and any implementation in between. Internally, the
+ class uses a regular expression replace pattern to decode a quoted-
+ printable string or file.
+ </para>
+	</remarks>
+	<example>
+ This example shows how to quoted-printable encode an html file and then
+ decode it.
+ <code>
+ string encoded = QuotedPrintable.EncodeFile(
+ 	@"C:\WEBS\wwwroot\index.html"
+ 	);
+ 
+ string decoded = QuotedPrintable.Decode(encoded);
+ 
+ Console.WriteLine(decoded);
+ </code>
+	</example>
+</member><member name="T:ACSGhana.Web.Framework.Enumerations.OrderStatus">
+	<summary>
+ The Order Status
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.AK">
+ AK
+ AL
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.AL">
+ AR
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.AR">
+ AZ
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.AZ">
+ CA
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.CA">
+ CO
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.CO">
+ CT
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.CT">
+ DC
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.DC">
+ DE
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.DE">
+ FL
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.FL">
+ GA
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.GA">
+ HI
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.HI">
+ IA
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.IA">
+ ID
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.ID">
+ IL
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.IL">
+ IN
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.IN">
+ KS
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.KS">
+ KY
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.KY">
+ LA
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.LA">
+ MA
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.MA">
+ MD
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.MD">
+ ME
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.ME">
+ MI
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.MI">
+ MN
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.MN">
+ MO
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.MO">
+ MS
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.MS">
+ MT
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.MT">
+ NC
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.NC">
+ ND
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.ND">
+ NE
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.NE">
+ NH
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.NH">
+ NJ
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.NJ">
+ NM
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.NM">
+ NV
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.NV">
+ NY
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.NY">
+ OH
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.OH">
+ OK
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.OK">
+ OR
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.OR">
+ PA
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.PA">
+ RI
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.RI">
+ SC
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.SC">
+ SD
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.SD">
+ TN
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.TN">
+ TX
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.TX">
+ UT
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.UT">
+ VA
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.VA">
+ VT
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.VT">
+ WA
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.WA">
+ WI
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.WI">
+ WV
+
+</member><member name="F:ACSGhana.Web.Framework.Enumerations.USState.WV">
+ WY
+
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.isCollectUnknowHeaderLines">
+	<summary>
+ used for debugging. Collects all unknown header lines for all (!) emails received
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.AllUnknowHeaderLines">
+	<summary>
+ list of all unknown header lines received, for all (!) emails 
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.IsCollectRawEmail">
+	<summary>
+ Set this flag, if you would like to get also the email in the raw US-ASCII format
+ as received.
+ Good for debugging, but takes quiet some space.
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.#ctor(System.String,System.Int32,System.Boolean,System.String,System.String)">
+	<summary>
+ constructor
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.GetEmail(System.Int32,ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage@)">
+	<summary>
+ Gets 1 email from POP3 server and processes it.
+ </summary>
+	<param name="MessageNo">Email Id to be fetched from POP3 server</param>
+	<param name="Message">decoded email</param>
+	<returns>false: no email received or email not properly formatted</returns>
+</member><member name="T:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.MimeEntityReturnCode">
+	<summary>
+ indicates the reason how a MIME entity processing has terminated
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.ProcessMimeEntity(ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage,System.String)">
+	<summary>
+ Process a MIME entity
+ 
+ A MIME entity consists of header and body.
+ Separator lines in the body might mark children MIME entities
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.parentBoundaryFound(System.String,System.String,System.String,ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.MimeEntityReturnCode@)">
+	<summary>
+ Check if the response line received is a parent boundary 
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.ProcessHeaderField(ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage,System.String)">
+	<summary>
+ Convert one MIME header field and update message accordingly
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.AddMailAddresses(System.String,System.Net.Mail.MailAddressCollection)">
+	<summary>
+ find individual addresses in the string and add it to address collection
+ </summary>
+	<param name="Addresses">string with possibly several email addresses</param>
+	<param name="AddressCollection">parsed addresses</param>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.ConvertToMailAddress(System.String)">
+	<summary>
+ Tries to convert a string into an email address
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.ConvertToDateTime(System.String)">
+	<summary>
+ Tries to convert string to date, following POP3 rules
+ If there is a run time error, the smallest possible date is returned
+ <example>Wed, 04 Jan 2006 07:58:08 -0800</example>
+	</summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.ConvertToTransferEncoding(System.String)">
+	<summary>
+ converts TransferEncoding as defined in the RFC into a .NET TransferEncoding
+ 
+ .NET doesn't know the type "bit8". It is translated here into "bit7", which
+ requires the same kind of processing (none).
+ </summary>
+	<param name="TransferEncodingString"></param>
+	<returns></returns>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.saveMessageBody(ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage,System.String)">
+	<summary>
+ Copies the content found for the MIME entity to the RxMailMessage body and creates
+ a stream which can be used to create attachements, alternative views, ...
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.SaveAttachment(ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage)">
+	<summary>
+ each attachement is stored in its own MIME entity and read into this entity's
+ ContentStream. SaveAttachment creates an attachment out of the ContentStream
+ and attaches it to the parent MIME entity.
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.RemoveBrackets(System.String)">
+	<summary>
+ removes leading '&lt;' and trailing '&gt;' if both exist
+ </summary>
+	<param name="parameterString"></param>
+	<returns></returns>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.AddChildPartsToParent(ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage,ACSGhana.Web.Framework.Mail.Pop3.RxMailMessage)">
+	<summary>
+ Add all attachments and alternative views from child to the parent
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient.DecodeByteArryToString(System.Byte[],System.Text.Encoding)">
+	<summary>
+ Converts byte array to string, using decoding as requested
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.Mail.Pop3.Pop3MimeClient">
+	<summary>
+ Reads POP3 / MIME based emails 
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Data.PollReactionsController.Insert(System.Guid,System.Guid,System.DateTime,System.String,System.Guid)">
+	<summary>
+ Inserts a record, can be used with the Object Data Source
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Data.PollReactionsController.Update(System.Guid,System.Guid,System.DateTime,System.String,System.Guid)">
+	<summary>
+ Updates a record, can be used with the Object Data Source
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.Data.PollReactionsController">
+	<summary>
+ Controller class for PollReactions
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovie.#ctor">
+	<summary>
+ Flash Movie Control.
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovie.InitializeControl">
+	<summary>
+ Initializes the default values for members.
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovie.CreateChildControls">
+	<summary>
+ Creates the PlaceHolders responsible for containing the controls used in the noscript and noflash rendering methods.
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mmajorversion">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mmajorrevision">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mminorversion">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mminorrevision">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._fsCommandScriptUrl">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mscriptaccesscontrol">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mdetectionalturl">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mdetectioncontenturl">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mallowflashautoinstall">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mname">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mautoplay">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mquality">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mautoloop">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mwmode">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mscale">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mflashAlign">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mhtmlalign">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._moutputtype">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mmenu">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mdevicefont">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mbgcolor">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mwidth">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mheight">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mLiveConnect">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mvariables">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mnoscript">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie._mnoflash">
+	<summary>
+	</summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie.PostRenderNoScriptContent">
+	<summary>
+ The raw HTML content that has been captured after the NoScriptContainer has rendered
+ </summary>
+</member><member name="F:ACSGhana.Web.Framework.UI.Controls.FlashMovie.PostRenderNoFlashContent">
+	<summary>
+ The raw HTML content that has been captured after the NoFlashContainer has rendered
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.MajorPluginVersion">
+	<summary>
+ Gets or sets the major version of the flash plugin to use.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.MajorPluginVersionRevision">
+	<summary>
+ Gets or sets the major version revision of the flash plugin to use.  The second of four numbers that make up the plugin's codebase.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.MinorPluginVersion">
+	<summary>
+ Gets or sets the minor version of the flash plugin to use.  The third of four numbers that make up the plugin's codebase.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.MinorPluginVersionRevision">
+	<summary>
+ Gets or sets the minor version revision of the flash plugin to use.  The fourth of four numbers that make up the plugin's codebase.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.ScriptAccessControl">
+	<summary>
+ Gets or sets the flash movie parameter responsible for allowing script access to the movie.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.FSCommandScriptUrl">
+	<summary>
+ Gets or Sets the url of a JavaScript .js file to include in the webpage.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.SWF_DetectionAltUrl">
+	<summary>
+ Gets or sets the alternate webpage to redirect to if SWF detection does not detect the flash plugin.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.SWF_DetectionContentUrl">
+	<summary>
+ Gets or sets the content webpage to redirect to if SWF detection detects that the flash plugin is installed.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.AllowFlashAutoInstall">
+	<summary>
+ Gets or sets the flash movie variable used to auto install the plugin.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.MovieName">
+	<summary>
+ The virtual path to the flash movie.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.AutoPlay">
+	<summary>
+ Gets or sets the flash movie parameter responsible for auto-starting your movie.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.AutoLoop">
+	<summary>
+ Gets or sets the flash movie parameter responsible for looping your movie.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.MovieQuality">
+	<summary>
+ Gets or sets the flash movie parameter responsible for setting the quality of your movie.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.WindowMode">
+	<summary>
+ Gets or sets the flash movie parameter responsible for setting the window mode of your movie.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.MovieScale">
+	<summary>
+ Gets or sets the flash movie parameter responsible for setting the scale of your movie.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.FlashHorizontalAlignment">
+	<summary>
+ Gets or sets the flash horizontal alignment for your movie.
+ Used in conjunction with the FlashVerticalAlignment property to form the flash "salign" parameter.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.FlashVerticalAlignment">
+	<summary>
+ Gets or sets the flash vertical alignment for your movie.
+ Used in conjunction with the FlashHorizontalAlignment property to form the flash "salign" parameter.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.FlashAlignment">
+	<summary>
+ Gets the value to be used in the flash salign parameter from both the FlashHorizontalAlignment and FlashVerticalAlignment properties.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.HtmlAlignment">
+	<summary>
+ Gets or sets the html alignment for your flash movie.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.FlashOutputType">
+	<summary>
+ Gets or sets the flash output type to use when rendering the FlashMovie control to the browser.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.ShowMenu">
+	<summary>
+ Gets or sets the flash movie parameter responsible for setting the menu mode of your flash movie.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.UseDeviceFonts">
+	<summary>
+ Gets or sets the flash movie parameter responsible for enabling or disabling device fonts in your movie.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.MovieBGColor">
+	<summary>
+ Gets or sets the background color of your flash movie.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.MovieWidth">
+	<summary>
+ Gets or sets the width of your flash movie.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.MovieHeight">
+	<summary>
+ Gets or sets the height of your flash movie.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.LiveConnect">
+	<summary>
+ Gets or sets the html embed element's swLiveConnect parameter.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.MovieVariables">
+	<summary>
+ Gets or sets the NameValueCollection used to pass variables to the flash movie through the querystring.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.NoScriptContainer">
+	<summary>
+ Gets or sets the PlaceHolder responsible for containing the controls that will be rendered as the html noscript 
+ content if javascript is disabled on the client browser.  This is only relevent if the FlashMovie controls output
+  type is set to one of the version detection enumeration members.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.NoFlashContainer">
+	<summary>
+ Gets or sets the PlaceHolder responsible for containing the controls that will be rendered as the javascript 
+ content if no flash plugin was detected on the client browser.  This is only relevent if the FlashMovie controls output
+  type is set to one of the version detection enumeration members.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.FlashMimeType">
+	<summary>
+ Gets the mimetype of the flash plugin.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.FlashClassID">
+	<summary>
+ Gets the CLASSID of the flash plugin.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.FlashCodeBase">
+	<summary>
+ Gets the CodeBase Url used as the codebase parameter to the flash object.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.FlashPluginsPage">
+	<summary>
+ Gets the flash plugins webpage url that is used in the embed element.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.DetectionPluginsPage">
+	<summary>
+ Gets the flash plugins webpage url that is used with SWF version detection.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.ClientScriptVersion">
+	<summary>
+ Gets the javascript version used to detect the falsh plugin version.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.UI.Controls.FlashMovie.VersionString">
+	<summary>
+ Gets the full version string of the plugin.  Used in the plugins codebase.
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovie.RenderChildren(System.Web.UI.HtmlTextWriter)">
+	<summary>
+ Captures and supresses the porting of the rendered content of the noscript and noflash containers to the HtmlTextWriter.
+ </summary>
+	<param name="writer">The HtmlTextWriter to render content to.</param>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovie.Render(System.Web.UI.HtmlTextWriter)">
+	<summary>
+ Renders the FlashMovie Control
+ </summary>
+	<param name="writer">The HtmlTextWriter to render content to.</param>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovie.RenderFlashObjectParameters(System.Web.UI.HtmlTextWriter)">
+	<summary>
+ Renders the flash movie parameters to the html object tag.
+ </summary>
+	<param name="writer">The HtmlTextWriter to render content to.</param>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovie.RenderFlashEmbedParameters(System.Web.UI.HtmlTextWriter)">
+	<summary>
+ Renders the flash movie parameters to the html embed tag.
+ </summary>
+	<param name="writer">The HtmlTextWriter to render content to.</param>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovie.RenderFlashMovieVariables(System.Web.UI.HtmlTextWriter)">
+	<summary>
+ Renders the NameValueCollection of flash movie variables into querystring form.
+ </summary>
+	<param name="writer">The HtmlTextWriter to render content to.</param>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovie.RenderPluginDetectionScript(System.Web.UI.HtmlTextWriter)">
+	<summary>
+ If plugin version detection is enabled this method is called to invoke the rendering of the FlashMovie control.
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovie.RenderFlashOnlyScript(System.Web.UI.HtmlTextWriter)">
+	<summary>
+ If FlashOnly output method is set this method is called to invoke the rendering of the FlashMovie control.
+ </summary>
+	<param name="writer">The HtmlTextWriter to render content to.</param>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovie.RenderSWFDetectionScript(System.Web.UI.HtmlTextWriter)">
+	<summary>
+ If SWF Detection in output method is set this method is called to invoke the rendering of the FlashMovie control.
+ </summary>
+	<param name="writer"></param>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovie.RenderPluginDetectionDeclaration(System.Web.UI.HtmlTextWriter,System.Int32)">
+	<summary>
+ Renders the client script variable initilization and sets the plugin client script variable
+ </summary>
+	<param name="writer">If plugin version detection is enabled this method is called to invoke the rendering of the FlashMovie control.</param>
+	<param name="version">The version number being used for plugin detection.</param>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovie.RenderPluginDetectionBlock(System.Web.UI.HtmlTextWriter)">
+	<summary>
+ Renders the client script that detects if the flash plugin is available
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovie.RenderFlashCanPlayBlock(System.Web.UI.HtmlTextWriter)">
+	<summary>
+ Renders the client script and content used to display the flash movie.
+ </summary>
+	<param name="writer">The HtmlTextWriter to render content to.</param>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovie.RenderFlashCanNotPlayBlock(System.Web.UI.HtmlTextWriter)">
+	<summary>
+ Renders the client script and content used if the flash plugin is unavailable.
+ </summary>
+	<param name="writer">The HtmlTextWriter to render content to.</param>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovie.RenderContentDisplayBlock(System.Web.UI.HtmlTextWriter)">
+	<summary>
+ Renders the top level client script used to display content to the browser.
+ </summary>
+	<param name="writer">The HtmlTextWriter to render content to.</param>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovie.SaveViewState">
+	<summary>
+	</summary>
+	<returns></returns>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.FlashMovie.LoadViewState(System.Object)">
+	<summary>
+	</summary>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.ModalForm.OnInit(System.EventArgs)">
+	<summary>
+ Force the creation of child controls now so that the ModalPopup extender is created on init.
+ </summary>
+	<param name="e"></param>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.ModalForm.CreateChildControls">
+	<summary>
+ Create the ModalPopup extender and add it as a child of this control.
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.ModalForm.OnPreRender(System.EventArgs)">
+	<summary>
+ Register javascript needed.
+ </summary>
+	<param name="e"></param>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.ModalForm.Render(System.Web.UI.HtmlTextWriter)">
+	<summary>
+ Render HTML for control.
+ </summary>
+	<param name="output"></param>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.ModalForm.CreateContainerControls">
+	<summary>
+ Create the header and content panels and place the existing child controls in the content panel.
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.ModalForm.GetCloseScript">
+	<summary>
+ Get the javascript to close the modal form.
+ </summary>
+	<returns>
+ The javascript which forces a click on the cancel control.
+ </returns>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.ModalForm.GetControl(System.Web.UI.Control,System.String)">
+	<summary>
+ Perform a recursive search for the indicated control.
+ </summary>
+	<param name="root">
+ The control whose children should be searched for the indicated control.
+ </param>
+	<param name="id">
+ The id of the control to get.
+ </param>
+	<returns>
+ The control with the indicated id.
+ </returns>
+</member><member name="M:ACSGhana.Web.Framework.UI.Controls.ModalForm.GetCloseImageUrl">
+	<summary>
+ Get the url for the close image, taking into account any active theme.
+ </summary>
+	<returns>
+ The url for the close image, taking into account any active theme.
+ </returns>
+</member><member name="T:ACSGhana.Web.Framework.Data.PollQuestionsCollection">
+	<summary>
+ Strongly-typed collection for the PollQuestions class.
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Data.PollQuestions.Insert(System.Guid,System.String,System.DateTime,System.Nullable{System.Guid})">
+	<summary>
+ Inserts a record, can be used with the Object Data Source
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Data.PollQuestions.Update(System.Guid,System.String,System.DateTime,System.Nullable{System.Guid})">
+	<summary>
+ Updates a record, can be used with the Object Data Source
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.Data.PollQuestions">
+	<summary>
+ This is an ActiveRecord class which wraps the PollQuestions table.
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.Data.PollVotesCollection">
+	<summary>
+ Strongly-typed collection for the PollVotes class.
+ </summary>
+</member><member name="P:ACSGhana.Web.Framework.Data.PollVotes.PollAnswers">
+	<summary>
+ Returns a PollAnswers ActiveRecord object related to this PollVotes
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Data.PollVotes.Insert(System.Guid,System.Guid,System.Guid,System.DateTime,System.Guid)">
+	<summary>
+ Inserts a record, can be used with the Object Data Source
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Data.PollVotes.Update(System.Guid,System.Guid,System.Guid,System.DateTime,System.Guid)">
+	<summary>
+ Updates a record, can be used with the Object Data Source
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.Data.PollVotes">
+	<summary>
+ This is an ActiveRecord class which wraps the PollVotes table.
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Data.PollVotesController.Insert(System.Guid,System.Guid,System.Guid,System.DateTime,System.Guid)">
+	<summary>
+ Inserts a record, can be used with the Object Data Source
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Data.PollVotesController.Update(System.Guid,System.Guid,System.Guid,System.DateTime,System.Guid)">
+	<summary>
+ Updates a record, can be used with the Object Data Source
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.Data.PollVotesController">
+	<summary>
+ Controller class for PollVotes
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Utility.SaveManyToManyRecord(System.String,System.String,System.String,System.Int32,System.Int32)">
+	<summary>
+ Deletes records from mapping table where the value this object's primary key value
+ and the mapColumnValue is the matching map record value
+ </summary>
+	<param name="mapTableName">The Mapping Table</param>
+	<returns>Number of records deleted</returns>
+</member><member name="M:ACSGhana.Web.Framework.Utility.DeleteManyToMany(System.String,System.Object,System.String,System.String,System.Int32)">
+	<summary>
+ Deletes records from mapping table where the value this object's primary key value
+ and the mapColumnValue is the matching map record value
+ </summary>
+	<param name="mapTableName">The Mapping Table</param>
+	<returns>Number of records deleted</returns>
+</member><member name="M:ACSGhana.Web.Framework.Utility.DeleteAllManyToMany(System.String,System.Object,System.String)">
+	<summary>
+ Deletes records from mapping table where the value this object's primary key value
+ </summary>
+	<param name="mapTableName">The Mapping Table</param>
+	<returns>Number of records deleted</returns>
+</member><member name="M:ACSGhana.Web.Framework.Utility.ObjectToXML(System.Type,System.Object)">
+	<summary>
+ Returns the Xml representation of object-specific data as a string
+ </summary>
+	<returns></returns>
+</member><member name="M:ACSGhana.Web.Framework.Utility.TestForSSL">
+	<summary>
+ This method will examine the current URL for use of https. If https:// isn't present, 
+ the page will reset itself to the secure url. This does NOT happen for localhost.
+ </summary>
+</member><member name="M:ACSGhana.Web.Framework.Utility.GetSecureRoot">
+	<summary>
+ Returns an SSL-enabled URL
+ </summary>
+	<returns></returns>
+</member><member name="M:ACSGhana.Web.Framework.Utility.GetNonSSLRoot">
+	<summary>
+ Returns a regular URL
+ </summary>
+	<returns></returns>
+</member><member name="M:ACSGhana.Web.Framework.Utility.GetRewriterUrl(System.String,System.String,System.String)">
+	<summary>
+ Rewrites an internal url like Product.aspx?id=1 to a nicely formatted URL 
+ that can be used for site navigation. These rules are simple; if you want to
+ do more complex rewriting, UrlRewriter.NET is a very nice option.
+ </summary>
+	<param name="pageTo">This is a page where the request is going</param>
+	<param name="paramValue">The querystring param value, usually the ID</param>
+	<returns></returns>
+</member><member name="M:ACSGhana.Web.Framework.Utility.UpdateFileText(System.String,System.String,System.String)">
+	<summary>
+ Updates the text in a file with the passed in values
+ </summary>
+	<param name="AbsoluteFilePath"></param>
+	<param name="LookFor"></param>
+	<param name="ReplaceWith"></param>
+</member><member name="M:ACSGhana.Web.Framework.Utility.WriteToFile(System.String,System.String)">
+	<summary>
+ Writes out a file
+ </summary>
+	<param name="AbsoluteFilePath"></param>
+	<param name="fileText"></param>
+</member><member name="T:ACSGhana.Web.Framework.Utility">
+	<summary>
+ Summary description for Utility
+ </summary>
+</member><member name="T:ACSGhana.Web.Framework.UI.Controls.RolloverLink">
+	<summary>
+ Provides a rollover button, but with client click support for navigation.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

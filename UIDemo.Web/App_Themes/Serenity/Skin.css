@@ -1,0 +1,304 @@
+/* This file defines classes that make up the "overall" skin.
+** the following colors are used in this css file
+** #9AB8D7: The light blue visible in the login page, and top of the gradient in the top bar
+** #406287: The dark blue used as headers for Panelbars and page titles
+** #c0c0c0: the single pixel gray border between the panel bar and the page content
+** #497699: blue link text
+*/
+
+
+/* The following makes pages 100% height */
+html, body, form
+{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+/* end 100% height stuff */
+
+
+/* background color of pages */
+body
+{
+	background-color: White;
+}
+body.Login
+{
+	background-color: #9AB8D7;
+}
+/* end background color */
+
+
+
+/* Container owns everything on the page */
+table.Container
+{
+	height: 100%;
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+td.Container
+{
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+}
+/* end container */
+
+
+
+
+/* menu bar is the bar directly below the top bar */
+td.MenuBar /* cell that is the parent of the MenuBar table */
+{
+	height: 80px;
+	width: 100%;
+	padding: 0px;
+	background-color: White;
+}
+
+table.MenuBar /* owns TopBar as well */
+{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 80px;
+}
+td.MenuBarLeft
+{
+	background: url(images/skin/MenuBarTile.png) repeat-x top left;
+	padding: 0px 0px 0px 14px;
+	vertical-align: top;
+}
+/* end menu bar */
+
+
+/* this is the blue bar on top of (almost) every page
+** it is actually contained in the MenuBar table */
+td.TopBarLeft
+{
+	background: url(images/skin/TopBarTile.png) repeat-x;
+	padding: 14px 25px 0px 45px;
+	font: 14pt Century Gothic, Arial;
+	color: White;
+	white-space: nowrap;
+}
+td.TopBarMid
+{
+	background: url(images/skin/TopBarTrans.png) no-repeat;
+	height: 42px;
+	padding: 0px;
+	width: 91px;
+}
+td.TopBarRight
+{
+	padding: 14px 45px 0px 0px;
+	font: 14pt Century Gothic, Arial;
+	color: White;
+	background: url(images/skin/TopBarTile.png) repeat-x;
+	white-space: nowrap;
+	text-align: right;
+	width: 100%;
+}
+/* end top bar */
+
+
+
+
+/* left bar is the panelbar on the left hand side of the page */
+/* see panelresize.js to resize this stuff */
+td.LeftBar /* cell that is the parent of the LeftBar table */
+{
+	height: 100%;
+	background-color: White;
+	width: 206px;
+	vertical-align: top;
+	padding: 0px;
+	overflow: hidden;
+}
+table.LeftBar
+{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+td.LeftBarInner /* cell that actually holds the panelbar */
+{
+	height: 100%;
+	background-color: White;
+	width: 206px;
+	vertical-align: top;
+	padding: 0px;
+	overflow: hidden;
+}
+/* end left bar */
+
+
+/* left bar content */
+td.LoggedInAsContainer /* this holds the "Logged In As" panel */
+{
+	height: 100px;
+	width: 100%;
+	overflow: hidden;
+	vertical-align: top;
+	padding: 0px;
+}
+div.SideBarPanelText /* text class that emulates a panelbar header */
+{
+	font: 10pt Tahoma, Arial, Verdana;
+	color: #406287;
+	padding: 8px 0px 0px 30px;
+}
+div.SideBarPanel /* emulates a panelbar header */
+{
+	width: 204px;
+	background: white url(images/skin/PanelTile.png) repeat-x;
+	height: 40px;
+}
+/* end of left bar content */
+
+
+/* right pane is where the content of every page goes */
+td.RightPane
+{
+	vertical-align: top;
+	background-color: White;
+	padding: 0px;
+	padding-left: 2px;
+}
+/* end of right pane */
+
+/* borders that exist in this skin */
+td.TopMidBorder
+{
+	width: 100%;
+	padding: 0px;
+	background: url(images/skin/MidBorder.png) repeat-x;
+}
+td.BottomMidBorder
+{
+	height: 12px;
+	padding: 0px;
+	background: url(images/skin/BottomTile.png) repeat-x top left;
+}
+td.MidBorder
+{
+	width: 1px;
+	padding: 0px;
+	background-color: #c0c0c0;
+}
+/* end borders */
+
+/* does a shadow around a box, used on the login page */
+table.ShadowBox
+{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+td.ShadowBox
+{
+	padding: 0px;
+}
+td.ShadowTopLeft
+{
+	padding: 0px;
+	width: 14px;
+	height: 14px;
+	background: url(images/skin/shadowcorners.png) no-repeat -60px 0px;
+}
+td.ShadowTopRight
+{
+	padding: 0px;
+	width: 14px;
+	height: 14px;
+	background: url(images/skin/shadowcorners.png) no-repeat -40px 0px;
+}
+td.ShadowBottomLeft
+{
+	padding: 0px;
+	width: 14px;
+	height: 14px;
+	background: url(images/skin/shadowcorners.png) no-repeat 0px 0px;
+}
+td.ShadowBottomRight
+{
+	padding: 0px;
+	width: 14px;
+	height: 14px;
+	background: url(images/skin/shadowcorners.png) no-repeat -20px 0px;
+}
+td.ShadowLeftTile
+{
+	padding: 0px;
+	width: 14px;
+	background: url(images/skin/shadowcorners.png) repeat-y -100px 0px;
+}
+td.ShadowRightTile
+{
+	padding: 0px;
+	width: 14px;
+	background: url(images/skin/shadowcorners.png) repeat-y -80px 0px;
+}
+td.ShadowTopTile
+{
+	padding: 0px;
+	height: 14px;
+	background: url(images/skin/shadowcorners2.png) repeat-x 0px -40px;
+}
+td.ShadowBottomTile
+{
+	padding: 0px;
+	height: 14px;
+	background: url(images/skin/shadowcorners2.png) repeat-x 0px 0px;
+}
+/* end shadow stuff */
+
+
+/* misc. stuff */
+a
+{
+	color: #497699;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #497699;
+	text-decoration: none;
+}
+div.Copyright
+{
+	height: 20px;
+	overflow: hidden;
+}
+.Copyright
+{
+	text-align: right;
+	padding-top: 8px;
+	color: White;
+	font: 8pt Arial, Verdana;
+}
+.Copyright a
+{
+	padding-top: 8px;
+	color: White;
+	text-decoration: none;
+	font: 8pt Arial, Verdana;
+}
+
+img
+{
+	border: solid 0px black;
+}
+/*************************/

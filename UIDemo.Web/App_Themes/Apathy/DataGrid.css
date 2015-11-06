@@ -1,0 +1,250 @@
+﻿table.DataGrid
+{
+	width: 100%;
+}
+
+tr.DataGridHeader
+{
+	background-color: #FFFFFF;
+	color: #497699;
+	font: bold 9pt Arial,Verdana;
+}
+tr.DataGridFooter
+{
+	background-color: #FFFFFF;
+	color: #497699;
+	font: bold 8pt Arial,Verdana;
+}
+
+tr.DataGridHeader td
+{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-bottom: solid 1px #E4E4E4;
+}
+
+td.DataGridCellFirst
+{
+	height: 25px;
+	padding: 1px 4px 0px 20px;
+}
+td.DataGridCell
+{
+	height: 25px;
+	padding: 1px 4px 0px 4px;
+}
+td.DataGridCellLast
+{
+	height: 25px;
+	padding: 1px 20px 0px 4px;
+}
+
+tr.DataGridItem img, tr.DataGridAltItem img, tr.DataGridItemHover img, tr.DataGridItemHoverNoClick img
+{
+	vertical-align: top;
+}
+
+tr.DataGridItem td.DataGridCell, tr.DataGridItem td.DataGridCellFirst, tr.DataGridItem td.DataGridCellLast
+{
+	background-color: #F2F2F2;
+	border-top: solid 1px #E4E4E4;
+	color: #333333;
+	font: 8pt Arial,Verdana;
+}
+
+tr.DataGridAltItem td
+{
+	font: 8pt Arial,Verdana;	
+}
+
+tr.DataGridAltItem td.DataGridCell, tr.DataGridAltItem td.DataGridCellFirst, tr.DataGridAltItem td.DataGridCellLast
+{
+	background-color: #FFFFFF;
+	border-top: solid 1px #E4E4E4;
+	color: #333333;
+	font: 8pt Arial,Verdana;
+}
+
+.DataGridItemHover td.DataGridCell, .DataGridItemHover td.DataGridCellFirst, .DataGridItemHover td.DataGridCellLast
+{
+	background-color: #FEF1B9;
+	border-top: solid 1px #E4E4E4;
+	color: #497699;
+	font: 8pt Arial,Verdana;
+}
+
+.DataGridItemHoverNoClick td.DataGridCell, .DataGridItemHoverNoClick td.DataGridCellFirst, .DataGridItemHoverNoClick td.DataGridCellLast
+{
+	background-color: #FEF1B9;
+	border-top: solid 1px #E4E4E4;
+	color: #497699;
+	font: 8pt Arial,Verdana;
+}
+
+
+
+
+
+
+.DataGridItem a
+{
+	color: #497699;
+}
+
+.DataGridAltItem a
+{
+	color: #497699;
+}
+
+.DataGridItemHoverNoClick a
+{
+	color: #497699;
+}
+
+.DataGridItemHover a
+{
+	color: #497699;
+}
+
+
+a.DataGridPager
+{
+	font: 10pt Arial,Verdana;
+	text-decoration: none;
+}
+a.DataGridPagerCurrent
+{
+	font: 10pt Arial,Verdana;
+	color: #000000;
+	text-decoration: none;
+}
+td.DataGridFooter
+{
+	padding: 0px;
+}
+table.DataGridFooter
+{
+	width: 100%;
+	height: 20px;
+	padding: 0px;
+	margin: 0px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+.DataGridFooterNav a
+{
+	background-color: #E2E2E2;
+	font: 9pt Arial,Verdana;
+	white-space: nowrap;
+	text-align: left;
+}
+
+td.DataGridFooterNav
+{
+	border-top: solid 1px #CCCCCC;
+	background-color: #E2E2E2;
+	color: #000000;
+	font: 9pt Arial,Verdana;
+	padding: 0px;
+	padding-left: 12px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+td.DataGridFooterNav img
+{
+	vertical-align: middle;
+}
+
+td.DataGridFooterSummary
+{
+	border-top: solid 1px #CCCCCC;
+	background-color: #E2E2E2;
+	color: #888888;
+	font: 9pt Arial,Verdana;
+	padding: 0px;
+	padding-right: 12px;
+
+	text-align: right;
+}
+
+.datagridred
+{
+	color: #FF0000;
+}
+
+span.DataGridManageLink
+{
+	height: 100%;
+	display: block;
+	color: Black;
+	width: 100%;
+	padding-top: 2px;
+	overflow: hidden;
+}
+
+a.DataGridManageLink
+{
+	font: 8pt Arial, Verdana;
+	color: Black;
+	border: solid 1px #C6C6C6;
+	height: 18px;
+	display: block;
+	background: url(images/icons/actions.png) no-repeat right center;
+	padding: 0px 20px 0px 0px;
+	background-color: #FFFFFF;
+	text-decoration: none;
+	width: 80px;
+}
+
+a.DataGridManageLink:hover
+{
+	font: 8pt Arial, Verdana;
+	color: Black;
+	border: solid 1px #C6C6C6;
+	height: 18px;
+	background: url(images/icons/actions.png) no-repeat right center;
+	padding: 0px 20px 0px 0px;
+	background-color: #FFFFFF;
+	text-decoration: none;
+	width: 80px;
+}
+
+
+
+.SmallerDataGridItem td.DataGridCellFirst
+{
+	border-left: solid 1px #E4E4E4;
+}
+.SmallerDataGridItem td.DataGridCellLast
+{
+	border-right: solid 1px #E4E4E4;
+}
+.SmallerDataGridHeader td
+{
+	background-color: #FFFFFF;
+	color: #497699;
+	font: bold 8pt Arial,Verdana;
+}
+.SmallerDataGridFooter td
+{
+	background-color: #FFFFFF;
+	color: #497699;
+	font: bold 8pt Arial,Verdana;
+}
+.SmallerDataGridItem td
+{
+	border-top: solid 1px #E4E4E4;
+	border-bottom: solid 1px #E4E4E4;
+	background-color: #F2F2F2;
+	color: #333333;
+	font: 8pt Arial,Verdana;
+}
+.SmallerDataGridAltItem td
+{
+	background-color: #FFFFFF;
+	border-top: solid 1px #E4E4E4;
+	color: #333333;
+	font: 8pt Arial,Verdana;
+}

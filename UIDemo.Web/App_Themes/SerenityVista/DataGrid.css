@@ -1,0 +1,310 @@
+﻿/* This file defines classes that make up the messages page
+** the following colors are used in this css file
+** #e2e2e2: borders
+** #5E9B59: blue text headers
+** #333333: gray text
+** #E4F6CE: selected row color
+** #D4E4F5: Pager color
+** #C6C6C6: Data Grid manage border color
+*/
+
+
+/* The data grid */
+table.DataGrid
+{
+	font: 8pt Arial,Verdana;
+	width: 100%;
+}
+
+/* Header row */
+tr.DataGridHeader
+{
+	background-color: #FFFFFF;
+	color: #5E9B59;
+	font: bold 9pt Arial,Verdana;
+}
+tr.DataGridHeader td.DataGridCellFirst
+{
+	border-left: solid 1px #FFFFFF;
+}
+tr.DataGridHeader td
+{
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-bottom: solid 1px #E2E2E2;
+}
+
+
+/* Footer row */
+tr.DataGridFooter
+{
+	background-color: #FFFFFF;
+	color: #5E9B59;
+	font: bold 8pt Arial,Verdana;
+}
+
+/* normal rows */
+tr.DataGridItem td.DataGridCell, tr.DataGridItem td.DataGridCellFirst, tr.DataGridItem td.DataGridCellLast
+{
+	background-color: #F2F2F2;
+	border-top: solid 1px #E2E2E2;
+	color: #333333;
+	font: 8pt Arial,Verdana;
+}
+.DataGridItem a
+{
+	color: #5E9B59;
+}
+.DataGrid td.DataGridCellFirst
+{
+	border-left: solid 1px #E2E2E2;
+}
+
+/* alternating rows */
+tr.DataGridAltItem td.DataGridCellFirst
+{
+	border-left: solid 1px White;
+}
+
+tr.DataGridAltItem td.DataGridCell, tr.DataGridAltItem td.DataGridCellFirst, tr.DataGridAltItem td.DataGridCellLast
+{
+	background-color: White;
+	border-top: solid 1px #E2E2E2;
+	color: #333333;
+	font: 8pt Arial,Verdana;
+}
+.DataGridAltItem a
+{
+	color: #5E9B59;
+}
+
+
+/* Hover row */
+.DataGridItemHover td.DataGridCell, .DataGridItemHover td.DataGridCellFirst, .DataGridItemHover td.DataGridCellLast
+{
+	background-color: #E4F6CE;
+	border-top: solid 1px #E2E2E2;
+	color: #555555;
+	font: 8pt Arial,Verdana;
+}
+.DataGridItemHover a
+{
+	color: #555555;
+}
+
+
+/* Hovering over a row that cant be clicked */
+.DataGridItemHoverNoClick td.DataGridCell, .DataGridItemHoverNoClick td.DataGridCellFirst, .DataGridItemHoverNoClick td.DataGridCellLast
+{
+	background-color: #E4F6CE;
+	border-top: solid 1px #E2E2E2;
+	color: #5E9B59;
+	font: 8pt Arial,Verdana;
+}
+.DataGridItemHoverNoClick a
+{
+	color: #5E9B59;
+}
+
+
+/* First column */
+td.DataGridCellFirst
+{
+	height: 25px;
+	padding: 1px 4px 0px 20px;
+}
+/* All other columns */
+td.DataGridCell
+{
+	height: 25px;
+	padding: 1px 4px 0px 4px;
+}
+/*Last Column*/
+td.DataGridCellLast
+{
+	height: 25px;
+	padding: 1px 20px 0px 4px;
+}
+
+/* any images in the grid */
+tr.DataGridItem img, tr.DataGridAltItem img, tr.DataGridItemHover img, tr.DataGridItemHoverNoClick img
+{
+	vertical-align: top;
+}
+
+
+/* Paging links */
+a.DataGridPager
+{
+	font: 10pt Arial,Verdana;
+	text-decoration: none;
+}
+a.DataGridPagerCurrent
+{
+	font: 10pt Arial,Verdana;
+	color: Black;
+	text-decoration: none;
+}
+td.DataGridFooter
+{
+	padding: 0px;
+}
+table.DataGridFooter, div.DataGridFooter
+{
+	width: 100%;
+	height: 20px;
+	padding: 0px;
+	margin: 0px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+
+#MessagesPager div.DataGridFooter
+{
+	text-align: center;
+}
+
+.DataGridFooterNav a
+{
+	background-color: #E2E2E2;
+	font: 9pt Arial,Verdana;
+	white-space: nowrap;
+	text-align: left;
+}
+
+#MessagesPager .DataGridFooterNav a
+{
+	background-color: Transparent;
+}
+
+.DataGridFooterNav img
+{
+	vertical-align: middle;
+	height: 17px;
+}
+.DataGridFooterNav
+{
+	background-color: #E2E2E2;
+	color: #555555;
+	font: 9pt Arial,Verdana;
+	padding: 0px;
+	padding-left: 12px;
+}
+
+div.DataGridFooterNav
+{
+	padding: 3px 0px 0px 12px;
+	display: inline;
+	float: left;
+}
+
+.DataGridFooterSummary
+{
+	background-color: #E2E2E2;
+	color: #555555;
+	font: 9pt Arial,Verdana;
+	padding: 0px;
+	padding-right: 12px;
+	text-align: right;
+}
+div.DataGridFooterSummary
+{
+	padding: 3px 12px 0px 0px;
+	display: inline;
+	float: right;
+}
+
+#MessagesPager .DataGridFooterNav
+{
+	width: 407px;
+	height: 21px;
+	padding: 0px 0px 0px 8px;
+	text-align: left;
+	line-height: 21px;
+	vertical-align: middle;
+	background: transparent url(images/skin/Pagerbar.png) no-repeat;
+}
+/* end data grid paging stuff */
+
+.datagridred
+{
+	color: #FF0000;
+}
+
+/* Manage/Actions link in a datagrid */
+span.DataGridManageLink
+{
+	height: 100%;
+	display: block;
+	color: Black;
+	width: 100%;
+	padding-top: 2px;
+	overflow: hidden;
+}
+
+a.DataGridManageLink
+{
+	font: 8pt Arial, Verdana;
+	color: Black;
+	border: solid 1px #C6C6C6;
+	height: 18px;
+	display: block;
+	background: url(images/icons/actions.png) no-repeat right center;
+	padding: 0px 20px 0px 0px;
+	background-color: #FFFFFF;
+	text-decoration: none;
+	width: 80px;
+}
+
+a.DataGridManageLink:hover
+{
+	font: 8pt Arial, Verdana;
+	color: Black;
+	border: solid 1px #C6C6C6;
+	height: 18px;
+	background: url(images/icons/actions.png) no-repeat right center;
+	padding: 0px 20px 0px 0px;
+	background-color: #FFFFFF;
+	text-decoration: none;
+	width: 80px;
+}
+/* */
+
+
+/* Indented grid */
+.SmallerDataGridItem td.DataGridCellFirst
+{
+	border-left: solid 1px #E2E2E2;
+}
+.SmallerDataGridItem td.DataGridCellLast
+{
+	border-right: solid 1px #E2E2E2;
+}
+.SmallerDataGridHeader td
+{
+	background-color: #FFFFFF;
+	color: #5E9B59;
+	font: bold 8pt Arial,Verdana;
+}
+.SmallerDataGridFooter td
+{
+	background-color: #FFFFFF;
+	color: #5E9B59;
+	font: bold 8pt Arial,Verdana;
+}
+.SmallerDataGridItem td
+{
+	border-top: solid 1px #E2E2E2;
+	border-bottom: solid 1px #E2E2E2;
+	background-color: #F2F2F2;
+	color: #333333;
+	font: 8pt Arial,Verdana;
+}
+.SmallerDataGridAltItem td
+{
+	background-color: #FFFFFF;
+	border-top: solid 1px #E2E2E2;
+	color: #333333;
+	font: 8pt Arial,Verdana;
+}
+/* */

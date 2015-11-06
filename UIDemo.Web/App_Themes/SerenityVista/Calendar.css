@@ -1,0 +1,324 @@
+.CalendarTable
+{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	vertical-align: top;
+}
+.CalendarLeft
+{
+	padding: 12px 0px 25px 12px;
+	vertical-align: top;
+}
+.CalendarRight
+{
+	padding: 12px 12px 25px 0px;
+	vertical-align: top;
+	width: 178px;
+}
+/*************************/
+td.CalendarDay
+{
+	vertical-align: top;
+	padding: 0px;
+}
+.CalHourly
+{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	border: #E6E4E4 1px solid;
+}
+.CalHourlyLeft 
+{
+	white-space: nowrap;
+	background-color: #F2F2F2;
+	border: #E6E4E4 1px solid;
+	color: #497699;
+	font: bold 8pt Arial, Helvetica, sans-serif;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+.CalHourlyRight {
+	
+	color: #000000;
+	font: 6pt Arial, Helvetica, sans-serif;
+	padding-left: 2px;
+	vertical-align: top;
+	z-index: -1;
+	border-collapse: collapse;
+}
+
+.CalHourlyRightAlt {
+	background-color: #FFFFFF;
+	border-bottom: #E6E4E4 1px solid;
+	color: #000000;
+	font: 6pt Arial, Helvetica, sans-serif;
+	padding-left: 2px;
+	vertical-align: top;
+	z-index: -1;
+	border-collapse: collapse;
+}
+
+.CalHourlyRight a, .CalHourlyRightAlt a, .CalHourlyRightEvent a, .CalHourlyRightEventAlt a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.CalHourlyRight a:hover,.CalHourlyRightAlt a:hover, .CalHourlyRightEvent a:hover, .CalHourlyRightEventAlt a:hover {
+	color: #000080;
+	text-decoration: underline;
+}
+
+.CalHourlyRightEvent, .CalHourlyRightEventAlt
+{
+	border: solid 1px #E6E4E4;
+	padding: 0px 5px 0px 5px;
+	vertical-align: top;
+	color: #000000;
+	font: 8pt Arial, Helvetica, sans-serif;
+	margin: 0px;
+	background-color: #FAFAFF;
+}
+
+/**************************/
+td.CalendarMutliDay
+{
+	vertical-align: top;
+}
+.CalMultiDay
+{
+	border-collapse: collapse;
+	border-spacing: 0px;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+.CalMultiDayLeft
+{
+	background-color: #F2F2F2;
+	border: #E6E4E4 1px solid;
+	color: #497699;
+	font: bold 8pt Arial, Helvetica, sans-serif;
+	line-height: 12pt;
+	padding: 5px;
+	vertical-align: top;
+}
+.CalMultiDayRight
+{
+	width: 100%;
+	background-color: #FFFFFF;
+	border: #E6E4E4 1px solid;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	line-height: 14pt;
+	padding: 5px;
+	vertical-align: top;
+}
+.CalMultiDayRight a
+{
+	color: #000000;
+	text-decoration: none;
+}
+.CalMultiDayRight a:hover
+{
+	color: #000080;
+	text-decoration: underline;
+}
+/**************************/
+td.CalendarMonth
+{
+	vertical-align: top;
+}
+/**************************/
+table.RightTable
+{
+	width: 100%;
+	padding: 0px;
+	margin: 0px auto;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	vertical-align: top;
+}
+td.RightCalendar
+{
+}
+td.RightTable
+{
+	background-color: #CFDDEE;
+	font: 8pt Arial, Helvetica, sans-serif;
+	text-align: center;
+	height: 18px;
+}
+td.LegendLeft
+{
+	width: 15px;
+	text-align: right;
+	font: 8pt Arial, Helvetica, sans-serif;
+	padding: 3px;
+}
+td.LegendRight
+{
+	font: 8pt Arial, Helvetica, sans-serif;
+	padding: 3px;
+}
+/**************************/
+.CalMainDay
+{
+	text-align: right;
+	font: bold 8pt Arial, Helvetica, sans-serif;
+}
+.CalMainDayToday
+{
+	text-align: right;
+	font: bold 8pt Arial, Helvetica, sans-serif;
+}
+.CalMainDayToday a
+{
+	text-align: right;
+	color: #F5461E;
+}
+
+
+.CalDay
+{
+	color: #000000;
+	font: 8pt Arial, Helvetica, sans-serif;
+}
+.CalDayDisabled
+{
+	color: #CCCCCC;
+	font: 8pt Arial, Helvetica, sans-serif;
+}
+.CalDayHover
+{
+	color: #000000;
+	font: 8pt Arial, Helvetica, sans-serif;
+}
+
+
+.CalDayBold, .CalDayBold a
+{
+	color: #000080;
+	font: bold 8pt Arial, Helvetica, sans-serif;
+}
+.CalDayBoldDisabled, .CalDayBoldDisabled a
+{
+	color: #999999;
+	font: bold 8pt Arial, Helvetica, sans-serif;
+}
+.CalDayBoldHover, .CalDayBoldHover a
+{
+	font: bold 8pt Arial, Helvetica, sans-serif;
+	color: #000080;
+}
+.CalDayToday, .CalDayToday a
+{
+	font: bold 8pt Arial, Helvetica, sans-serif;
+	color: #F5461E;
+}
+.CalDayTodayHover, .CalDayTodayHover a
+{
+	font: bold 8pt Arial, Helvetica, sans-serif;
+	color: #F5461E;
+}
+.CalText, .CalText a
+{
+	overflow: hidden;
+	font: 8pt Arial, Helvetica, sans-serif;
+}
+/**************************/
+
+
+
+/* this is the pop up calendar page */
+
+table.calpage /* The style of the page as a whole */
+{
+	
+	border-width: 0px;
+	width: 100%;
+	background-color: white;
+	color: #000000;
+	height: 100%;
+}
+
+/* -------------------------------------------------------
+Top of page with month,year,and navigation buttons 
+------------------------------------------------------- */
+
+a.caltopbutton /* Prev and Next buttons */{
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 10pt;
+	text-decoration: none;
+}
+
+span.caltop /* Month and year indicator */{
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 10pt;
+}
+
+table.caltop /* Bar with month and year */{
+	background-color: white;
+	background: url(images/skin/ButtonBarTile.png) repeat-x;
+	height: 40px;
+	color: #000000;
+}
+
+/* -------------------------------------------------------
+Calendar portion of the page 
+------------------------------------------------------- */
+
+a.calday /* Hyperlinks for days */{
+	color: #497699;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	height: 28px;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+}
+
+a.calday:hover /* Hyperlinks for days (hover) */{
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	height: 30px;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: underline;
+	width: 100%;
+}
+
+table.calframe /* Container of the calendar grid */{
+	background-color: #B0B0B0;
+	color: #000000;
+}
+
+td.calday /* Cells containing days (or day placeholders) */{
+	background-color: white;
+	border-color: #CCCCCC;
+	border-style: solid;
+	border-width: 1px;
+	color: #000000;
+	height: 30px;
+	text-align: center;
+}
+
+td.calweekday /* Cells containing Mon,Tues,Wed,etc */{
+	background-color: #CFDDEE;
+	border-color: #B0B0B0;
+	border-style: solid;
+	border-width: 1px;
+	color: black;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+}
+/********************/

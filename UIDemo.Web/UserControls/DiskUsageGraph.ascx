@@ -1,0 +1,2 @@
+<%@ Control Language="C#" AutoEventWireup="false" CodeBehind="DiskUsageGraph.ascx.cs" Inherits="SMWeb05.UserControls.DiskUsageGraph" %>
+<asp:Label Runat="server" ID="GraphLabel"></asp:Label><table cellpadding=0 cellspacing=0 border=0><tr><td height=7></td></tr></table>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<Skin>
+	<Title>SmarterMail 4.0 Default Skin</Title>
+	<ID>13D6ECE4-FA08-4DF3-AD79-ECC572686A0A</ID>
+	<Author>SmarterTools Inc.</Author>
+	<Chart>
+		<ChartID>HardDriveSpace</ChartID>
+		<BackgroundColor>#ffffff</BackgroundColor>
+		<PointColor>#497699</PointColor>
+		<PointColor>#ffffff</PointColor>
+		<ShadowColor>#333333s</ShadowColor>
+	</Chart>
+</Skin>

@@ -1,0 +1,19 @@
+<%@ Master Language="C#" AutoEventWireup="false" Codebehind="Dummy.master.cs" Inherits="SMWeb05.MasterPages.Dummy" EnableTheming="true" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<title>Untitled Page</title>
+</head>
+<body>
+	<form id="form1" runat="server">
+		<asp:ContentPlaceHolder ID="BPH" runat="server" />
+		<asp:ContentPlaceHolder ID="BrPH" runat="server" />
+		<asp:ContentPlaceHolder ID="TPH" runat="server" />
+		<asp:ContentPlaceHolder ID="NavPH" runat="server" />
+		<asp:ContentPlaceHolder ID="CntPH" runat="server" />
+		<asp:ContentPlaceHolder ID="FPH" runat="server" />
+		<asp:ContentPlaceHolder ID="MPH" runat="server" />
+		<asp:ContentPlaceHolder ID="M2PH" runat="server" />
+	</form>
+</body>
+</html>

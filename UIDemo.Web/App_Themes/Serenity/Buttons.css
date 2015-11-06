@@ -1,0 +1,89 @@
+﻿.LoginImageButton
+{
+	color: #555555;
+	font: 10pt Arial;
+	text-decoration: none;
+	vertical-align: middle;
+	padding-right: 4px;
+}
+img.LoginImageButton 
+{
+	display: none;	
+}
+
+.SidebarImageButton
+{
+	border: solid 1px #CCCCCC;
+	display: block;
+	padding: 1px;
+	padding-right: 4px;
+	float: right;
+	color: #555555;
+	font: 10pt Arial;
+	text-decoration: none;
+	vertical-align: middle;
+}
+img.SidebarImageButton 
+{
+	display: none;	
+}
+
+.ButtonBarImageButton
+{
+	outline: none;
+	display: block;
+	float: left;
+	color: #555555;
+	font: 10pt Arial;
+	text-decoration: none;
+	padding: 4px 12px 4px 7px;
+	border-right: solid 1px white;
+}
+td.ButtonBarRight .ButtonBarImageButton
+{
+	border-left: solid 1px white;
+	border-right: none;
+}
+img.ButtonBarImageButton
+{
+	padding: 0px;
+	display: none;
+}
+
+div.ButtonBarRight
+{
+	float: right;
+}
+td.ButtonBar
+{
+	background-color: #E2E2E2;
+	padding: 0px;
+	height: 24px;
+	vertical-align: middle;
+}
+td.ButtonBarLeft
+{
+	color: #333333;
+	text-align: left;
+	font: 9pt Arial, Verdana;
+	vertical-align: bottom;
+	padding: 0px 0px 0px 6px;
+	white-space: nowrap;
+}
+td.ButtonBarRight
+{
+	text-align: right;
+	font: 9pt Arial, Verdana;
+	vertical-align: middle;
+	padding: 0px 16px 0px 0px;
+	white-space: nowrap;
+}
+table.TwoCellButtonBar
+{
+	margin: 0px;
+	padding: 0px;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	width: 100%;
+}
+/*************************************************/

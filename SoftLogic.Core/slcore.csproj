@@ -1,0 +1,880 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2EAE9FAE-75AA-47B5-8189-47374FB34853}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SoftLogik</RootNamespace>
+    <AssemblyName>slcore</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=3.0.8.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="nunit.framework, Version=2.4.3.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SoftLogic.Dep\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="PropertyGridEx, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SoftLogic.Dep\PropertyGridEx.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks, Version=3.2.0.781, Culture=neutral, PublicKeyToken=0b3305902db7183f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SoftLogic.Dep\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="SubSonic, Version=2.1.0.0, Culture=neutral, PublicKeyToken=eadb47849839a332, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SoftLogic.Dep\SubSonic\SubSonic.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SoftLogic.Dep\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\EnumUnit.cs" />
+    <Compile Include="Collections\CollectionUtils.cs" />
+    <Compile Include="Collections\EnumerableUtils.cs" />
+    <Compile Include="Collections\EnumerableWrapper.cs" />
+    <Compile Include="Collections\EnumeratorWrapper.cs" />
+    <Compile Include="Collections\KeyedList.cs" />
+    <Compile Include="Collections\ListWrapper.cs" />
+    <Compile Include="Collections\SerializableNameValueCollection.cs" />
+    <Compile Include="Configuration\ConfigurationElementCollectionBase.cs" />
+    <Compile Include="Web\UI\Controls\Support\ListSupport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Converters\ByteArrayTypeConverter.cs" />
+    <Compile Include="Converters\DotNetTypeConverter.cs" />
+    <Compile Include="Converters\FileSystemInfoConverter.cs" />
+    <Compile Include="Converters\IPAddressTypeConverter.cs" />
+    <Compile Include="Converters\MailAddressCollectionTypeConverter.cs" />
+    <Compile Include="Converters\MailAddressTypeConverter.cs" />
+    <Compile Include="Database\DatabaseUtils.cs" />
+    <Compile Include="Database\SqlUtils.cs" />
+    <Compile Include="Email\EmailController.cs" />
+    <Compile Include="Email\EmailUtils.cs" />
+    <Compile Include="Email\IEmailSender.cs" />
+    <Compile Include="Email\SmtpEmailSender.cs" />
+    <Compile Include="EnterpriseLibrary\ErrorModule.cs" />
+    <Compile Include="EnterpriseLibrary\ServiceGlobalExceptionHandler.cs" />
+    <Compile Include="EnterpriseLibrary\WebRequestTextExceptionFormatter.cs" />
+    <Compile Include="Inflector.cs" />
+    <Compile Include="IO\ExcelServices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IO\Files.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IO\FileUtils.cs" />
+    <Compile Include="IO\IStreamGetter.cs" />
+    <Compile Include="IO\ResourceStreamGetter.cs" />
+    <Compile Include="IO\StreamUtils.cs" />
+    <Compile Include="IO\WebRequestStreamGetter.cs" />
+    <Compile Include="Mail\EmailServices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mail\InboxManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mail\MailViewer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mail\Pop3MailClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mail\Pop3MimeClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mail\QuotedPrintable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mail\RxMailMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Miscellaneous\AssemblyUtils.cs" />
+    <Compile Include="Miscellaneous\BitUtils.cs" />
+    <Compile Include="Miscellaneous\ConfigUtils.cs" />
+    <Compile Include="Miscellaneous\ConvertUtils.cs" />
+    <Compile Include="Miscellaneous\CurrencyUtils.cs" />
+    <Compile Include="Miscellaneous\DataMapper.cs" />
+    <Compile Include="Miscellaneous\DateTimeUtils.cs" />
+    <Compile Include="Miscellaneous\EncryptionUtils.cs" />
+    <Compile Include="Miscellaneous\EnumUtils.cs" />
+    <Compile Include="Miscellaneous\ErrorEventArgs.cs" />
+    <Compile Include="Miscellaneous\EventResult.cs" />
+    <Compile Include="Miscellaneous\EventUtils.cs" />
+    <Compile Include="Miscellaneous\ExceptionUtils.cs" />
+    <Compile Include="Miscellaneous\HttpUtilities.cs" />
+    <Compile Include="Miscellaneous\IDataGetter.cs" />
+    <Compile Include="Miscellaneous\IIdentifiable.cs" />
+    <Compile Include="Miscellaneous\IPAddressUtils.cs" />
+    <Compile Include="Miscellaneous\MathUtils.cs" />
+    <Compile Include="Miscellaneous\MiscellaneousUtils.cs" />
+    <Compile Include="Miscellaneous\NumberUtils.cs" />
+    <Compile Include="Miscellaneous\ObjectDumper.cs" />
+    <Compile Include="Miscellaneous\ParameterUtils.cs" />
+    <Compile Include="Miscellaneous\RandomUtils.cs" />
+    <Compile Include="Miscellaneous\SingletonProvider.cs" />
+    <Compile Include="Miscellaneous\TableTextWriter.cs" />
+    <Compile Include="Miscellaneous\TestDataGetter.cs" />
+    <Compile Include="Miscellaneous\UdpClientDataGetter.cs" />
+    <Compile Include="Miscellaneous\ValidationUtils.cs" />
+    <Compile Include="Network\NetworkServices.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reflection\GenericOperatorFactory.cs" />
+    <Compile Include="Reflection\ReflectionUtils.cs" />
+    <Compile Include="Reporting\ReportServices.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\IResourceGetter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Resources\ResourceDefaultValueAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Resources\ResourceDescriptionAttribute.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Resources\ResourceLoader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Resources\ResourceLoaderGeneric.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Resources\Strings1.Designer.cs" />
+    <Compile Include="Services\ErrorBehaviorAttribute.cs" />
+    <Compile Include="Services\ServiceUtils.cs" />
+    <Compile Include="Testing\ClassTester.cs" />
+    <Compile Include="Testing\ClassTesterException.cs" />
+    <Compile Include="Testing\IValueCreator.cs" />
+    <Compile Include="Testing\RandomValueCreator.cs" />
+    <Compile Include="Testing\TestFixtureBase.cs" />
+    <Compile Include="Testing\TestingUtils.cs" />
+    <Compile Include="Text\Constants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Text\Dates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Text\FormatUtils.cs" />
+    <Compile Include="Text\Numbers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Text\RegexUtils.cs" />
+    <Compile Include="Text\StringBuffer.cs" />
+    <Compile Include="Text\Strings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Text\StringUtils.cs" />
+    <Compile Include="Text\Validation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Threading\CancelableAsyncResult.cs" />
+    <Compile Include="Threading\Consumer.cs" />
+    <Compile Include="Threading\LockSignal.cs" />
+    <Compile Include="Threading\Producer.cs" />
+    <Compile Include="Threading\Worker.cs" />
+    <Compile Include="Utilities\Time.cs" />
+    <Compile Include="Utilities\Utility.cs" />
+    <Compile Include="Web\ControlUtils.cs" />
+    <Compile Include="Web\CurrentHttpContextGetter.cs" />
+    <Compile Include="Web\FormParameterAttribute.cs" />
+    <Compile Include="Web\Handlers\HandlerBase.cs" />
+    <Compile Include="Web\HttpValueCollection.cs" />
+    <Compile Include="Web\IHttpContextGetter.cs" />
+    <Compile Include="Web\JavaScriptUtils.cs" />
+    <Compile Include="Web\MockHttpContext.cs" />
+    <Compile Include="Web\MockHttpContextGetter.cs" />
+    <Compile Include="Web\Modules\AccessDeniedRedirectModule.cs" />
+    <Compile Include="Web\Modules\DefaultRedirectModule.cs" />
+    <Compile Include="Web\Modules\DefaultResolveModule.cs" />
+    <Compile Include="Web\Modules\ErrorModule.cs" />
+    <Compile Include="Web\QueryParameterAttribute.cs" />
+    <Compile Include="Web\ResponseUtils.cs" />
+    <Compile Include="Web\ScriptManagerHelper.cs" />
+    <Compile Include="Web\UI\Controls\BaseRegularExpressionValidator.cs" />
+    <Compile Include="Web\UI\Controls\Container.cs" />
+    <Compile Include="Web\UI\Controls\CurrencyValidator.cs" />
+    <Compile Include="Web\UI\Controls\CustomCheckBox.cs" />
+    <Compile Include="Web\UI\Controls\DateValidator.cs" />
+    <Compile Include="Web\UI\Controls\EmailAddressValidator.cs" />
+    <Compile Include="Web\UI\Controls\NumericValidator.cs" />
+    <Compile Include="Web\UI\TableUtils.cs" />
+    <Compile Include="Web\UrlBuilder.cs" />
+    <Compile Include="Web\UrlHelper.cs" />
+    <Compile Include="Web\UrlPath.cs" />
+    <Compile Include="Web\UrlUtils.cs" />
+    <Compile Include="Web\WebControlUtils.cs" />
+    <Compile Include="Web\WebParameterAttribute.cs" />
+    <Compile Include="Web\XmlResponseHandlerBase.cs" />
+    <Compile Include="Win\Data\Controller\AllStructs.cs" />
+    <Compile Include="Win\Data\Controller\AutoCodeController.cs" />
+    <Compile Include="Win\Data\Controller\CountryController.cs" />
+    <Compile Include="Win\Data\Controller\MasterController.cs" />
+    <Compile Include="Win\Data\Controller\MasterGroupController.cs" />
+    <Compile Include="Win\Data\Controller\StoredProcedures.cs" />
+    <Compile Include="Win\Data\dsUserSecurity.cs">
+      <DependentUpon>dsUserSecurity.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\Data\dsUserSecurity.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsUserSecurity.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Win\Data\Entities\AutoCode.cs" />
+    <Compile Include="Win\Data\Entities\Country.cs" />
+    <Compile Include="Win\Data\Entities\Master.cs" />
+    <Compile Include="Win\Data\Entities\MasterGroup.cs" />
+    <Compile Include="Win\Data\Entities\SimpleSearch.cs" />
+    <Compile Include="Win\Docking\Controls\PopupButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\Docking\Controls\PopupButton.Designer.cs">
+      <DependentUpon>PopupButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\Docking\Extender\Extender.cs" />
+    <Compile Include="Win\Docking\Extender\FromBase\AutoHideStripFromBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\Docking\Extender\FromBase\AutoHideTabFromBase.cs" />
+    <Compile Include="Win\Docking\Extender\FromBase\DockPaneCaptionFromBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\Docking\Extender\FromBase\DockPaneStripFromBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\Docking\Extender\FromBase\DockPaneTabFromBase.cs" />
+    <Compile Include="Win\Docking\Extender\FromBase\Helpers\DockHelper.cs" />
+    <Compile Include="Win\Docking\Extender\FromBase\Helpers\DrawHelper.cs" />
+    <Compile Include="Win\Docking\Extender\FromBase\Helpers\ResourceHelper.cs" />
+    <Compile Include="Win\Docking\Extender\FromBase\Win32\Enums.cs" />
+    <Compile Include="Win\Docking\Extender\FromBase\Win32\Gdi32.cs" />
+    <Compile Include="Win\Docking\Extender\FromBase\Win32\Structs.cs" />
+    <Compile Include="Win\Docking\Extender\FromBase\Win32\User32.cs" />
+    <Compile Include="Win\Docking\Extender\Override\AutoHideStripOverride.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\Docking\Extender\Override\DockPaneStripOverride.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\Docking\Support\DockingMDISupport.cs" />
+    <Compile Include="Win\Reporting\SPReportManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\Reporting\SPReportManager.Designer.cs">
+      <DependentUpon>SPReportManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\Reporting\Support\Collections.cs" />
+    <Compile Include="Win\Reporting\Support\Enum.cs" />
+    <Compile Include="Win\Reporting\Support\Interfaces.cs" />
+    <Compile Include="Win\Reporting\Support\SPReportSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\Reporting\Support\SPReportSettings.Designer.cs">
+      <DependentUpon>SPReportSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\Reporting\Support\SPReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\Reporting\Support\SPReportViewer.Designer.cs">
+      <DependentUpon>SPReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\Reporting\Support\UI\SPReportFilterUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Win\Reporting\Support\UI\SPReportFilterUI.Designer.cs">
+      <DependentUpon>SPReportFilterUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\Reporting\Support\UI\SPReportGroupingUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Win\Reporting\Support\UI\SPReportGroupingUI.Designer.cs">
+      <DependentUpon>SPReportGroupingUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\Reporting\Support\UI\SPReportUIFactory.cs" />
+    <Compile Include="Win\Security\ApplicationRole.cs" />
+    <Compile Include="Win\Security\ApplicationUser.cs" />
+    <Compile Include="Win\Security\ChangePasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\Security\ChangePasswordForm.Designer.cs">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\Security\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\Security\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\Security\SecurityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\Security\SecurityForm.Designer.cs">
+      <DependentUpon>SecurityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\Security\SecurityManager.cs" />
+    <Compile Include="Win\Security\Support\AspNetLoginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Win\Security\Support\AspNetLoginControl.Designer.cs">
+      <DependentUpon>AspNetLoginControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\Security\Support\AspnetUserManager.cs" />
+    <Compile Include="Win\Security\Support\CustomPrincipal.cs" />
+    <Compile Include="Win\Security\Support\Hashcypher.cs" />
+    <Compile Include="Win\Security\Support\IUserManager.cs" />
+    <Compile Include="Win\Security\Support\LoginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Win\Security\Support\LoginControl.Designer.cs">
+      <DependentUpon>LoginControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\Security\Support\LoginEventArgs.cs" />
+    <Compile Include="Win\Security\Support\UserManagerProxy.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\Security\Support\WSLoginControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Win\Security\Support\WSLoginControl.Designer.cs">
+      <DependentUpon>WSLoginControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Controls\DataMenuStrip\DataMenuStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\DataMenuStrip\DataMenuStrip.Designer.cs">
+      <DependentUpon>DataMenuStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Controls\DataTreeView\DataTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\DataTreeView\DataTreeView.Designer.cs">
+      <DependentUpon>DataTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Controls\DomainTextBox\DomainTextBox.cs">
+    </Compile>
+    <Compile Include="Win\UI\Controls\DomainTextBox\DomainTextBox.Designer.cs">
+      <DependentUpon>DomainTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Controls\DropDownList\DropDownList.cs">
+    </Compile>
+    <Compile Include="Win\UI\Controls\DropDownList\DropDownList.Designer.cs">
+      <DependentUpon>DropDownList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Controls\ImageBox\ImageBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\ImageBox\ImageBox.Designer.cs">
+      <DependentUpon>ImageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Controls\OutlookStyleNavigateBar\MTSplitter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\OutlookStyleNavigateBar\NavigateBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\OutlookStyleNavigateBar\NavigateBarButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\OutlookStyleNavigateBar\NavigateBarButtonCollection.cs" />
+    <Compile Include="Win\UI\Controls\OutlookStyleNavigateBar\NavigateBarButtonEventArgs.cs" />
+    <Compile Include="Win\UI\Controls\OutlookStyleNavigateBar\NavigateBarCaption.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\OutlookStyleNavigateBar\NavigateBarCaptionDescription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\OutlookStyleNavigateBar\NavigateBarCollapsibleScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\OutlookStyleNavigateBar\NavigateBarCollapsibleText.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\OutlookStyleNavigateBar\NavigateBarEmptyPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\OutlookStyleNavigateBar\NavigateBarHelper.cs" />
+    <Compile Include="Win\UI\Controls\OutlookStyleNavigateBar\NavigateBarOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\OutlookStyleNavigateBar\NavigateBarOptions.Designer.cs">
+      <DependentUpon>NavigateBarOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Controls\OutlookStyleNavigateBar\NavigateBarOverFlowPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\OutlookStyleNavigateBar\NavigateBarOverFlowPanelButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\OutlookStyleNavigateBar\NavigateBarOverFlowPanelMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\OutlookStyleNavigateBar\NavigateBarSettings.cs" />
+    <Compile Include="Win\UI\Controls\OutlookStyleNavigateBar\NavigateBarTheme.cs" />
+    <Compile Include="Win\UI\Controls\RadioButtonList\RadioButtonList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\RadioButtonList\RadioButtonList.Designer.cs">
+      <DependentUpon>RadioButtonList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Controls\RadioButtonList\RadioButtonListEditorUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\RadioButtonList\RadioButtonListEditorUI.Designer.cs">
+      <DependentUpon>RadioButtonListEditorUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Controls\RibbonControl\IContainsRibbonComponents.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\IContainsSelectableRibbonItems.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\IDropDownRibbonItem.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\IRibbonElement.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\IScrollableRibbonItem.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\Ribbon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonButtonCollection.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonButtonDesigner.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonButtonList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonButtonListDesigner.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonButtonStyle.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonCanvasEventArgs.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonColorChooser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonComboBoxDesigner.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonContext.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonContextCollection.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonDesigner.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonElementMeasureSizeEventArgs.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonElementPaintEventArgs.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonElementWithItemCollectionDesigner.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonItemBoundsEventArgs.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonItemCollection.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonItemCollectionEditor.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonItemGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonItemGroupDesigner.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonItemGroupItemCollection.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonItemRenderEventArgs.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonPanelCollection.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonPanelDesigner.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonPanelFlowDirection.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonPanelPopup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonPanelRenderEventArgs.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonPanelSizeMode.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonPopup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonProfesionalRendererColorTable.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonProfessionalRenderer.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonRenderer.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonRenderEventArgs.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonSensor.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonSeparator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonTabCollection.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonTabDesigner.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonTabRenderEventArgs.cs" />
+    <Compile Include="Win\UI\Controls\RibbonControl\RibbonTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\VisualTabControl\VisualTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\VisualTabControl\VisualTabControl.Designer.cs">
+      <DependentUpon>VisualTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Controls\VisualTabControl\VisualTabOrderManager.cs" />
+    <Compile Include="Win\UI\Controls\VisualTabControl\VisualTabSchemeProvider.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Controls\VisualTabControl\VisualThemedColors.cs" />
+    <Compile Include="Win\UI\Dialog\DocumentPreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Dialog\DocumentPreview.Designer.cs">
+      <DependentUpon>DocumentPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Dialog\DocumentPrintSettings.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Dialog\DocumentPrintSettings.Designer.cs">
+      <DependentUpon>DocumentPrintSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Dialog\FileDialog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Dialog\FileDialog.Designer.cs">
+      <DependentUpon>FileDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Form\DockableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Form\DockableForm.Designer.cs">
+      <DependentUpon>DockableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Form\DockingMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Form\DockingMDI.designer.cs">
+      <DependentUpon>DockingMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Form\DocklessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Form\DocklessForm.Designer.cs">
+      <DependentUpon>DocklessForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Form\ListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Form\ListForm.Designer.cs">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Form\LookupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Form\LookupForm.Designer.cs">
+      <DependentUpon>LookupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Form\MasterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Form\MasterForm.Designer.cs">
+      <DependentUpon>MasterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Form\NavigatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Form\NavigatorForm.Designer.cs">
+      <DependentUpon>NavigatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Form\RecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Form\RecordForm.Designer.cs">
+      <DependentUpon>RecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Form\SetupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Form\SetupForm.Designer.cs">
+      <DependentUpon>SetupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Form\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Form\SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UI\Form\Support\DataFormatting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Form\Support\Enums.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Form\Support\FormsSupport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Form\Support\SearchHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Form\Support\ToolbarSupport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Form\TransactionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\UI\Form\TransactionForm.Designer.cs">
+      <DependentUpon>TransactionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xml\XmlResourceResolver.cs" />
+    <Compile Include="Xml\XmlUtils.cs" />
+    <Compile Include="Xml\XPathUtils.cs" />
+    <Compile Include="Xml\XslUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Email\EmailBase.xslt" />
+    <Content Include="Resources\1downarrow.png" />
+    <Content Include="Resources\1downarrow22.png" />
+    <Content Include="Resources\1leftarrow.png" />
+    <Content Include="Resources\1rightarrow.png" />
+    <Content Include="Resources\1uparrow22.png" />
+    <Content Include="Resources\2downarrow.png" />
+    <Content Include="Resources\2leftarrow.png" />
+    <Content Include="Resources\2rightarrow.png" />
+    <Content Include="Resources\2uparrow.png" />
+    <Content Include="Resources\3uparrow.png" />
+    <Content Include="Resources\abacus24.png" />
+    <Content Include="Resources\admin_24.png" />
+    <Content Include="Resources\AlignTableCellMiddleLeftJustHS.png" />
+    <Content Include="Resources\ArreterSZ.png" />
+    <Content Include="Resources\ArrowDown.PNG" />
+    <Content Include="Resources\ArrowLeft.png" />
+    <Content Include="Resources\ArrowMenu.png" />
+    <Content Include="Resources\ArrowRight.png" />
+    <Content Include="Resources\ArrowUp.PNG" />
+    <Content Include="Resources\BlueTooth.png" />
+    <Content Include="Resources\Book_angleHS.png" />
+    <Content Include="Resources\Book_openHS.png" />
+    <Content Include="Resources\button_cancel.png" />
+    <Content Include="Resources\Calendar241.png" />
+    <Content Include="Resources\Clock.png" />
+    <Content Include="Resources\clock_24.png" />
+    <Content Include="Resources\Computer.ico" />
+    <Content Include="Resources\computer_32.png" />
+    <Content Include="Resources\config.png" />
+    <Content Include="Resources\Contacts24.png" />
+    <Content Include="Resources\Control-Panel.png" />
+    <Content Include="Resources\copy.png" />
+    <Content Include="Resources\Critical.png" />
+    <Content Include="Resources\desktop22.png" />
+    <Content Include="Resources\Diary24.png" />
+    <None Include="Resources\DockPaneCaption.AutoHideNo.bmp" />
+    <None Include="Resources\DockPaneCaption.AutoHideYes.bmp" />
+    <None Include="Resources\DockPaneCaption.CloseDisabled.bmp" />
+    <None Include="Resources\DockPaneCaption.CloseEnabled.bmp" />
+    <None Include="Resources\DockPaneCaption.OptionsDisabled.bmp" />
+    <None Include="Resources\DockPaneCaption.OptionsEnabled.bmp" />
+    <None Include="Resources\DockPaneStrip.CloseDisabled.bmp" />
+    <None Include="Resources\DockPaneStrip.CloseEnabled.bmp" />
+    <None Include="Resources\DockPaneStrip.OptionsDisabled.bmp" />
+    <None Include="Resources\DockPaneStrip.OptionsEnabled.bmp" />
+    <None Include="Resources\DockPaneStrip.OverflowDisabled.bmp" />
+    <None Include="Resources\DockPaneStrip.OverflowEnabled.bmp" />
+    <Content Include="Resources\EcranLcd Off.png" />
+    <Content Include="Resources\EcranLcd.png" />
+    <Content Include="Resources\Edit file_24.png" />
+    <Content Include="Resources\editdelete.png" />
+    <Content Include="Resources\eventlogSuccessAudit.ico" />
+    <Content Include="Resources\eventlogSuccessAudit1.ico" />
+    <Content Include="Resources\exit.png" />
+    <Content Include="Resources\FermerSZ.png" />
+    <Content Include="Resources\FermerSZ1.png" />
+    <Content Include="Resources\filesave.png" />
+    <Content Include="Resources\FolderList24.png" />
+    <Content Include="Resources\Generic_Document.png" />
+    <Content Include="Resources\keys.ico" />
+    <Content Include="Resources\Locker.png" />
+    <Content Include="Resources\Lockup.bmp" />
+    <Content Include="Resources\lock_16.png" />
+    <Content Include="Resources\LoginControl.bmp" />
+    <Content Include="Resources\Mail24.png" />
+    <Content Include="Resources\monitor-48.png" />
+    <Content Include="Resources\NavigateBar.bmp" />
+    <Content Include="Resources\NoImage.png" />
+    <Content Include="Resources\notepad_32.png" />
+    <Content Include="Resources\Notes24.png" />
+    <Content Include="Resources\OrganizerHS.png" />
+    <Content Include="Resources\reload.png" />
+    <Content Include="Resources\search22.png" />
+    <Content Include="Resources\Shortcut24.png" />
+    <Content Include="Resources\sort_incr.png" />
+    <Content Include="Resources\SPTaskViewDesigner.bmp" />
+    <Content Include="Resources\Switch User.ico" />
+    <Content Include="Resources\SYS.ico" />
+    <Content Include="Resources\Tasks24.png" />
+    <Content Include="Resources\TileWindowsHorizontallyHS.png" />
+    <Content Include="Resources\touch screen kiosk-24.png" />
+    <Content Include="Resources\umd red.png" />
+    <Content Include="Resources\user-48.png" />
+    <Content Include="Resources\users.ico" />
+    <Content Include="Resources\user_group.ico" />
+    <Content Include="Resources\wi0054-48.gif" />
+    <Content Include="Resources\wi0111-48.gif" />
+    <Content Include="Resources\wi0122-48.gif" />
+    <Content Include="Resources\world_24_hot.png" />
+    <Content Include="Win\Reporting\Support\FilterConfig.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Resources\Strings.resx" />
+    <EmbeddedResource Include="Win\Docking\Controls\PopupButton.resx">
+      <DependentUpon>PopupButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\Reporting\Support\SPReportSettings.resx">
+      <DependentUpon>SPReportSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\Reporting\Support\SPReportViewer.resx">
+      <DependentUpon>SPReportViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UI\Controls\DomainTextBox\DomainTextBox.resx">
+      <DependentUpon>DomainTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UI\Controls\OutlookStyleNavigateBar\NavigateBarOptions.resx">
+      <DependentUpon>NavigateBarOptions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UI\Controls\RadioButtonList\RadioButtonList.resx">
+      <DependentUpon>RadioButtonList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UI\Controls\RadioButtonList\RadioButtonListEditorUI.resx">
+      <DependentUpon>RadioButtonListEditorUI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UI\Dialog\DocumentPreview.resx">
+      <DependentUpon>DocumentPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UI\Dialog\DocumentPrintSettings.resx">
+      <DependentUpon>DocumentPrintSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UI\Dialog\FileDialog.resx">
+      <DependentUpon>FileDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UI\Form\DockableForm.resx">
+      <DependentUpon>DockableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UI\Form\DockingMDI.resx">
+      <DependentUpon>DockingMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UI\Form\DocklessForm.resx">
+      <DependentUpon>DocklessForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UI\Form\ListForm.resx">
+      <DependentUpon>ListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UI\Form\LookupForm.resx">
+      <DependentUpon>LookupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UI\Form\MasterForm.resx">
+      <DependentUpon>MasterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UI\Form\NavigatorForm.resx">
+      <DependentUpon>NavigatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UI\Form\RecordForm.resx">
+      <DependentUpon>RecordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UI\Form\SetupForm.resx">
+      <DependentUpon>SetupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UI\Form\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UI\Form\TransactionForm.resx">
+      <DependentUpon>TransactionForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Win\Data\dsUserSecurity.xsc">
+      <DependentUpon>dsUserSecurity.xsd</DependentUpon>
+    </None>
+    <None Include="Win\Data\dsUserSecurity.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUserSecurity.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Win\Data\dsUserSecurity.xss">
+      <DependentUpon>dsUserSecurity.xsd</DependentUpon>
+    </None>
+    <None Include="Win\UI\Controls\RibbonControl\ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

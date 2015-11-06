@@ -1,0 +1,190 @@
+.calendarWrapper
+{
+	cursor: default;
+	font: normal 12px Arial, Verdana, Sans-serif;
+	color: black;
+	width: 100%;
+	text-align: left;
+}
+.calendarWrapper td
+{
+	vertical-align: top;
+}
+
+
+td.RightCalendar .radCalDefault, td.RightCalendar .radCalWeekendDefault
+{
+	width: auto;
+	min-height: 12px;
+	height: auto;
+	background: white;
+	font: 8pt Arial, Helvetica, sans-serif;
+	padding: 0px;
+	text-align: right;
+	border: 0px;
+	padding-right: 2px;
+}
+
+td.RightCalendar .radCalSelect, td.RightCalendar .radCalWeekendSelect
+{
+	width: auto;
+	min-height: 12px;
+	height: auto;
+	background: #F2F2F2;
+	font: 8pt Arial, Helvetica, sans-serif;
+	padding: 0px;
+	text-align: right;
+	border: 0px;
+	padding-right: 2px;
+}
+
+td.RightCalendar .radCalHover, td.RightCalendar .radCalWeekendHover
+{
+	width: auto;
+	min-height: 12px;
+	height: auto;
+	background: #F2F2F2;
+	font: 8pt Arial, Helvetica, sans-serif;
+	padding: 0px;
+	text-align: right;
+	border: 0px;
+	padding-right: 2px;
+}
+
+td.RightCalendar .otherMonth
+{
+	width: auto;
+	min-height: 12px;
+	height: auto;
+	background: white;
+	padding: 0px;
+	text-align: right;
+	border: 0px;
+	padding-right: 2px;
+}
+
+
+.radCalDefault, .radCalWeekendDefault
+{
+	min-height: 80px;
+	height: 80px;
+	background: white;
+	padding: 3px 8px 3px 3px;
+	border: solid 1px #E6E4E4;
+}
+
+.radCalWeekendHover, .radCalHover, .radCalSelect, .radCalWeekendSelect
+{
+	min-height: 80px;
+	height: 80px;
+	background-color: #FAFAFA;
+	padding: 3px 8px 3px 3px;
+	border: solid 1px #E6E4E4;
+}
+
+
+.otherMonth
+{
+	min-height: 80px;
+	height: 80px;
+	background-color: #F2F2F2;
+	padding: 3px 8px 3px 3px;
+	border: solid 1px #E6E4E4;
+}
+
+
+.DaysOfWeek
+{
+	padding-right: 2px;
+	text-align: right;
+	font: bold 8pt Arial, Helvetica, sans-serif;
+}
+
+.outOfRange
+{
+}
+
+td.RightCalendar .titlebar
+{
+	margin-bottom: 4px;
+	padding: 0px;
+	background-color: #CFDDEE;
+	font: 8pt Arial, Helvetica, sans-serif;
+	text-align: center;
+	height: 18px;
+}
+
+.titlebar
+{
+}
+
+td.CalendarMonth .titlebar
+{
+	display: none;
+}
+
+.TableLayout
+{
+	table-layout: fixed;
+	width: 100%;
+}
+td.RightCalendar .TableLayout
+{
+	table-layout: fixed;
+	width: 170px;
+}
+
+
+.TableLayout td
+{
+}
+
+.radCalDefault img, .radCalHover img, .radCalSelect img, .radCalWeekendDefault img, .radCalWeekendHover img, .radCalWeekendSelect img
+{
+	
+}
+
+
+/*** MonthYearFastNav ***/
+.MonthYearFastNav
+{
+	border: solid 1px #777777;
+	background-color: white;
+	font: normal 10px Verdana;
+	color: #000000;
+	border-collapse: collapse;
+	filter: progid:DXImageTransform.Microsoft.Shadow(direction=140,color=#666666,strength=3);
+}
+
+.MonthYearFastNav TD
+{
+	text-align: center;
+	vertical-align: middle;
+	border: solid 1px #777777;
+	border-bottom: 1px solid #777777;
+	cursor: hand;
+	padding: 4px;
+}
+
+.MonthYearFastNav TD.selected
+{
+	background-color: #CFDDEE;
+	border: solid 1px #777777;
+	color: Black;
+}
+
+.MonthYearFastNav TD.bottom
+{
+	text-align: center;
+}
+
+.MonthYearFastNav TD INPUT
+{
+	background-color: #CFDDEE;
+	border: 1px solid #777777;
+	font: normal 10px Verdana;
+	color: Black;
+	float: left;
+	margin-right: 1px;
+}
+/*** MonthYearFastNav ***/

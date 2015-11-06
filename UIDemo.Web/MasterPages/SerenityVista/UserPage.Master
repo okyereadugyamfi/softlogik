@@ -1,0 +1,154 @@
+<%@ Master Language="C#" AutoEventWireup="false" Codebehind="UserPage.Master.cs" Inherits="SMWeb05.MasterPages.Apathy.UserPage" EnableTheming="true" %>
+<%@ Register Assembly="RadMenu.Net2" Namespace="Telerik.WebControls" TagPrefix="radM" %>
+<%@ Register Assembly="RadPanelbar.Net2" Namespace="Telerik.WebControls" TagPrefix="radP" %>
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- ... -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+	<title></title>
+	<SMWC:FavIcon ID="FavIcon1" runat="server" />
+	<SMWC:CommonScripts ID="Scripts1" runat="server" />
+</head>
+<body>
+	<form id="form" runat="server">
+
+		<script type="text/javascript" src="<%= JScript %>"></script>
+
+		<table class="Container" id="Container2">
+			<tr>
+				<td id="MenuBar" class="MenuBar">
+					<table class="MenuBar">
+						<tr>
+							<td class="TopBarLeft">
+								<SMWC:SmarterMailVersion ID="SMV" runat="server" />
+							</td>
+							<td class="TopBarMid">
+								<SMWC:Spacer ID="Spacer1" runat="server" Width="95" Height="1" />
+							</td>
+							<td class="TopBarRight">
+								<SMWC:DomainTitle ID="DomainTitle" runat="server" />
+							</td>
+						</tr>
+						<tr>
+							<td class="MenuBarLeft" colspan="3">
+								<radM:RadMenu ID="RM" runat="server" EnableViewState="false">
+									<Items>
+										<radM:RadMenuItem Text="#MENU_Reports" ImageUrl="Images/Icons/Reports.png" lookid="Top" requires="REPORTS">
+											<Items>
+												<radM:RadMenuItem Text="#MENU_DomainDiskSpace" requires="DOMAINADMIN" NavigateUrl="DomainAdmin/frmDomainDiskSpace.aspx" />
+												<radM:RadMenuItem Text="#MENU_DomainBandwidth" requires="DOMAINADMIN" NavigateUrl="DomainAdmin/frmDomainBandwidth.aspx" />
+												<radM:RadMenuItem IsSeparator="True" requires="DOMAINADMIN" />
+												<radM:RadMenuItem Text="#MENU_MyStatistics" NavigateUrl="Main/frmMyStatistics.aspx" />
+											</Items>
+										</radM:RadMenuItem>
+										<radM:RadMenuItem Text="#MENU_Settings" ImageUrl="Images/Icons/Settings.png" lookid="Top">
+											<Items>
+												<radM:RadMenuItem Text="#MENU_MySettings" NavigateUrl="Main/frmMySettings.aspx" />
+												<radM:RadMenuItem Text="#MENU_MyInfo" Requires="ENTERPRISE" NavigateUrl="Main/frmMyInfo.aspx" />
+												<radM:RadMenuItem Text="#MENU_MyFolders" NavigateUrl="Main/frmFolders.aspx" />
+												<radM:RadMenuItem Text="#MENU_MailingLists" Requires="LISTMODERATOR,SHOWLISTMENU,NOTDOMAINADMIN" NavigateUrl="DomainAdmin/frmLists.aspx" />
+												<radM:RadMenuItem IsSeparator="True" />
+												<radM:RadMenuItem Text="#MENU_MyAutoResponder" Requires="AUTORESPONDER" NavigateUrl="Main/frmMyAutoResponder.aspx" />
+												<radM:RadMenuItem Text="#MENU_MyContentFiltering" NavigateUrl="Main/frmContentFilters.aspx" />
+												<radM:RadMenuItem Text="#MENU_MySpamFiltering" NavigateUrl="Main/frmSpamOptions.aspx" />
+												<radM:RadMenuItem Text="#MENU_MyPopRetrieval" Requires="ENABLEPOPRETRIEVAL" NavigateUrl="Main/frmPopRetrievalList.aspx" />
+												<radM:RadMenuItem IsSeparator="True" Requires="Enterprise,Sharing" />
+												<radM:RadMenuItem Text="#MENU_MySharedResources" Requires="Enterprise,Sharing" NavigateUrl="Main/frmMySharedResources.aspx" />
+												<radM:RadMenuItem Text="#MENU_MyMappedResources" Requires="Enterprise,Sharing" NavigateUrl="Main/Sharing/frmMappedFolders.aspx" />
+												<radM:RadMenuItem IsSeparator="True" Requires="Enterprise,Sharing" />
+												<radM:RadMenuItem Text="#MENU_SyncTools" Requires="Enterprise" NavigateUrl="Main/frmSyncTool.aspx" />
+											</Items>
+										</radM:RadMenuItem>
+										<radM:RadMenuItem Text="#MENU_DomainSettings" ImageUrl="Images/Icons/DomainSettings.png" lookid="Top" requires="DOMAINADMIN">
+											<Items>
+												<radM:RadMenuItem Requires="DomainSettings" Text="#MENU_DomainGeneralSettings" NavigateUrl="DomainAdmin/frmDomainSettings.aspx" />
+												<radM:RadMenuItem Requires="DomainSettings" IsSeparator="True" />
+												<radM:RadMenuItem Text="#MENU_EmailAccounts" NavigateUrl="DomainAdmin/frmUsers.aspx" />
+												<radM:RadMenuItem Text="#MENU_EmailAliases" NavigateUrl="DomainAdmin/frmAliases.aspx" />
+												<radM:RadMenuItem Text="#MENU_MailingLists" Requires="SHOWLISTMENU" NavigateUrl="DomainAdmin/frmLists.aspx" />
+												<radM:RadMenuItem Text="#MENU_UserGroups" Requires="DOMAINADMIN,ENTERPRISE" NavigateUrl="DomainAdmin/frmUserGroups.aspx" />
+												<radM:RadMenuItem Text="#MENU_NewUserDefaultSettings" Requires="DOMAINADMIN" NavigateUrl="DomainAdmin/frmNewUserDefaultSettings.aspx" />
+												<radM:RadMenuItem Text="#MENU_ImportUsers" Requires="DOMAINADMIN,ADI" NavigateUrl="DomainAdmin/frmImportUsers.aspx" />
+												<radM:RadMenuItem IsSeparator="True" />
+												<radM:RadMenuItem Text="#MENU_DomainContentFiltering" Requires="SHOWCONTENTFILTERMENU" NavigateUrl="Main/frmContentFilters.aspx?level=domain" />
+												<radM:RadMenuItem Text="#MENU_DomainSpamOptions" Requires="SHOWSPAMMENU" NavigateUrl="Main/frmSpamOptions.aspx?level=domain" />
+												<radM:RadMenuItem Text="#MENU_DomainFolderAutoClean" NavigateUrl="Main/frmFolderAutoClean.aspx?level=domain" />
+												<radM:RadMenuItem Text="#MENU_DomainAliases" Requires="SHOWDOMAINALIASMENU" NavigateUrl="DomainAdmin/frmDomainAliases.aspx" />
+											</Items>
+										</radM:RadMenuItem>
+										<radM:RadMenuItem Text="#MENU_Help" ImageUrl="Images/Icons/Help.png">
+											<Items>
+												<radM:RadMenuItem Text="#MENU_HelpForThisPage" MenuID="HelpForThisPage" />
+												<radM:RadMenuItem Text="#MENU_HelpTopics" MenuID="HelpTopics" />
+												<radM:RadMenuItem IsSeparator="True" />
+												<radM:RadMenuItem Text="#MENU_SmarterToolsWebSite" MenuID="SmarterToolsSite" />
+												<radM:RadMenuItem Text="#MENU_About" MenuID="About" />
+											</Items>
+										</radM:RadMenuItem>
+									</Items>
+								</radM:RadMenu>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td class="Container">
+					<table class="Container" id="Container">
+						<tr>
+							<td class="LeftBar">
+								<table class="LeftBar" id="LeftBar2">
+									<tr>
+										<td id="LoggedInAs" class="LoggedInAsContainer">
+											<div class="SideBarPanel">
+												<div class="SideBarPanelText">
+													<%=GlobalString("@LoggedInAs") %>
+												</div>
+											</div>
+											<div class="LoggedInAs">
+												<SMWC:LoggedInAs ID="LIA" runat="server"></SMWC:LoggedInAs>
+											</div>
+											<asp:HiddenField ID="HiddenValue" EnableViewState="true" runat="server" />
+
+											<script type="text/javascript">
+												function onClientExpand(sender, eventArgs)
+												{
+													document.forms.aspnetForm.<%=HiddenValue.ClientID%>.value = eventArgs.Item.Value;
+												}
+											</script>
+
+											<asp:Literal ID="litExpand" Visible="false" runat="server" />
+										</td>
+									</tr>
+									<tr>
+										<td class="LeftBarInner" id="LeftBar">
+
+											<script type="text/javascript">
+											var el = document.getElementById("Container");
+											var h2 = (el.clientHeight - 12);
+											if (h2>0) el.style.height = h2 + "px";
+											</script>
+
+											<radP:RadPanelbar OnClientItemExpand="onClientExpand" ID="PB" runat="server" EnableViewState="False" ExpandMode="FullExpandedItem" Height="100%" Width="206px" />
+										</td>
+									</tr>
+								</table>
+							</td>
+							<td class="MidBorder">
+								<SMWC:Spacer ID="Spacer8" runat="server" Width="1" Height="1" /></td>
+							<td class="RightPane" id="RightPane">
+								<asp:ContentPlaceHolder ID="PH" runat="server" />
+							</td>
+						</tr>
+						<tr>
+							<td class="BottomMidBorder" colspan="3">
+								<SMWC:Spacer ID="Spacer12" runat="server" Width="1" Height="12" /></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

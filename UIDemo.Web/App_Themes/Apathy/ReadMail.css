@@ -1,0 +1,317 @@
+﻿table.ReadMailFrame
+{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+iframe.ReadMailFrame
+{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+td.ReadMailFrame
+{
+	height: 100%;
+	padding: 0px;
+	padding-top: 3px;
+}
+form.ReadMailContent
+{
+	height: 100%;
+	width: 100%;
+}
+body.ReadMailContent
+{
+	height: 100%;
+	width: 100%;
+}
+
+table.ReadMailContent
+{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+td.InnerReadMailHeader
+{
+	padding: 0px;
+}
+td.ReadMailContainer
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+.ReadMailImageButton, .ReadMailImageButtonDisabled
+{
+	color: #333333;
+	font: 8pt Arial;
+	text-decoration: none;
+	padding: 0px 3px 0px 3px;
+}
+.ReadMailImageButtonDisabled
+{
+	color: #999999;
+	cursor: default;
+}
+.ReadMailImageButtonDisabled:hover
+{
+	cursor: default;
+	color: #999999;
+}
+
+img.ReadMailImageButton, img.ReadMailImageButtonDisabled
+{
+	padding: 0px;
+	vertical-align: middle;
+}
+table.ReadMailContainer
+{
+	padding: 0px;
+	margin: 0px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+table.InnerReadMailContent
+{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	background-color: #e2e2e2;
+	border-top: solid 1px #CCCCCC;
+	border-bottom: solid 1px #CCCCCC;
+}
+td.ReadMailLeft
+{
+	padding: 3px 0px 0px 6px;
+	text-align: left;
+	vertical-align: top;
+	margin: 0px;
+}
+td.ReadMailRight
+{
+	vertical-align: top;
+	margin: 0px;
+	padding: 3px 6px 0px 0px;
+	text-align: right;
+}
+table.ReadMailLeft
+{
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	text-align: left;
+}
+table.ReadMailRight
+{
+	padding: 0px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: 0;
+	text-align: right;
+}
+.ReadMailLabelDate
+{
+	vertical-align: top;
+	font: bold 8pt Arial, Verdana;
+	padding: 1px;
+	color: #497699;
+}
+.ReadMailIcons
+{
+	white-space: nowrap;
+}
+.ReadMailLabel
+{
+	vertical-align: top;
+	font: bold 8pt Arial, Verdana;
+	padding: 1px;
+	color: #497699;
+	width: 85px;
+}
+.ReadMailDate
+{
+	vertical-align: top;
+	font: 8pt Arial, Verdana;
+	padding: 1px;
+	color: #555555;
+	white-space: nowrap;
+}
+.ReadMailView
+{
+	vertical-align: top;
+	font: 8pt Arial, Verdana;
+	padding: 1px;
+	color: #555555;
+	white-space: nowrap;
+}
+.ReadMailField
+{
+	vertical-align: top;
+	font: 8pt Arial, Verdana;
+	padding: 1px;
+	color: #555555;
+}
+div.ReadMailContent
+{
+	font: 9pt Arial, Verdana;
+	overflow: auto;
+}
+
+div.ReadMailContent2
+{
+	padding: 25px;
+}
+.AddContact
+{
+	float: left;
+	display: inline;
+	left: 65px;
+	position: absolute;
+}
+
+
+.ReadMailDangerousField /* shows when dangerous scripts were removed */
+{
+	vertical-align: top;
+	font: bold 9pt Arial, Verdana;
+	padding: 3px 10px 3px 10px;
+	color: #FE4719;
+}
+
+
+div.GridArea
+{
+	outline: none;
+	height: 100%;
+	overflow: auto;
+}
+div.PreviewArea
+{
+	outline: none;
+	height: 100%;
+	overflow: auto;
+}
+
+/*************************/
+
+/* pager cell */
+td.MessagesPager
+{
+	padding: 0px;
+}
+/* */
+
+/* cell containing the scrolling divs */
+td.MessagesGrid
+{
+	padding: 0px;
+	width: 100%;
+	border-bottom: solid 1px #CCCCCC;
+}
+td.MessagesPreview
+{
+	height: 1px;
+	padding: 0px;
+	vertical-align: top;
+	width: 100%;
+}
+/* */
+
+/* The graph showing mailbox size usage */
+table.UsageGraph
+{
+	padding: 0px;
+	margin-right: 0px;
+	margin-left: auto;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+.UsageHeader
+{
+	padding-bottom: 3px;
+	color: #497699;
+	font: bold 9pt Arial, Verdana;
+}
+.UsageChart
+{
+	margin-top: 2px;
+	padding: 0px 0px 0px 0px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	width: 120px;
+	height: 12px;
+	border: solid 1px #999999;
+}
+.UsageFull
+{
+	background-color: white;
+}
+.UsageSep
+{
+	background: #999999;
+}
+.UsageEmpty
+{
+}
+.ReadMailPlainText
+{
+	font: 10pt 'Courier New';
+}
+
+div.PrintMailContent
+{
+	display: none;
+}
+
+@media print
+{
+	div.PopUpBox
+	{
+		font: 9pt Arial,Verdana;
+		color: #555555;
+		position: relative;
+		visibility: visible;
+		border: solid 0px Black;
+		padding: 0px;
+		background-color: Transparent;
+		z-index: 500;
+	}
+	.ReadMailField div span
+	{
+		display: none;
+	}
+	div.PrintMailContent
+	{
+		display: block;
+		font: 9pt Arial, Verdana;
+	}
+	div.ReadMailContent
+	{
+		display: none;
+	}
+	.ReadMailImageButton
+	{
+		display: none;
+	}
+	.AddContact
+	{
+		display: none;
+	}
+}

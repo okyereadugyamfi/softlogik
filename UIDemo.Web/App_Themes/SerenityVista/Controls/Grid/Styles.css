@@ -1,0 +1,191 @@
+.RadGrid_Grid
+{
+	font: 10pt Arial, Verdana, Sans-serif;
+	text-align: left;
+	cursor: default;
+	outline: none;
+	background-color: #FFFFFF;
+}
+.RadGrid_Grid a
+{
+	color: #5E9B59;
+}
+
+.RadGrid_Grid th, 
+.RadGrid_Grid th a
+{ 
+	text-align: left;
+	background-color: #FFFFFF;
+	color: #5E9B59;
+	font: bold 9pt Arial,Verdana;
+}
+
+.RadGrid_Grid th
+{
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.GridRow_Grid td div
+{
+	text-align: center;
+	font: bold 8pt Arial,Verdana;
+}
+
+.RadGrid_Grid td
+{ 
+	font: 11px tahoma;
+	color: #000000;
+}
+
+.MasterTable_Grid
+{
+	border-collapse: separate !important;
+	width: 100%;
+}
+
+.GridHeader_Grid
+{
+
+}
+
+.GridHeader_Grid a
+{
+	color: white;
+}
+
+.GridRow_Grid td.First
+{
+	border-left: solid 1px #E4E4E4;
+}
+
+.GridRow_Grid td
+{
+	height: 25px;
+	padding: 2px 0px 3px 0px;
+	background-color: #F2F2F2;
+	border-top: solid 1px #E4E4E4;
+	border-bottom: solid 1px #E4E4E4;
+	color: #555555;
+	font: 8pt Arial,Verdana;
+	cursor: pointer;
+}
+
+.GridAltRow_Grid td
+{
+	height: 25px;
+	padding: 2px 0px 3px 0px;
+	background-color: #FFFFFF;
+	color: #555555;
+	font: 8pt Arial,Verdana;
+	cursor: pointer;
+}
+
+.GridEmpty_Grid td
+{
+	height: 25px;
+	padding: 2px 0px 3px 0px;
+	background-color: #FFFFFF;
+	border: none;
+	color: #555555;
+	font: 8pt Arial,Verdana;
+}
+
+.GridRowUnread_Grid td
+{
+	height: 25px;
+	padding: 2px 0px 3px 0px;
+	background-color: #F2F2F2;
+	color: #555555;
+	font: bold 8pt Arial,Verdana;
+	border-top: solid 1px #E4E4E4;
+	border-bottom: solid 1px #E4E4E4;
+	cursor: pointer;
+}
+
+.GridAltRowUnread_Grid td
+{
+	height: 25px;
+	padding: 2px 0px 3px 0px;
+	background-color: #FFFFFF;
+	color: #555555;
+	font: bold 8pt Arial,Verdana;
+	cursor: pointer;
+}
+
+.SelectedRow_Grid td
+{
+	height: 25px;
+	padding: 2px 0px 3px 0px;
+	background-color: #E4F6CE;
+	color: #555555;
+	cursor: pointer;
+}
+.SelectedRowUnread_Grid td
+{
+	height: 25px;
+	padding: 2px 0px 3px 0px;
+	background-color: #E4F6CE;
+	color: #555555;
+	cursor: pointer;
+}
+
+
+
+
+
+.ActiveRow_Grid td
+{
+	background-color: #E4F6CE;
+	color: #5E9B59;
+	font: bold 8pt Arial,Verdana;
+}
+
+.GridPager_Grid td
+{
+	display: none;
+	/*border-top: solid 1px #CCCCCC;*/
+	background-color: #E2E2E2;
+	color: #000000;
+	font: 9pt Arial,Verdana;
+	padding: 8px;
+	white-space: nowrap;
+	text-align: left;
+}
+
+tr.GroupHeader_Grid td
+{
+	background: #deeffe;
+	font-weight: bold;
+	height:20px;
+}
+
+.GroupPanel_Grid
+{
+	background-color: #467a9e;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.GroupPanel_Grid TD
+{
+	color: white;
+}
+
+.GroupPanelItems_Grid
+{
+	background: #6ca7d2;
+	color: white !important;
+	white-space:  nowrap;
+	font-size: 11px;
+}
+td.GridHeader_Grid input
+{
+	width: auto;
+	float: left;
+	background: #fafafa;
+	font: bold 10px Verdana, Arial, Sans-serif;
+	color: #989cb0;
+	height: 14px;
+	vertical-align:middle;
+}

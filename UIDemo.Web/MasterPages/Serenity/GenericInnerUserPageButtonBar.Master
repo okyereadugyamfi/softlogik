@@ -1,0 +1,84 @@
+<%@ Master Language="C#" MasterPageFile="UserPage.Master" AutoEventWireup="false" Codebehind="GenericInnerUserPageButtonBar.master.cs" Inherits="SMWeb05.MasterPages.Apathy.GenericInnerUserPageButtonBar" EnableTheming="true" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="PH" runat="server">
+
+	<script type="text/javascript">
+function GetScrollableSize(doc)
+{
+	var menu = document.getElementById('Menu');
+	var button = document.getElementById('Button');
+	var pager = document.getElementById('Pager');
+	var search = document.getElementById('SearchRow');
+	var tip = document.getElementById('<%= TipText.ClientID %>');
+	var retval = menu.offsetHeight + button.offsetHeight
+	if (pager!=null) retval = retval + pager.offsetHeight;
+	if (tip!=null) retval = retval + tip.offsetHeight;
+	if (search!=null) retval = retval + search.offsetHeight;
+	return retval;
+}
+	</script>
+
+	<table class="InnerSettings" id="InnerContent">
+		<tr>
+			<td id="Menu" class="TopPanelMenuLeft">
+				<div id="PageTitle" class="TopPanelMenuText">
+					<STWC:CustomPageTitle runat="server" ID="CustomPageTitle1" />
+				</div>
+			</td>
+			<td class="TopPanelMenuRight">
+				<asp:ContentPlaceHolder ID="CntPH" runat="server" />
+			</td>
+		</tr>
+		<tr class="ButtonBar">
+			<td id="Button" colspan="2" class="ButtonBar">
+				<table class="TwoCellButtonBar">
+					<tr>
+						<td class="ButtonBarLeft">
+							<asp:ContentPlaceHolder ID="BPH" runat="server" />
+						</td>
+						<td class="ButtonBarRight">
+							<div class="ButtonBarRight">
+								<asp:ContentPlaceHolder ID="BrPH" runat="server" />
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td class="SearchRow" colspan="2" id="SearchRow">
+				<asp:ContentPlaceHolder ID="SPH" runat="server" />
+			</td>
+		</tr>
+		<tr runat="server" id="trTipText">
+			<td id="TipText" class="Tip" colspan="2" style="padding: 0px">
+				<asp:Literal runat="Server" ID="litTipText"></asp:Literal>
+			</td>
+		</tr>
+		<tr>
+			<td id="Scrollable" colspan="2" class="InnerPageContent">
+				<div class="ContentDiv">
+					<asp:ContentPlaceHolder ID="MPH" runat="server" />
+				</div>
+			</td>
+		</tr>
+		<tr runat="server" id="trFooter" visible="false">
+			<td colspan="2" style="padding: 0px;">
+				<table id="Pager" class="DataGridFooter">
+					<tr>
+						<td class="DataGridFooterNav">
+							<asp:ContentPlaceHolder ID="NavPH" runat="server" />
+						</td>
+						<td class="DataGridFooterSummary">
+							
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<div runat="server" visible="false">
+		<asp:ContentPlaceHolder ID="M2PH" runat="server" />
+	</div>
+</asp:Content>
+

@@ -1,0 +1,9 @@
+C:\myhome\Components.NET\SoftLogic\UIDemo.Windows\bin\Debug\UIDemo.Windows.exe
+C:\myhome\Components.NET\SoftLogic\UIDemo.Windows\bin\Debug\UIDemo.Windows.pdb
+C:\myhome\Components.NET\SoftLogic\UIDemo.Windows\obj\Debug\ResolveAssemblyReference.cache
+C:\myhome\Components.NET\SoftLogic\UIDemo.Windows\obj\Debug\UIDemo.Windows.Properties.Resources.resources
+C:\myhome\Components.NET\SoftLogic\UIDemo.Windows\obj\Debug\UIDemo.Windows.csproj.GenerateResource.Cache
+C:\myhome\Components.NET\SoftLogic\UIDemo.Windows\obj\Debug\UIDemo.Windows.exe
+C:\myhome\Components.NET\SoftLogic\UIDemo.Windows\obj\Debug\UIDemo.Windows.pdb
+C:\myhome\Components.NET\SoftLogic\UIDemo.Windows\bin\Debug\SoftLogic.Core.dll
+C:\myhome\Components.NET\SoftLogic\UIDemo.Windows\bin\Debug\SoftLogic.Core.pdb

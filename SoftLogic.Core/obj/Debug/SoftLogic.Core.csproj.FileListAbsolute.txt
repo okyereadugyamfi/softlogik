@@ -1,0 +1,5 @@
+C:\myhome\Components.NET\SoftLogic\SoftLogic.Core\obj\Debug\ResolveAssemblyReference.cache
+C:\myhome\Components.NET\SoftLogic\SoftLogic.Core\bin\Debug\SoftLogic.Core.dll
+C:\myhome\Components.NET\SoftLogic\SoftLogic.Core\bin\Debug\SoftLogic.Core.pdb
+C:\myhome\Components.NET\SoftLogic\SoftLogic.Core\obj\Debug\SoftLogic.Core.dll
+C:\myhome\Components.NET\SoftLogic\SoftLogic.Core\obj\Debug\SoftLogic.Core.pdb

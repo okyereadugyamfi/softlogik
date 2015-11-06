@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Font Name="Tahoma" Size="8.25" />
+  <Comment CommentText="SoftLogik Basic Form Inheritance Model&#xD;&#xA;">
+    <Position X="0.5" Y="8.74" Height="0.656" Width="7.096" />
+  </Comment>
+  <Class Name="SoftLogik.Framework.Code.FormDataState" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\Common.vb</FileName>
+      <HashCode>AGAAAAAAAAAAAAAAAAAAAAAAAJAAIAAIAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftLogik.Framework.Code.CSPRegistry" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\RegSupport.vb</FileName>
+      <HashCode>AAACAAAAIAAAEgAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftLogik.Framework.Code.SPPreview" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Controls\SPPreview.vb</FileName>
+      <HashCode>AAAAAAAAACAAAAAAAACAAEACAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftLogik.Framework.Code.SPCompany" Collapsed="true">
+    <Position X="0.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\SPSecurity.vb</FileName>
+      <HashCode>AAAAAAAAgCAAAAAAAACAAAQAAAEAAAAAAAAAAgAAQAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SoftLogik.Framework.Code.SPSecurity" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\SPSecurity.vb</FileName>
+      <HashCode>ACCAAQAAACAAQAABAACAAARAAAAEAAAAAAAAAgAAACA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SoftLogik.Framework.Code.SPUser" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\SPSecurity.vb</FileName>
+      <HashCode>AEAAAAAAAAAgAAAAAAAAAAQAAAAAAAACAAAAAAAAQAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftLogik.Framework.Code.My.MySettings" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABABAAIACAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftLogik.Framework.Code.SPTaskView">
+    <Position X="0.5" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Controls\SPTaskView.vb</FileName>
+      <NewMemberFileName>Classes\SPTask.vb</NewMemberFileName>
+      <HashCode>AAAAAAAAACAAAAAAgACAEAACAEAAABQAgAAIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="SoftLogik.Framework.Code.SPTaskView.SPTaskItemEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controls\SPTaskView.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+  </Class>
+  <Class Name="SoftLogik.Framework.Code.frmSecurity" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Forms\frmSecurity.vb</FileName>
+      <HashCode>CBAAMAAQMDAoAsKAAAGADAyDQIgaGAAAJKQAQoQAwUE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftLogik.Framework.Code.frmSoftLogik">
+    <Position X="6" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Forms\SoftLogik Form.vb</FileName>
+      <HashCode>AAAAAAAAACAAAAAAAACCAAADAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftLogik.Framework.Code.frmCompany" Collapsed="true">
+    <Position X="0.5" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Forms\frmCompany.vb</FileName>
+      <HashCode>AQEAAAAAAGAAABAAAAKAAIACAQA0AABAgESGAAAAAAU=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftLogik.Framework.Code.SPTaskItem" Collapsed="true">
+    <Position X="4" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Controls\SPTaskView.vb</FileName>
+      <HashCode>AAAAAQAAAAAAEAAABAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+  </Class>
+  <Class Name="SoftLogik.Framework.Code.SPTaskGroup" Collapsed="true">
+    <Position X="2.25" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Controls\SPTaskView.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftLogik.Framework.Code.SPTaskItemEventArgs" Collapsed="true">
+    <Position X="5.75" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Controls\SPTaskView.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="SoftLogik.Framework.Code.SPPolicy" Collapsed="true">
+    <Position X="4" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\PolicySupport.vb</FileName>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAQAAAAACAAAAAAAAAAAQAA=</HashCode>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="SoftLogik.Framework.Code.EncryptAlgorithmsEnum" Collapsed="true">
+    <Position X="5.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\Encrypt.vb</FileName>
+      <HashCode>AACAAAAAAAAAAAAAAAEACAAAAAAAAAgAAAAAAACAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftLogik.Framework.Code.HashTypeEnum" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\Encrypt.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftLogik.Framework.Code.FileParseEnum" Collapsed="true">
+    <Position X="2.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\FileSupport.vb</FileName>
+      <HashCode>AAAAAQAAAAAAAAABAAAAACAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftLogik.Framework.Code.SecurityViewItemType" Collapsed="true">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Forms\frmSecurity.vb</FileName>
+      <HashCode>AEAAAEAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Module Name="SoftLogik.Framework.Code.Common" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\Common.vb</FileName>
+      <HashCode>AAAAAAAAAABABAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="SoftLogik.Framework.Code.DSNSupport" Collapsed="true">
+    <Position X="5.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\DSNSupport.vb</FileName>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="SoftLogik.Framework.Code.CultureSupport" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\CultureSupport.vb</FileName>
+      <HashCode>RAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="SoftLogik.Framework.Code.FileSupport" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\FileSupport.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="SoftLogik.Framework.Code.DateSupport" Collapsed="true">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\CultureSupport.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="SoftLogik.Framework.Code.My.MySettingsProperty" Collapsed="true">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="SoftLogik.Framework.Code.PopulateSupport" Collapsed="true">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\PopulateSupport.vb</FileName>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAgAAABAAAAAAIAQAAAAAAEAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="SoftLogik.Framework.Code.FormSupport" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\FormSupport.vb</FileName>
+      <HashCode>AAAAAAAAIAAAAAAACAAAAAAAABAAAQAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="SoftLogik.Framework.Code.My.Resources.Resources" Collapsed="true">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="SoftLogik.Framework.Code.RegSupport" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\RegSupport.vb</FileName>
+      <HashCode>AAAAAAAAAAAEAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="SoftLogik.Framework.Code.StringSupport" Collapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\CultureSupport.vb</FileName>
+      <HashCode>AAAACAAAAAACAgIAAAAAIAAAgAAAAIAAAIBAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="SoftLogik.Framework.Code.SPEncrypt" Collapsed="true">
+    <Position X="4" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\Encrypt.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAIAACCAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="SoftLogik.Framework.Code.TStripSupport" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Modules\TStripSupport.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAgBAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+</ClassDiagram>

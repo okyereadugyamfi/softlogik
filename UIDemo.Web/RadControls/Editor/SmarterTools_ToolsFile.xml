@@ -1,0 +1,58 @@
+﻿<root>
+  <modules>
+  </modules>
+
+  <tools name="MainToolbar" dockable="true">
+    <tool name="FindAndReplace" shortcut="CTRL+F"/>
+    <tool name="Cut" shortcut="CTRL+X"/>
+    <tool name="Copy" shortcut="CTRL+C"/>
+    <tool name="Paste" shortcut="CTRL+V"/>
+    <tool name="SpellCheck" shortcut="F7"/>
+    <tool name="Bold" shortcut="CTRL+B"/>
+    <tool name="Italic" shortcut="CTRL+I"/>
+    <tool name="Underline" shortcut="CTRL+U"/>
+  </tools>
+  <tools name="Tools">
+    <tool name="JustifyLeft" />
+    <tool name="JustifyCenter" />
+    <tool name="JustifyRight" />
+    <tool name="JustifyFull" />
+    <tool name="JustifyNone" />
+    <tool separator="true"/>
+    <tool name="Indent" />
+    <tool name="Outdent" />
+    <tool name="InsertOrderedList" />
+    <tool name="InsertUnorderedList" />
+    <tool separator="true"/>
+    <tool name="LinkManager" shortcut="CTRL+K"/>
+  </tools>
+  <tools name="DropdownToolbar">
+    <tool name="FontName"></tool>
+    <tool name="Undo" shortcut="CTRL+Z"/>
+    <tool name="Redo" shortcut="CTRL+Y"/>
+    <tool name="RealFontSize"/>
+    <tool name="ForeColor" />
+    <tool name="BackColor" />
+
+  </tools>
+  <tools name="DialogToolbar" enabled="false">
+    <tool name="IncreaseSize" shortcut="F10"/>
+    <tool name="DecreaseSize" shortcut="F9"/>
+    <tool name="InsertParagraph" />
+    <tool name="InsertHorizontalRule" />
+    <tool name="InsertDate" />
+    <tool name="InsertTime" />
+    <tool separator="true"/>
+    <tool name="AboutDialog" />
+    <tool name="Help" shortcut="F1"/>
+  </tools>
+
+  <tools name="EnhancedEditToolbar" dockable="true" enabled="false">
+    <tool name="ToggleScreenMode" shortcut="F11"/>
+    <tool name="ToggleTableBorder" />
+    <tool name="Zoom" />
+    <tool name="ModuleManager" />
+    <tool name="ToggleDocking" />
+    <tool name="RepeatLastCommand" shortcut="F4"/>
+  </tools>
+</root>

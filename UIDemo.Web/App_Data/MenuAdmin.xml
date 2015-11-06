@@ -1,0 +1,79 @@
+<Menu>
+  <Group Flow="Horizontal">
+    <Item Text="#MENU_Manage" ImageURL="Images/Icons/Manage.png" Requires="ADMIN,ACTIVATED">
+      <Group Flow="Vertical">
+        <Item Text="#MENU_NewDomain" NavigateUrl="SystemAdmin/frmDomain.aspx"></Item>
+        <Item Text="#MENU_ManageDomains" NavigateUrl="SystemAdmin/frmDomains.aspx?search="></Item>
+        <Item IsSeparator="True"></Item>
+        <Item Text="#MENU_ManageSpoolQueue" NavigateUrl="SystemAdmin/frmSpool.aspx"></Item>
+        <Item Text="#MENU_EnableDisableServices" NavigateUrl="SystemAdmin/frmEnableDisableServices.aspx"></Item>
+        <Item IsSeparator="True"></Item>
+        <Item Text="#MENU_ImpersonateUser" NavigateUrl="SystemAdmin/frmImpersonateUser.aspx"></Item>
+      </Group>
+    </Item>
+    <Item Text="#MENU_Reports" ImageURL="Images/Icons/Reports.png" Requires="ADMIN,ACTIVATED">
+      <Group Flow="Vertical">
+        <Item Text="#MENU_SystemDashboard" NavigateUrl="SystemAdmin/frmDashboard.aspx"></Item>
+        <Item Text="#MENU_ServerStatistics" NavigateUrl="SystemAdmin/Reports/frmServerStatistics.aspx"></Item>
+        <Item Text="#MENU_Connections" NavigateUrl="SystemAdmin/Reports/frmConnections.aspx"></Item>
+        <Item Text="#MENU_CurrentBlocks" NavigateUrl="SystemAdmin/Reports/frmCurrentBlocks.aspx"></Item>
+        <Item IsSeparator="True"></Item>
+        <Item Text="#MENU_DomainStatistics" NavigateUrl="SystemAdmin/Reports/frmDomainStatistics.aspx"></Item>
+        <Item Text="#MENU_DiskUsageReport" NavigateUrl="SystemAdmin/Reports/frmDiskUsageReport.aspx"></Item>
+        <Item Text="#MENU_DomainAliasReport" NavigateUrl="SystemAdmin/Reports/frmDomainAliasReport.aspx"></Item>
+        <Item IsSeparator="True"></Item>
+        <Item Text="#MENU_InactiveUsersReport" NavigateUrl="SystemAdmin/Reports/frmInactiveUsers.aspx"></Item>
+        <Item IsSeparator="True"></Item>
+        <Item Text="#MENU_CustomReports" NavigateUrl="SystemAdmin/Reports/frmReports.aspx"></Item>
+        <Item Text="#MENU_EmailReports" NavigateUrl="SystemAdmin/Reports/frmEmailReports.aspx"></Item>
+      </Group>
+    </Item>
+    <Item Text="#MENU_Settings" ImageURL="Images/Icons/Settings.png" LookId="Top" Requires="ADMIN,ACTIVATED">
+      <Group Flow="Vertical">
+        <Item Text="#MENU_GeneralSettings" NavigateUrl="SystemAdmin/frmGeneralSettings.aspx"></Item>
+        <Item Text="#MENU_ProtocolSettings" NavigateUrl="SystemAdmin/frmProtocolSettings.aspx"></Item>
+        <Item Text="#MENU_Logging" NavigateUrl="SystemAdmin/frmLogging.aspx"></Item>
+        <Item Text="#MENU_DomainDefaults" NavigateUrl="SystemAdmin/frmDefaultDomainSettings.aspx"></Item>
+        <Item Text="#MENU_DomainPropogate" NavigateUrl="SystemAdmin/frmPublishDomainDefaults.aspx"></Item>
+        <Item IsSeparator="True"></Item>
+        <Item Text="#MENU_StoreAndForward" NavigateUrl="SystemAdmin/frmDomainForwards.aspx"></Item>
+        <Item Text="#MENU_FolderAutoClean" NavigateUrl="SystemAdmin/frmFolderAutoClean.aspx"></Item>
+        <Item Text="#MENU_Archive" NavigateUrl="SystemAdmin/frmMessageArchiving.aspx"></Item>
+        <Item Text="#MENU_SmarthostServers" NavigateUrl="SystemAdmin/frmSmarthost.aspx"></Item>
+        <Item Text="#MENU_GatewayServers" NavigateUrl="SystemAdmin/frmGatewayList.aspx"></Item>
+		  <Item IsSeparator="True"></Item>
+		  <Item Text="#MENU_Skins" NavigateUrl="SystemAdmin/frmSkins.aspx"></Item>
+	  </Group>
+    </Item>
+    <Item Text="#MENU_SecuritySettings" ImageURL="Images/Icons/Security.png" LookId="Top" Requires="ADMIN,ACTIVATED">
+      <Group Flow="Vertical">
+        <Item Text="#MENU_AntiVirus" NavigateUrl="SystemAdmin/frmVirusAdministration.aspx"></Item>
+        <Item Text="#MENU_AntiSpam" NavigateUrl="SystemAdmin/frmSpamAdministration.aspx"></Item>
+	    	<Item Text="#MENU_SpamAssassin" NavigateUrl="SystemAdmin/frmSpamAssassinServers.aspx"></Item>
+        <Item Text="#MENU_GreyListing" NavigateUrl="SystemAdmin/frmGreyListing.aspx"></Item>
+        <Item Text="#MENU_SSL" Requires="ENTERPRISE" NavigateUrl="SystemAdmin/frmSSL.aspx"></Item>
+        <Item IsSeparator="True"></Item>
+        <Item Text="#MENU_IntrusionDetection" NavigateUrl="SystemAdmin/frmIntrusionDetection.aspx"></Item>
+        <Item Text="#MENU_BlackListWhiteList" NavigateUrl="SystemAdmin/frmBlackList.aspx"></Item>
+        <Item Text="#MENU_SMTPBlockedRecipients" NavigateUrl="SystemAdmin/frmSmtpBlockedRecipients.aspx"></Item>
+        <Item Text="#MENU_SMTPBlockedSenders" NavigateUrl="SystemAdmin/frmSmtpBlockedSenders.aspx"></Item>
+        <Item Text="#MENU_SMTPAuthenticationBypass" NavigateUrl="SystemAdmin/frmSmtpAuthBypass.aspx"></Item>
+      </Group>
+    </Item>
+    <Item Text="#MENU_Help" ImageUrl="Images/Icons/Help.png">
+      <Group Flow="Vertical">
+        <Item Text="#MENU_HelpForThisPage" MenuID="HelpForThisPage"></Item>
+        <Item Text="#MENU_HelpTopics" MenuID="HelpTopics"></Item>
+        <Item Text="#MENU_GettingStarted" MenuID="GettingStarted" Requires="ADMIN"></Item>
+        <Item IsSeparator="True"></Item>
+        <Item Text="#MENU_OrderNow" Requires="ADMIN,FREEVERSION" ClientSideCommand="BringUpHelp('http://www.smartertools.com/Products/smartermail/Default.aspx?op=ordernow')"></Item>
+        <Item Text="#MENU_ActivateProduct" Requires="ADMIN" NavigateUrl="SystemAdmin/frmLicensing.aspx"></Item>
+        <Item IsSeparator="True" Requires="ADMIN"></Item>
+        <Item Text="#MENU_SmarterToolsWebSite" MenuID="SmarterToolsSite"></Item>
+        <Item Text="#MENU_Diagnostics" Target="_blank" Requires="ADMIN" NavigateUrl="About/Checkup.aspx"></Item>
+        <Item Text="#MENU_DecludeSupport" ClientSideCommand="BringUpWindow_SSVersion('http://support.declude.com')" Requires="ADMIN,DECLUDE"></Item>
+        <Item Text="#MENU_About" MenuID="About"></Item>
+      </Group>
+    </Item>
+  </Group>
+</Menu>

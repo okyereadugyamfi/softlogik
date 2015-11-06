@@ -1,0 +1,41 @@
+<%@ Master Language="C#" AutoEventWireup="false" Codebehind="Blank.master.cs" Inherits="SMWeb05.MasterPages.Apathy.Blank" %>
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- ... -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+	<title></title>
+</head>
+<body>
+	<form id="form1" runat="server">
+		<table class="GenericBox">
+			<tr class="ButtonBar">
+				<td class="ButtonBar">
+					<table class="TwoCellButtonBar">
+						<tr>
+							<td class="ButtonBarLeft">
+								<asp:ContentPlaceHolder ID="BPH" runat="server" />
+							</td>
+							<td class="ButtonBarRight">
+								<div class="ButtonBarRight">
+									<asp:ContentPlaceHolder ID="BrPH" runat="server" />
+								</div>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr class="GenericBox">
+				<td class="GenericBox">
+					<asp:ContentPlaceHolder ID="MPH" runat="server" />
+				</td>
+			</tr>
+			<tr class="ButtonBar">
+				<td class="ButtonBar">
+					<asp:ContentPlaceHolder ID="FPH" runat="server" />
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

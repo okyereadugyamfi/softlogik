@@ -1,0 +1,26 @@
+﻿/* This file defines classes that make up the RSS page
+** the following colors are used in this css file
+** #497699: blue link text
+*/
+
+
+.RSSTitle
+{
+	font: bold 18pt Arial, Verdana;
+}
+.RSSDesc
+{
+	font: 9pt Arial, Verdana;
+	font-style: italic;
+}
+.RSSSubject
+{
+	font: bold 9pt Arial, Verdana;
+	color: #497699;
+}
+.RSSDate
+{
+}
+.RSSArticle
+{
+}

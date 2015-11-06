@@ -1,0 +1,20 @@
+﻿.RSSTitle
+{
+	font: bold 18pt Arial, Verdana;
+}
+.RSSDesc
+{
+	font: 9pt Arial, Verdana;
+	font-style: italic;
+}
+.RSSSubject
+{
+	font: bold 9pt Arial, Verdana;
+	color: #497699;
+}
+.RSSDate
+{
+}
+.RSSArticle
+{
+}
